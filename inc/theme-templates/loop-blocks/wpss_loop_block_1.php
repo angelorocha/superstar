@@ -29,11 +29,6 @@ function wpss_loop_block_1( $excerpt = 20 ) {
                                 <li><i class="far fa-calendar-alt"></i> <?= get_the_date( 'd-m-Y' ); ?></li>
                                 <li><i class="far fa-eye"></i> <?= wpss_get_post_views( get_the_ID() ); ?></li>
                                 <li><?= getPostLikeLink( get_the_ID() ); ?></li>
-								<?php if ( is_post_type_archive( array( 'clipping' ) ) ): ?>
-                                    <li>
-                                        <strong>Fonte:</strong> <?= get_post_meta( get_the_ID(), '_clipping_font', true ); ?>
-                                    </li>
-								<?php endif; ?>
                             </ul>
                         </div><!-- col-md-8 -->
                         <div class="col-md-3 ml-0 text-right">

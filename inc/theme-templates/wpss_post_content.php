@@ -24,7 +24,7 @@ function wpss_post_content() {
 			do_action( 'wpss_content_begin' );
 
 			if ( $wpss_show_thumbnail && has_post_thumbnail() ):
-				echo "<div class='wpss-post-thumbnail'>" . wpss_thumbnail( 'post_cover' ) . "</div>";
+				echo "<div class='wpss-post-thumbnail'>" . wpss_thumbnail( 'wpss_post_cover' ) . "</div>";
 			endif;
 
 			echo "<h3 aria-labelledby='wpss-article' class='wpss-article-title text-center'>" . get_the_title() . "</h3>";
