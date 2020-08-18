@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * @author              Angelo Rocha
+ * @author              Angelo Rocha <contato@angelorocha.com.br>
+ * @link                https://angelorocha.com.br
+ * @copyleft            2020
+ * @license             GNU GPL 3 (https://www.gnu.org/licenses/gpl-3.0.html)
+ * @package WordPress
+ * @subpackage superstar
+ * @since 1.0.0
+ */
+
+.wpss-slide{border:3px solid #FFF;}
+.wpss-slide:after{content:""; background:url("../images/slide-shadow.png") center top no-repeat; background-size:contain; width:100%; height:27px; position:absolute; left:0; bottom:-30px;}
+.wpss-slide .carousel-inner{min-height:281px; overflow:hidden;}
+.wpss-slide .row{margin:0;}
+.wpss-slide .carousel-indicators{top:10px; left:auto; bottom:auto; right:10px; justify-content:right; margin:0;}
+.wpss-slide-caption{background:rgba(0, 0, 0, 0.5); color:#FFF; position:absolute; left:0; bottom:20px; width:100%; overflow:hidden;}
+.wpss-slide-caption-text{padding-top:10px; padding-bottom:10px;}
+.wpss-slide-caption h5{font-size:1.1rem; line-height:20px; height:20px; overflow:hidden; margin:0 0 5px 0;}
+.wpss-slide-caption p{font-size:0.8rem; line-height:20px; max-height:40px; overflow:hidden; margin:0;}
+.wpss-slide-control{position:relative;}
+.wpss-slide-control a{position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; opacity:0.5;}
+.wpss-slide-control a:hover{background:rgba(0, 0, 0, 0.5); opacity:1;}
+.wpss-control-prev{border-right:1px solid #AAA;}
+.wpss-control-next{border-left:1px solid #AAA;}

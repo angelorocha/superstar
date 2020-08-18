@@ -1,0 +1,2 @@
+This is a simples wordpress theme framework!
+Very, very, very simple.

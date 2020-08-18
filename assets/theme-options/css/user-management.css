@@ -1,0 +1,43 @@
+.wpss-admin-container{background:#FFF; padding:10px; margin:30px; max-width:880px;}
+.wpss-admin{display:flex;}
+.wpss-admin-container h3{margin:0 0 10px 0; border-bottom:3px solid #999; padding:0 0 5px 0;}
+.wpss-admin-nav{flex-basis:30%; margin:0;}
+.wpss-admin-nav li{margin:0;}
+.wpss-admin-nav li a{text-decoration:none; color:#455a64; display:block; padding:5px; transition:300ms;}
+.wpss-admin-nav li a:hover,
+.wpss-admin-nav li.active a{background:#cfd8dc; color:#607d8b;}
+.wpss-tab{display:none; padding:0 10px 0 10px; flex-basis:100%;}
+.wpss-tab.wpss-tab-active{display:block;}
+.wpss-admin-home{}
+
+/*** Add user form */
+.wpss-admin{}
+.wpss-admin label,
+.wpss-admin textarea,
+.wpss-admin input[type='text'],
+.wpss-admin select{display:block;}
+.wpss-admin label{margin-bottom:5px; font-weight:bold;}
+.wpss-admin select,
+.wpss-admin .select2-container,
+.wpss-admin input[type='text'],
+.wpss-admin textarea{width:100% !important; margin-bottom:10px;}
+
+/*** Utils */
+.wpss-button{background:#cfd8dc; color:#78909c; border:0; cursor:pointer; padding:5px 20px 5px 20px; transition:300ms; text-decoration:none;}
+.wpss-button.danger{background:#e57373; color:#ffebee;}
+.wpss-button:hover{background:#263238; color:#b0bec5;}
+.wpss-button.danger:hover{background:#c62828; color:#ffcdd2;}
+.text-center{text-align:center;}
+.mb10{margin-top:10px;}
+.mt10{margin-top:10px;}
+.text-right{text-align:right;}
+.wpss-alert-success{background:#e0f7fa; border:1px solid #80deea; color:#00acc1; padding:5px;margin:5px 0 10px 0;}
+.wpss-alert-warning{background:#fff8e1; border:1px solid #ffe082; color:#ffb300; padding:5px;margin:5px 0 10px 0;}
+.wpss_hide{display:none;}
+.wpss_show{display:block;}
+
+.wpss-table{width:100%; border-collapse:collapse;}
+.wpss-table tr{}
+.wpss-table th,
+.wpss-table td{border:1px solid #EEE; padding:5px;}
+.wpss-table thead th{padding:10px; background:#f4f4f4;}

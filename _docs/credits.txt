@@ -1,0 +1,79 @@
+Developed by.: Angelo Rocha
+
+Using:
+# Bootstrap 4
+-- https://getbootstrap.com
+
+# Font Awesome
+-- https://fontawesome.com
+
+# Bootstrap menu navwalker class
+-- https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+-- Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz
+
+# Likely
+- The social sharing buttons that aren’t shabby
+-- https://github.com/ilyabirman/Likely
+
+# lightGallery
+-- https://github.com/sachinchoolur/lightGallery
+
+# jquery.animateNumber
+-- http://aishek.github.io/jquery-animateNumber/
+-- https://github.com/aishek/jquery-animateNumber
+
+# Datatables
+-- https://datatables.net/
+
+# Perfect Scroll
+-- https://github.com/mdbootstrap/perfect-scrollbar
+
+# jQuery UI
+-- https://jqueryui.com/
+
+# Select2
+-- https://select2.org/
+-- https://github.com/select2/select2
+
+# Fockus
+-- http://lab.hakim.se/fokus
+
+# jQuery Countdown
+-- http://hilios.github.io/jQuery.countdown/
+
+# jPlayer
+-- http://jplayer.org/
+
+# jQuery Mask
+-- http://igorescobar.com
+-- https://github.com/igorescobar/jQuery-Mask-Plugin
+
+# Sticky Sidebar
+-- https://github.com/abouolia/sticky-sidebar
+
+Thanks! ♥
+
+#########################################################################
+
+ ___  __      __        _     _         ___      _ _
+|_ _| \ \    / /_ _ _ _| |_  | |_ ___  | _ ) ___| (_)_____ _____
+ | |   \ \/\/ / _` | ' \  _| |  _/ _ \ | _ \/ -_) | / -_) V / -_)
+|___|   \_/\_/\__,_|_||_\__|  \__\___/ |___/\___|_|_\___|\_/\___|
+
+               _____
+             ,-"     "-.
+            / o       o \
+           /   \     /   \
+          /     )-"-(     \
+         /     ( 6 6 )     \
+        /       \ " /       \
+       /         )=(         \
+      /   o   .--"-"--.   o   \
+     /    I  /  -   -  \  I    \
+ .--(    (_}y/\       /\y{_)    )--.
+(    ".___l\/__\_____/__\/l___,"    )
+ \                                 /
+  "-._      o O o O o O o      _,-"
+      `--Y--.___________.--Y--'
+         |==.___________.==|
+         `==.___________.=='

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * @author              Angelo Rocha
+ * @author              Angelo Rocha <contato@angelorocha.com.br>
+ * @link                https://angelorocha.com.br
+ * @copyleft            2020
+ * @license             GNU GPL 3 (https://www.gnu.org/licenses/gpl-3.0.html)
+ * @package WordPress
+ * @subpackage superstar
+ * @since 1.0.0
+ */
+
+body.login,
+body.wpss-login-page{background:#FAFAFA;}
+.wpss-login-box{max-width:660px; margin:0 auto 0 auto;}
+
+.login h1{display:none;}
+
+.btn-login{background: #000; color:#FFF;}
+.btn-login:hover{background:#999; color:#333;}

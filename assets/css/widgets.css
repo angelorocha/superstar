@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.wpss-widget-blocks-container{margin-top:30px; margin-bottom:30px;}
+.wpss-widget-blocks-container > h3{margin:0 0 20px 0; color:#30445C; font-size:1.5rem; padding-bottom:10px;}
+.wpss-widget-blocks-container > h3 > span{font-size:1.5rem; border-bottom:3px solid #00ACC1; padding:0 10px 5px 0;}
+.wpss-widget-blocks-container .wpss-widget-blocks{}
+
+/**
+ * Block 1 Style
+ */
+.wpss-widget-block-1{}
+.wpss-widget-block-1 h3{font-size:1.4rem; text-align:center; margin:20px 0 15px 0; padding:15px 0 15px 0; border-top:3px double #DDD; border-bottom:3px double #DDD; color:#00ACC1;}
+.wpss-widget-block-1 a{}
+.wpss-widget-block-1 a h4{font-size:0.9rem; color:#00ACC1;}
+.wpss-widget-block-1 a:hover h4{}
+.wpss-widget-block-1 a small{color:#999; margin:10px 0 10px 0; padding:5px 0 5px 0; border-top:1px solid #DDD; border-bottom:1px solid #DDD; display:block; text-align:right;}
+.wpss-widget-block-1 a small span{margin-left:10px;}
+
+/**
+ * Block 2 Style
+ */
+.wpss-widget-block-3{}
+.wpss-widget-block-3:last-child{}
+.wpss-widget-block-3 .wpss-block{}
+.wpss-widget-block-3 .wpss-block h4{}
+.wpss-widget-block-3 .wpss-block small{}
+.wpss-widget-block-3 .wpss-block small > span:last-child{}
+
+
+.wpss-widget-block-2{margin-top:20px; padding-top:20px; border-top:1px solid #DDD;}
+.wpss-widget-block-2 h4{margin:0 0 20px 0; font-size:2.1rem; border-bottom:3px solid #DDD; padding-bottom:10px; color:#00ACC1;}
+.wpss-widget-block-2 h4 span{display:inline-block; border-bottom:3px solid #00ACC1; margin-bottom:-13px; padding:0 30px 10px 0;}
+.wpss-widget-block-2 .wpss-box-image{max-height:370px; overflow:hidden; border:3px solid #DBDBDB;}
+.wpss-widget-block-2 .wpss-box-info{background:#FFF; border:1px solid #EEE; max-width:80%; padding:50px; margin:-100px auto 30px auto; position:relative; z-index:100;}
+.wpss-widget-block-2 .wpss-box-info small{display:block; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #BFBFBF;}
+.wpss-widget-block-2 .wpss-box-info small span{color:#BFBFBF; margin-right:20px;}
+.wpss-widget-block-2 .wpss-box-info h4{}
+.wpss-widget-block-2 .wpss-box-info h4 a{color:#3C5573;}
+.wpss-widget-block-2 .wpss-box-info h4 a:hover{color:#00ACC1;}
+.wpss-widget-block-2 .wpss-box-info p{}
+
+/**
+ * Block 3
+ */
+.wpss-widget-block-3{}
+.wpss-widget-block-3 .wpss-block-container{position:relative; margin-bottom:20px; min-height:120px;}
+.wpss-widget-block-3 .wpss-block-container h4{background:rgba(0, 0, 0, 0.5); font-size:1.1rem; position:absolute; left:0; bottom:0; margin:0; padding:10px; width:100%; height:100%; display:flex; align-items:center; text-align:center; justify-content:center;}
+.wpss-widget-block-3 .wpss-block-container h4 a{color:#FFF;}
+.wpss-widget-block-3 .wpss-block-container h4 small{display:block; font-size:0.8rem; margin-top:15px;}
+.wpss-widget-block-3 .wpss-block-btn{position:absolute; left:50%; bottom:10px; z-index:20; margin-left:-74px;}
+
+/**
+ * Block 4
+ */
+.wpss-widget-block-4{background:url("../images/box-dot.png") right bottom no-repeat #FFF; padding:5px;}
+.wpss-widget-block-4 h4{font-size:0.9rem; line-height:20px; height:20px; overflow:hidden; margin:5px 0 0 0; color:#59676F;}
+.wpss-widget-block-4 span{display:block; font-size:0.8rem; padding-top:5px; margin:5px 0 0 0; color:#C69C61; border-top:1px solid #F3EBE0;}
+.wpss-widget-block-4 .wpss-featured-image{position:relative; overflow:hidden;}
+.wpss-widget-block-4 .wpss-featured-image a{background:url("../images/wpss_thumbnail_opacity.png") bottom right no-repeat; position:absolute; width:100%; background-size:contain; height:100%; top:0; left:0; text-indent:-9999px; z-index:30;}
+.wpss-widget-block-4 .wpss-featured-image img{transition:300ms; filter:grayscale(1);}
+.wpss-widget-block-4 .wpss-featured-image a:hover{background-position:350px;}
+.wpss-widget-block-4 .wpss-featured-image a:hover ~ img{transform:scale(1.1); filter: grayscale(0);}
+
+/**
+ * Block 5
+ */
+.wpss-widget-block-5{position:relative; overflow:hidden; background:#000;}
+.wpss-widget-block-5 > a{position:absolute; top:0; left:0; z-index:10; width:100%; height:100%; text-indent:-9999px; overflow:hidden;}
+.wpss-widget-block-5 > .wpss-block-info{background:rgba(0, 0, 0, 0.5);}
+.wpss-widget-block-5 > a:hover ~ .wpss-block-info h4{opacity:1; }
+.wpss-widget-block-5 > a:hover ~ .wpss-block-image img{opacity:0.5; transform:scale(1.1);}
+.wpss-widget-block-5 .wpss-block-info{position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; text-align:center; padding:0 10px 0 10px;}
+.wpss-widget-block-5 h4{font-size:0.9rem; margin:0 0 0 0; letter-spacing:1px; opacity:0.8; transition:300ms; color:#FFF;}
+.wpss-widget-block-5 h4 strong{display:block; line-height:20px; max-height:40px; overflow:hidden;}
+.wpss-widget-block-5 h4 small{display:block; font-size:0.8rem;}
+.wpss-widget-block-5 h4 small:before{content:""; display:block; width:100%; height:1px; margin:10px 0 10px 0; background:rgba(255, 255, 255, 0.3);}
+.wpss-widget-block-5 h4 small span{display:inline-block; margin:0 5px 0 5px;}
+.wpss-widget-block-5 .wpss-block-image{}
+.wpss-widget-block-5 .wpss-block-image img{transition:300ms;}
+
+/**
+ * Block 6
+ */
+.wpss-widget-block-6{background:#FFF; border:3px solid #FFF; position:relative;}
+.wpss-widget-block-6 .wpss-block-link{position:absolute; top:0; left:0; width:100%; height:100%; text-indent:-9999px; overflow:hidden; z-index:20;}
+.wpss-widget-block-6 .wpss-block-link:hover{background:rgba(0, 0, 0, 0.5);}
+.wpss-widget-block-6 .wpss-block-link:hover ~ .wpss-block-content{bottom:-65px;}
+.wpss-widget-block-6 .wpss-block-content{position:absolute; left:0; bottom:-27px; width:100%; padding:0 20px 0 20px; transition:300ms;}
+.wpss-widget-block-6 .wpss-block-content .wpss-block-info{background:#FFF; padding:2px 5px 5px 5px; position:relative;}
+.wpss-widget-block-6 .wpss-block-content .wpss-block-info:after{content:""; background:url("../images/widget-wide-shadow.png") center top no-repeat; background-size:contain; position:absolute; width:100%; height:8px; bottom:-8px; left:0;}
+.wpss-widget-block-6 .wpss-block-content .wpss-block-info h4{font-size:0.9rem; line-height:20px; height:20px; overflow:hidden; color:#59676F; margin:0 0 3px 0;}
+.wpss-widget-block-6 .wpss-block-content .wpss-block-info p{font-size:0.7rem; line-height:15px; height:30px; overflow:hidden; color:#7F8D99; margin:0;}
+
+/**
+ * Block 7
+ */
+.wpss-widget-block-7{}
+.wpss-widget-block-7.row{display:block;}
+.wpss-widget-block-7 li a{max-height:38px; overflow:hidden;}

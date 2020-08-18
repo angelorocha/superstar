@@ -1,0 +1,26 @@
+.form_field_table{
+    width:100% !important;
+}
+
+.form_field_table input,
+.form_field_table select{
+    width:100% !important;
+}
+
+.form_field_table td#form_field_id{
+    width:100px !important;
+}
+.form_field_table td#form_field_select{
+    width:120px !important;
+}
+.form_field_table td#form_field_size{
+    width:80px !important;
+}
+
+.form_field_table td#form_field_required{
+    width:40px !important;
+}
+
+.form_field_table td#form_field_required input{
+    width:20px !important;
+}

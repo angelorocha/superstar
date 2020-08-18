@@ -1,0 +1,25 @@
+#wpbody, #wpcontent {background: #32373C; overflow: hidden;}
+#wpcontent:after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #32373C; z-index: -1;}
+.wpss-container {background: #FFF; max-width: 970px; margin: 30px auto; padding: 10px 15px 10px 15px;}
+.wpss-container h1.header {font-size: 1.6rem; margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 5px solid #32373C;}
+.wpss-form {display: flex;}
+.wpss-form label {display: block; font-weight: bold; margin-bottom: 5px;}
+.wpss-form input,
+.wpss-form select {width: 100%;}
+.wpss-form input[type='submit'] {cursor: pointer;}
+.wpss-col {width: 100%; margin: 0 10px 0 10px;}
+.wpss-col:first-child {margin: 0 10px 0 0;}
+.wpss-col:last-child {margin: 0 0 0 10px;}
+.wpss-align-self-end {align-self: flex-end;}
+.text-right {text-align: right;}
+
+.wpss-table {width: 100%; border-collapse: collapse; margin-top: 20px;}
+.wpss-table thead {}
+.wpss-table th,
+.wpss-table td {border: 1px solid #DDD; padding: 6px;}
+
+.wpss-button {display: block; background: #09C; color: #FFF; text-align: center; border: 1px solid #266480; text-decoration: none; transition: 300ms;}
+.wpss-button:hover {background: #156479; color: #efebe9;}
+
+.text-center {text-align: center;}
+.float-right {float: right;}

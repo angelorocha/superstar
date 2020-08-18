@@ -1,0 +1,15 @@
+SELECT 
+	wp_posts.post_title AS 'Post Title',
+	DATE_FORMAT(wp_posts.post_date, "%d-%m-%Y %H:%i") AS 'Post Date',
+	wp_posts.post_name AS 'Post URL',
+	wp_postmeta.meta_value AS 'Post Views'
+	FROM wp_posts 
+	INNER JOIN
+	wp_postmeta ON wp_postmeta.post_id = wp_posts.ID
+	WHERE 
+	wp_posts.post_type LIKE 'post'
+	AND
+	wp_posts.post_status LIKE 'publish'
+	AND
+	wp_postmeta.meta_key LIKE 'post_views_count'
+	ORDER BY ABS(wp_postmeta.meta_value) DESC;

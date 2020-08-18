@@ -1,0 +1,92 @@
+# Register a post type:
+
+# Register a taxonomy:
+
+# Make a query:
+
+# Make a custom CPT template:
+
+# About Constants:
+
+# Add a js file:
+
+# Add a css file:
+
+# Theme Hooks:
+    - Document Hooks:
+        - wpss_before_head
+        - wpss_body_begin
+        - wpss_body_end
+        - wpss_before_header
+        - wpss_after_header
+
+    - Content singular hooks:
+        - wpss_section_begin
+        - wpss_content_begin
+        - wpss_inside_content_begin
+        - wpss_inside_content_end
+        - wpss_content_end
+        - wpss_section_end
+        - wpss_before_breadcrumb
+
+    - Loop Hooks:
+        - wpss_loop_begin
+        - wpss_loop_end
+        - wpss_loop_item_begin
+        - wpss_loop_item_end
+
+    - Sidebar Hooks:
+        - wpss_sidebar_before
+        - wpss_sidebar_after
+
+# Theme Filters:
+    - Loop Filter
+        -
+
+# Theme Global Vars
+    - $wpss_custom_loop -> true to custom cpt loop
+    - $wpss_custom_singular -> true to custom singular cpt template
+    - $wpss_custom_sidebar -> true to custom cpt sidebar
+    - $wpss_show_thumbnail -> true to show post thumbnail in singular templates
+    - $wpss_breadcrumb_home_link -> string to define breadcrumb home link
+
+# Theme Custom Fields:
+        - wpss_slide_show
+        - wpss_expire_content
+        - wpss_expire_date
+        - wpss_expire_type
+        - wpss_post_image
+        - wpss_post_image_link
+        - wpss_gallery_images
+        - wpss_gallery_desc
+        - wpss_post_text
+        - wpss_user_ip
+        - wpss_user_agent
+        - _event_real_date
+        - _evento_data
+        - _evento_hora
+        - _evento_local
+        - _aviso_text
+        - _aviso_file
+        - _popup_show_on
+        - _popup_url_show_on
+        - _popup_image
+        - _modal_url
+        - _video_mp4
+        - _thumbnail_time
+        - _video_desc
+
+# Shortcodes
+    - cpt_calendar
+        - Params: "cpt"
+            - Return a calendar with posts from a custom post type
+        - Usage:
+            [cpt_calendar cpt="post"]
+
+    - tax_list
+        - Params: "tax_id"
+                  "type"
+            - Return a terms list from taxonomy
+        - Usage:
+            [tax_list tax_id="category" type="list"] // retrieve a terms list from "category" taxonomy
+            [tax_list tax_id="category" type="select"] // retrieve a terms list from "category" taxonomy in a select element

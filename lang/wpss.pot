@@ -1,0 +1,1018 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Super Star\n"
+"POT-Creation-Date: 2020-08-18 12:37-0300\n"
+"PO-Revision-Date: 2020-08-17 15:07-0300\n"
+"Last-Translator: \n"
+"Language-Team: contato@angelorocha.com.br\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;esc_html_e;"
+"esc_html__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: lib\n"
+
+#: classes/WPSSCptMenu.php:143
+msgid "Toggle navigation"
+msgstr ""
+
+#: classes/WPSSFFmpeg.php:52
+msgid "File type not allowed"
+msgstr ""
+
+#: classes/WPSSRest.php:26
+msgid "Sorry, only GET methods..."
+msgstr ""
+
+#: classes/WPSSRest.php:31
+msgid "Access denied for this client..."
+msgstr ""
+
+#: classes/WPSSUpload.php:100
+msgid "File size not allowed, please check your file and try again."
+msgstr ""
+
+#: classes/WPSSbreadcrumb.php:27
+msgid "Home"
+msgstr ""
+
+#: classes/WPSSbreadcrumb.php:49 inc/wpss_archive_title.php:29
+msgid "Search results for: "
+msgstr ""
+
+#: classes/WPSSbreadcrumb.php:53
+msgid "404 not found"
+msgstr ""
+
+#: classes/WPSScomments.php:30
+msgid "Y-m-d H:i:s"
+msgstr ""
+
+#: classes/WPSScpt.php:92
+#: theme-options/post-views/wpss_content_statistics.php:117
+msgid "Post Type"
+msgstr ""
+
+#: classes/WPSScpt.php:93
+msgid "Post Type Description"
+msgstr ""
+
+#: classes/WPSScpt.php:184 classes/WPSScpt.php:185 classes/WPSScpt.php:186
+#: classes/WPSScpt.php:187 classes/WPSScpt.php:191 classes/WPSSct.php:55
+#: classes/WPSSct.php:56 classes/WPSSct.php:57
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: classes/WPSScpt.php:188
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#: classes/WPSScpt.php:189
+#, php-format
+msgid "%s Attributes"
+msgstr ""
+
+#: classes/WPSScpt.php:190
+msgid "Parent Item:"
+msgstr ""
+
+#: classes/WPSScpt.php:192 classes/WPSScpt.php:193 classes/WPSSct.php:62
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: classes/WPSScpt.php:194
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: classes/WPSScpt.php:195 classes/WPSSct.php:63
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: classes/WPSScpt.php:196 classes/WPSSct.php:64
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: classes/WPSScpt.php:197 classes/WPSSct.php:65
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: classes/WPSScpt.php:198
+#, php-format
+msgid "View %ss"
+msgstr ""
+
+#: classes/WPSScpt.php:199 classes/WPSSct.php:70
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: classes/WPSScpt.php:200
+msgid "Not found"
+msgstr ""
+
+#: classes/WPSScpt.php:201
+msgid "Not found in Trash"
+msgstr ""
+
+#: classes/WPSScpt.php:202
+msgid "Featured Image"
+msgstr ""
+
+#: classes/WPSScpt.php:203
+msgid "Set featured image"
+msgstr ""
+
+#: classes/WPSScpt.php:204
+msgid "Remove featured image"
+msgstr ""
+
+#: classes/WPSScpt.php:205
+msgid "Use as featured image"
+msgstr ""
+
+#: classes/WPSScpt.php:206
+msgid "Insert in item"
+msgstr ""
+
+#: classes/WPSScpt.php:207
+msgid "Uploaded to this item"
+msgstr ""
+
+#: classes/WPSScpt.php:208
+msgid "Items list"
+msgstr ""
+
+#: classes/WPSScpt.php:209
+msgid "Items list navigation"
+msgstr ""
+
+#: classes/WPSScpt.php:210
+msgid "Filter items list"
+msgstr ""
+
+#: classes/WPSSct.php:58
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: classes/WPSSct.php:59
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: classes/WPSSct.php:60
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: classes/WPSSct.php:61
+#, php-format
+msgid "New %s name"
+msgstr ""
+
+#: classes/WPSSct.php:66
+msgid "Separate items with commas"
+msgstr ""
+
+#: classes/WPSSct.php:67
+#, php-format
+msgid "Add or remove %s"
+msgstr ""
+
+#: classes/WPSSct.php:68
+msgid "Choose from the most used"
+msgstr ""
+
+#: classes/WPSSct.php:69
+#, php-format
+msgid "Popular %s"
+msgstr ""
+
+#: classes/WPSSct.php:71
+msgid "Not Found"
+msgstr ""
+
+#: classes/WPSSct.php:72
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#: classes/WPSSct.php:73
+#, php-format
+msgid "%s list"
+msgstr ""
+
+#: classes/WPSSct.php:74
+#, php-format
+msgid "%s list navigation"
+msgstr ""
+
+#: classes/WPSSmenu.php:367
+msgid "Add menu"
+msgstr ""
+
+#: classes/WPSSquery.php:54
+msgid "<h4 class=\"text-center\">No information yet...</h4>"
+msgstr ""
+
+#: cpt-templates/single-forms.php:79
+msgid "<h3>You can not access this form!</h3>"
+msgstr ""
+
+#: cpt-templates/single-forms.php:82
+#, php-format
+msgid ""
+"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
+msgstr ""
+
+#: cpt-templates/single-forms.php:92
+msgid "<h3>Form Info</h3>"
+msgstr ""
+
+#: cpt-templates/single-forms.php:100
+msgid "<h3>Expire</h3>"
+msgstr ""
+
+#: cpt-templates/single-forms.php:109
+msgid "<h3>Data</h3>"
+msgstr ""
+
+#: functions.php:92
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:93
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:94
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/content-parts/wpss_modal_login.php:22
+msgid "User: "
+msgstr ""
+
+#: inc/content-parts/wpss_modal_login.php:27
+msgid "Password: "
+msgstr ""
+
+#: inc/content-parts/wpss_modal_login.php:33
+msgid "Remember"
+msgstr ""
+
+#: inc/content-parts/wpss_modal_login.php:37 login-page.php:36
+msgid "Login"
+msgstr ""
+
+#: inc/content-parts/wpss_post_pagination.php:29 inc/wpss_slide.php:80
+#: inc/wpss_slide.php:147
+msgid "Previous"
+msgstr ""
+
+#: inc/content-parts/wpss_post_pagination.php:40 inc/wpss_slide.php:92
+#: inc/wpss_slide.php:159
+msgid "Next"
+msgstr ""
+
+#: inc/content-parts/wpss_readmore_btn.php:20
+#: inc/widgets/blocks/wpss_widget_block_5.php:19
+msgid "Read More"
+msgstr ""
+
+#: inc/theme-templates/wpss_content.php:18
+msgid "Content area"
+msgstr ""
+
+#: inc/theme-templates/wpss_default_loop.php:31
+msgid "No information entered in this section"
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:23
+msgid "A calendar for your custom post types."
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:26
+msgid "(WPSS) Calendar (Custom Post Type)"
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:57
+msgid "Calendar"
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:95 inc/widgets/WPSSWidgetBlocks.php:151
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:100 inc/widgets/WPSSWidgetBlocks.php:156
+#: theme-options/post-views/wpss_content_statistics.php:38
+msgid "Post Type:"
+msgstr ""
+
+#: inc/widgets/WPSSCPTCalendar.php:199
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:22
+msgid "Show a content list"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:25
+msgid "(WPSS) Last Posts"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:75
+msgid "Last Posts"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:101
+#: theme-options/post-views/wpss_content_statistics.php:81
+#: theme-options/post-views/wpss_content_statistics.php:119
+msgid "Date"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:102
+msgid "Rand"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:103
+msgid "Título"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:113
+#: theme-options/post-views/wpss_content_statistics.php:92
+msgid "DESC"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:114
+#: theme-options/post-views/wpss_content_statistics.php:92
+msgid "ASC"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:124
+msgid "Block 1"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:125
+msgid "Block 2"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:126
+msgid "Block 3"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:127
+msgid "Block 4"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:128
+msgid "Block 5"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:129
+msgid "Block 6"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:130
+msgid "Block 7"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_forms.php:96
+#: inc/wpss_slide.php:24
+msgid "Yes"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_forms.php:95
+#: inc/wpss_slide.php:25
+msgid "No"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:158
+msgid "Eg: post"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:162
+msgid "Limit Posts:"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:167
+msgid "Excerpt Limit (Words):"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:172
+msgid "Block Type:"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:184
+msgid "Order By:"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:196
+#: theme-options/post-views/wpss_content_statistics.php:78
+msgid "Order:"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:206
+msgid "Ajax Load:"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:291
+msgid "No content found"
+msgstr ""
+
+#: inc/widgets/WPSSWidgetBlocks.php:296
+msgid "Load More"
+msgstr ""
+
+#: inc/widgets/blocks/wpss_widget_block_3.php:26
+msgid "Continue reading..."
+msgstr ""
+
+#: inc/wpss_archive_title.php:33
+msgid "404 - Content not found"
+msgstr ""
+
+#: inc/wpss_content_date.php:24
+msgid "(today)"
+msgstr ""
+
+#: inc/wpss_content_date.php:28
+msgid "(yesterday)"
+msgstr ""
+
+#: inc/wpss_content_date.php:32
+#, php-format
+msgid "(%1$s days ago)"
+msgstr ""
+
+#: inc/wpss_content_date.php:38
+msgid "Posted by"
+msgstr ""
+
+#: inc/wpss_content_date.php:39 inc/wpss_content_date.php:47
+msgid "on"
+msgstr ""
+
+#: inc/wpss_content_date.php:39 inc/wpss_content_date.php:47
+msgid "at"
+msgstr ""
+
+#: inc/wpss_content_date.php:46
+msgid "Last updated by "
+msgstr ""
+
+#: inc/wpss_custom_crons.php:26
+msgid "Once a week"
+msgstr ""
+
+#: inc/wpss_custom_crons.php:32
+msgid "Once a month"
+msgstr ""
+
+#: inc/wpss_custom_crons.php:38
+msgid "Once a minute"
+msgstr ""
+
+#: inc/wpss_datepicker.php:25
+msgid "0000-00-00"
+msgstr ""
+
+#: inc/wpss_datepicker.php:26
+msgid "yy-mm-dd"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "January"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "February"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "March"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "April"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "May"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "June"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "July"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "August"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "September"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "October"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "November"
+msgstr ""
+
+#: inc/wpss_datepicker.php:28
+msgid "December"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Sunday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Monday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Tuesday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Wednesday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Thursday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Friday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:29
+msgid "Saturday"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Sun"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Mon"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Tue"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Wed"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Thu"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Fri"
+msgstr ""
+
+#: inc/wpss_datepicker.php:30
+msgid "Sat"
+msgstr ""
+
+#: inc/wpss_forms.php:14
+msgid "Form"
+msgstr ""
+
+#: inc/wpss_forms.php:17
+msgid "Type form title"
+msgstr ""
+
+#: inc/wpss_forms.php:23
+msgid "Form Options"
+msgstr ""
+
+#: inc/wpss_forms.php:27
+msgid "Fields"
+msgstr ""
+
+#: inc/wpss_forms.php:28
+msgid ""
+"For field types: <br><strong>Radio, Select and Checkbox,</strong> separate "
+"the values with commas"
+msgstr ""
+
+#: inc/wpss_forms.php:33
+msgid "Add Field"
+msgstr ""
+
+#: inc/wpss_forms.php:37
+msgid "Form Type"
+msgstr ""
+
+#: inc/wpss_forms.php:38
+msgid "Select the form type, if is \"PDF\", data can't be saved!"
+msgstr ""
+
+#: inc/wpss_forms.php:49
+msgid "Send to"
+msgstr ""
+
+#: inc/wpss_forms.php:69
+msgid "WhatsApp Number"
+msgstr ""
+
+#: inc/wpss_forms.php:70
+msgid "Type your WhatsApp number, don't type spaces or special characters."
+msgstr ""
+
+#: inc/wpss_forms.php:78
+msgid "DDI+DDD+Phone Number"
+msgstr ""
+
+#: inc/wpss_forms.php:82
+msgid "Button Text"
+msgstr ""
+
+#: inc/wpss_forms.php:85
+msgid "Send"
+msgstr ""
+
+#: inc/wpss_forms.php:89
+msgid "Expire/Publish form"
+msgstr ""
+
+#: inc/wpss_forms.php:100
+msgid "Publish date"
+msgstr ""
+
+#: inc/wpss_forms.php:104
+msgid "d-m-Y"
+msgstr ""
+
+#: inc/wpss_forms.php:107
+msgid "Active in"
+msgstr ""
+
+#: inc/wpss_forms.php:118
+msgid "Expire in"
+msgstr ""
+
+#: inc/wpss_forms.php:125
+msgid "Expired in"
+msgstr ""
+
+#: inc/wpss_forms.php:136
+msgid "Form Description"
+msgstr ""
+
+#: inc/wpss_forms.php:145
+msgid "After send message"
+msgstr ""
+
+#: inc/wpss_forms.php:149
+msgid "Form successfully submitted"
+msgstr ""
+
+#: inc/wpss_forms.php:155
+msgid "Form Access"
+msgstr ""
+
+#: inc/wpss_forms.php:161
+msgid "Logged in Users"
+msgstr ""
+
+#: inc/wpss_forms.php:162
+msgid "Public"
+msgstr ""
+
+#: inc/wpss_forms.php:166
+msgid "Form Report Acess"
+msgstr ""
+
+#: inc/wpss_forms.php:174
+msgid "Add User"
+msgstr ""
+
+#: inc/wpss_gallery_sizes_names.php:20
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/wpss_gallery_sizes_names.php:21
+msgid "Post Cover"
+msgstr ""
+
+#: inc/wpss_gallery_sizes_names.php:22
+msgid "Container Cover"
+msgstr ""
+
+#: inc/wpss_gallery_sizes_names.php:23
+msgid "Full Width Image"
+msgstr ""
+
+#: inc/wpss_pagination.php:31
+msgid "&laquo;"
+msgstr ""
+
+#: inc/wpss_pagination.php:32
+msgid "&raquo;"
+msgstr ""
+
+#: inc/wpss_pagination.php:40
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/wpss_post_views.php:29
+msgid " views"
+msgstr ""
+
+#: inc/wpss_post_views.php:56
+#: theme-options/post-views/wpss_content_statistics.php:121
+msgid "Views"
+msgstr ""
+
+#: inc/wpss_rest.php:21
+msgid "Choose a post type..."
+msgstr ""
+
+#: inc/wpss_share_icons.php:16
+msgid "Share on Facebook"
+msgstr ""
+
+#: inc/wpss_share_icons.php:17
+msgid "Tweet this!"
+msgstr ""
+
+#: inc/wpss_share_icons.php:18
+msgid "Send via WhatsApp"
+msgstr ""
+
+#: inc/wpss_share_icons.php:19
+msgid "Share on Linkedin"
+msgstr ""
+
+#: inc/wpss_share_icons.php:20
+msgid "Send via telegram"
+msgstr ""
+
+#: inc/wpss_sidebar_widgets.php:15
+msgid "Sidebar Widgets"
+msgstr ""
+
+#: inc/wpss_slide.php:16
+msgid "Slide"
+msgstr ""
+
+#: inc/wpss_slide.php:20
+msgid "Show in slide?"
+msgstr ""
+
+#: inc/wpss_slide.php:34
+msgid "Expire"
+msgstr ""
+
+#: inc/wpss_slide.php:35
+msgid "Expire Slide?"
+msgstr ""
+
+#: inc/wpss_super_like.php:313
+msgid "You Like:"
+msgstr ""
+
+#: inc/wpss_super_like.php:345
+msgid "Today's Most Popular Posts"
+msgstr ""
+
+#: inc/wpss_super_like.php:377
+msgid "This Month's Most Popular Posts"
+msgstr ""
+
+#: inc/wpss_super_like.php:409
+msgid "This Week's Most Popular Posts"
+msgstr ""
+
+#: inc/wpss_super_like.php:428
+msgid "Most Popular Posts"
+msgstr ""
+
+#: init/WPSSinit.php:35
+#, php-format
+msgid "Class %s not defined..."
+msgstr ""
+
+#: login-page.php:24
+msgid "User"
+msgstr ""
+
+#: login-page.php:25
+msgid "User Login"
+msgstr ""
+
+#: login-page.php:27
+msgid "Password"
+msgstr ""
+
+#: login-page.php:28
+msgid "User Password"
+msgstr ""
+
+#: login-page.php:33
+msgid "Remember me"
+msgstr ""
+
+#: login-page.php:48
+msgid "User successfully logged out"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:16
+#: theme-options/post-views/wpss_content_statistics.php:17
+#: theme-options/post-views/wpss_content_statistics.php:34
+msgid "Post Statistics"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:47
+msgid "All"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:55
+msgid "Start Date:"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:62
+msgid "End Date"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:66
+msgid "Limit:"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:101
+msgid "Submit"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:118
+msgid "Title"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:120
+#: theme-options/post-views/wpss_content_statistics.php:130
+msgid "URL"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:125
+#: theme-options/role-management/wpss_role_management_functions.php:453
+msgid "Edit"
+msgstr ""
+
+#: theme-options/post-views/wpss_content_statistics.php:130
+msgid "Go to URL"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management.php:17
+#: theme-options/role-management/wpss_role_management.php:18
+#: theme-options/role-management/wpss_role_management.php:44
+msgid "Role Management"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:19
+msgid "Select User: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:69
+msgid "User Login: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:70
+msgid "Display Name: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:71
+msgid "User Email: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:72
+msgid "Registered on: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:72
+msgid "Y-m-d H:i"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:73
+msgid "Roles: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:84
+#: theme-options/role-management/wpss_role_management_functions.php:244
+msgid "Removed Capabilities: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:90
+#: theme-options/role-management/wpss_role_management_functions.php:241
+msgid "Added Capabilities: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:111
+msgid "Add or Remove User Capabilities"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:161
+msgid "Role name: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:162
+msgid "Type role name"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:163
+msgid "Add Role"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:178
+msgid "Role successfully created"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:180
+msgid "Something went wrong, try again"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:192
+msgid "Delete Role"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:193
+msgid "This action cannot be undone"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:195
+#: theme-options/role-management/wpss_role_management_functions.php:454
+msgid "Delete"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:202
+msgid " successfully deleted!"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:213
+msgid "Select Role Capabilities: "
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:248
+msgid "No Changes..."
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:260
+msgid "All capabilities has been removed..."
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:305
+msgid "Special Capabilities"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:307
+msgid "These capabilities only apply in special cases"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:313
+msgid "Show"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:314
+msgid "Hide"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:336
+msgid "Taxonomies"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:387
+msgid "Post Types"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:437
+msgid "Save"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management_functions.php:447
+msgid "Available Custom Roles"
+msgstr ""

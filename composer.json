@@ -1,0 +1,31 @@
+{
+  "name": "wpss/superstar",
+  "description": "A WordPress theme for the rich and the famous websites",
+  "authors": [
+    {
+      "name": "Angelo Rocha",
+      "email": "contato@angelorocha.com.br"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "monolog/monolog": "1.12.0",
+    "cmb2/cmb2": "dev-master",
+    "dompdf/dompdf": "^0.8.3",
+    "phpoffice/phpspreadsheet": "^1.9",
+    "php-ffmpeg/php-ffmpeg": "^0.14.0",
+    "php-ffmpeg/extras": "^0.3.1"
+  },
+  "autoload": {
+    "files": ["lib/cmb2/cmb2/init.php"]
+  },
+  "config": {
+    "vendor-dir": "lib"
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "lib/npm",
+      "bower-asset-library": "lib/bower"
+    }
+  }
+}

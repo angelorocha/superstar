@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+Theme Name: SuperStar
+Theme URI: https://github.com/angelorocha/superstar
+Author: Angelo Rocha
+Author URI: https://angelorocha.com.br
+Description: A WordPress theme for the rich and the famous websites
+Requires at least: WordPress 5.5.0
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: LICENSE
+Text Domain: wpss
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*** Post Pagination*/
+.wpss-post-pagination{}
+.wpss-post-pagination:before{content:""; background:#F3EBE0; position:absolute; width:100%; max-width:670px; left:50%; margin-left:-335px; height:5px; border-radius:20px;}
+.wpss-post-pagination .row{position:relative;}
+.wpss-post-pagination h4{font-size:1.3rem; color:#D8B892;}
+.wpss-post-pagination p{line-height:20px; max-height:40px; overflow:hidden; color:#7B8B95;}
+.wpss-post-pagination i{font-size:3rem; color:#7B8B95; transition:300ms;}
+.wpss-post-pagination a{position:absolute; display:inherit; top:0; left:0; width:100%; height:100%; text-indent:-9999px; overflow:hidden; z-index:1000;}
+.wpss-post-pagination a:hover ~ div > i,
+.wpss-post-pagination a:hover ~ div > p{color:#434f59;}
+
+/*** Scroll top */
+.wpss-scroll-top {color: #83152D;position: fixed;bottom: 10%;right: 3%;font-size: 3.5rem;cursor: pointer;display: none;z-index: 1000;}
+.wpss-scroll-top i {border-radius: 50%; animation: wpss-scroll-pulse 2s infinite;}
+@keyframes wpss-scroll-pulse {
+    0% {box-shadow: 0 0 0 0 rgba(111, 17, 38, 0.4);}
+    70% {box-shadow: 0 0 0 10px rgba(111, 17, 38, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(111, 17, 38, 0);}
+}
+
+/*** Responsive Classes */
+@media (min-width:320px) and (max-width:640px){
+}

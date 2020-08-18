@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * @author              Angelo Rocha
+ * @author              Angelo Rocha <contato@angelorocha.com.br>
+ * @link                https://angelorocha.com.br
+ * @copyleft            2020
+ * @license             GNU GPL 3 (https://www.gnu.org/licenses/gpl-3.0.html)
+ * @package WordPress
+ * @subpackage superstar
+ * @since 1.0.0
+ */
+
+/**
+ * Content Header 1
+ */
+.wpss-content-header-1{font-size:1.1rem; color:#C69C61; text-shadow:1px 1px 0 #FFF; margin:0 0 10px 0; position:relative;}
+.wpss-content-header-1:before,
+.wpss-content-header-1:after{content:""; background:#C69C61; position:absolute; width:100%; height:1px; left:0; z-index:5;}
+.wpss-content-header-1:before{bottom:10px;}
+.wpss-content-header-1:after{bottom:8px;}
+.wpss-content-header-1 a{color:#C69C61; display:block;}
+.wpss-content-header-1 span{display:block;}
+.wpss-content-header-1 span:after{content:""; position:absolute; background:#F3EBE0; width:30px; height:15px; left:50%; margin-left:-15px; bottom:0; z-index:10;}
+.wpss-content-header-1 i{display:inline-block; padding:0 10px 0 10px; position:relative; z-index:20; transition:300ms;}
+.wpss-content-header-1:hover i{transform:rotateY(360deg); color:#83152D;}
+
+/**
+ * Content Header 2
+ */
+.wpss-content-header-2{background:url("../images/body-divider.png") center bottom no-repeat; color:#C69C61; font-size:1.1rem; text-shadow:1px 1px 0 #FFF; padding-bottom:10px; letter-spacing:0.5px;}
+
+/**
+ * Content Header 3
+ */
+.wpss-content-header-3{background:url("../images/bullets.png") center bottom no-repeat; text-shadow:1px 1px 0 #FFF; font-size:1.5rem;}
+.wpss-content-header-3:hover{background:url("../images/bullets-hover.png") center bottom no-repeat;}
+.wpss-content-header-3:hover a{color:#D8BA92;}
+.wpss-content-header-3 a{color:#C69C61;}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.wpss-modal-login-container{
+    background:rgba(0, 0, 0, 0);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition:300ms;
+}
+.wpss-modal-login-container-show{
+    background:rgba(0, 0, 0, 0.9);
+    z-index:1000;
+}
+.wpss-modal-login-container-show .wpss-modal-login{
+    opacity:1;
+    z-index:1020;
+    position:relative;
+}
+
+.wpss-login-close{
+    font-size:2.8rem;
+    position:absolute;
+    top:-50px;
+    right:-35px;
+    line-height:30px;
+    cursor:pointer;
+    color:#FFF;
+}
+
+.wpss-modal-login{
+    background:#FFF;
+    width:440px;
+    max-height:660px;
+    box-shadow:0 0 80px #000;
+    opacity:0;
+    transition:300ms;
+}

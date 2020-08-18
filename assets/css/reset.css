@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * @author              Angelo Rocha
+ * @author              Angelo Rocha <contato@angelorocha.com.br>
+ * @link                https://angelorocha.com.br
+ * @copyleft            2020
+ * @license             GNU GPL 3 (https://www.gnu.org/licenses/gpl-3.0.html)
+ * @package WordPress
+ * @subpackage superstar
+ * @since 1.0.0
+ */
+
+body{overflow-x:hidden; padding:0 !important; margin-left:0px; transition:300ms;}
+
+body.modal-open{overflow:inherit;}
+
+img{max-width:100%; height:auto;}
+a,
+a:hover,
+a:link,
+a:active,
+a:focus,
+a:visited{text-decoration:none; transition:300ms; outline:none;}
+
+a{}
+a:hover{}
+
+*:active,
+*:focus{outline:0 !important; box-shadow:none !important;}
+
+.btn.focus,
+.btn:focus{box-shadow:none !important;}
+
+/*** Bootstrap resets */
+.custom-file-label:after{content:"Arquivo" !important;}
+.custom-file-label{white-space:nowrap; overflow:hidden;}
+
+/*** Datatables select filter*/
+.filter th select{width:100%; border:1px solid #DDD; padding:3px; border-radius:5px;}
+
+/*** Media queries */
+@media (min-width:320px) and (max-width:740px){
+}
