@@ -42,4 +42,5 @@ A powerful WordPress Theme Framework
 21. Custom post type archive templates;
 22. Custom taxonomies archive templates;
 23. Native maintenance mod;
+
 ... and more :smirk: ...

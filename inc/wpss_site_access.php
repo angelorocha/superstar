@@ -10,7 +10,7 @@
  * @since 1.0.0
  */
 
-add_action( 'wpss_before_head', 'wpss_site_access' );
+//add_action( 'wpss_before_head', 'wpss_site_access' );
 function wpss_site_access() {
 	if ( ! is_user_logged_in() ):
 		require_once _WPSS_THEME_DIR . '/login-page.php';
