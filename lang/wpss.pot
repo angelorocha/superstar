@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Super Star\n"
-"POT-Creation-Date: 2020-08-18 12:37-0300\n"
+"POT-Creation-Date: 2020-08-18 13:08-0300\n"
 "PO-Revision-Date: 2020-08-17 15:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: contato@angelorocha.com.br\n"
@@ -793,6 +793,43 @@ msgstr ""
 
 #: inc/wpss_slide.php:35
 msgid "Expire Slide?"
+msgstr ""
+
+#: inc/wpss_super_like.php:189
+msgid "Who liked?"
+msgstr ""
+
+#: inc/wpss_super_like.php:202
+msgid "Be first to like!"
+msgstr ""
+
+#: inc/wpss_super_like.php:219
+msgid "See who likes"
+msgstr ""
+
+#: inc/wpss_super_like.php:221
+msgid "Like"
+msgstr ""
+
+#: inc/wpss_super_like.php:221 inc/wpss_super_like.php:237
+#: inc/wpss_super_like.php:243
+msgid "Like!"
+msgstr ""
+
+#: inc/wpss_super_like.php:226
+msgid "You must be logged in to like!"
+msgstr ""
+
+#: inc/wpss_super_like.php:239
+msgid " liked"
+msgstr ""
+
+#: inc/wpss_super_like.php:240
+msgid "Dislike"
+msgstr ""
+
+#: inc/wpss_super_like.php:277
+msgid "Didn't like anything yet..."
 msgstr ""
 
 #: inc/wpss_super_like.php:313

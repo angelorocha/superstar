@@ -186,7 +186,7 @@ function wpss_like_modal() {
 	echo '<div class="modal-dialog" role="document">';
 	echo '<div class="modal-content">';
 	echo '<div class="modal-header">';
-	echo '<h5 class="modal-title">Quem Curtiu?</h5>';
+	echo '<h5 class="modal-title">'.__('Who liked?','wpss').'</h5>';
 	echo '<button type="button" class="close btn btn-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 	echo '</div>';
 	echo '<div class="modal-body">';
@@ -199,7 +199,7 @@ function wpss_like_modal() {
 		}
 		echo '</ul>';
 	} else {
-		echo '<p class="alert alert-info text-center">Seja o primeiro a curtir!</p>';
+		echo '<p class="alert alert-info text-center">'.__('Be first to like!','wpss').'</p>';
 	}
 	echo '</div>';
 	echo '</div>';
@@ -216,14 +216,14 @@ function getPostLikeLink( $post_id ) {
 	$output    = '';
 
 	if ( AlreadyLiked( $post_id ) ) {
-		$like_link .= '<a href="javascript:;" title="Veja quem curtiu!" class="wpss-like-already" data-toggle="modal" data-target="#who-like-' . $post_id . '"><i class="fas fa-thumbs-up"></i> ' . $count . '</a>';
+		$like_link .= '<a href="javascript:;" title="'.__('See who likes','wpss').'" class="wpss-like-already" data-toggle="modal" data-target="#who-like-' . $post_id . '"><i class="fas fa-thumbs-up"></i> ' . $count . '</a>';
 	} else {
-		$like_link .= '<a href="javascript:;" title="Curtir!" class="wpss-post-like" data-post_id="' . $post_id . '"><i class="far fa-thumbs-up"></i> Curtir!</a>';
+		$like_link .= '<a href="javascript:;" title="'.__('Like','wpss').'" class="wpss-post-like" data-post_id="' . $post_id . '"><i class="far fa-thumbs-up"></i> '.__('Like!','wpss').'</a>';
 	}
 	if ( is_user_logged_in() ) {
 		$output .= $like_link;
 	} else {
-		$output .= '<a href="javascript:;" title="É preciso estar logado para curtir!" class="wpss-like-already" data-toggle="modal" data-target="#who-like-' . $post_id . '"><i class="fa fa-thumbs-up"></i></a>';
+		$output .= '<a href="javascript:;" title="'.__('You must be logged in to like!','wpss').'" class="wpss-like-already" data-toggle="modal" data-target="#who-like-' . $post_id . '"><i class="fa fa-thumbs-up"></i></a>';
 	}
 
 	return $output;
@@ -234,13 +234,13 @@ function getPostLikeLink( $post_id ) {
  */
 function getPostLikeCount( $post_id ) {
 	$like_count = get_post_meta( $post_id, "_post_like_count", true ); // get post likes
-	$count      = ( empty( $like_count ) || $like_count == "0" ) ? 'Curtir!' : esc_attr( $like_count );
+	$count      = ( empty( $like_count ) || $like_count == "0" ) ? __('Like!','wpss') : esc_attr( $like_count );
 	if ( AlreadyLiked( $post_id ) ) {
-		$class = esc_attr( ' liked' );
-		$title = esc_attr( 'Deixar de Curtir' );
+		$class = esc_attr( __(' liked','wpss') );
+		$title = esc_attr( __('Dislike','wpss') );
 	} else {
 		$class = esc_attr( '' );
-		$title = esc_attr( 'Curtir!' );
+		$title = esc_attr( __('Like!','wpss') );
 	}
 	$output = '<a href="#" class="wpss-post-like-content' . $class . '" data-post_id="' . $post_id . '" title="' . $title . '">' . $count . '</a>';
 
@@ -274,7 +274,7 @@ function show_user_likes( $user ) { ?>
 			}
 			echo $like_list;
 		} else {
-			echo "<td>Nada Curtido Ainda...</td>";
+			echo "<td>".__('Didn\'t like anything yet...','wpss')."</td>";
 		} ?>
     </ul>
 <?php }
@@ -310,7 +310,7 @@ function frontEndUserLikes() {
 		if ( $count > 0 ) {
 			$limited_likes = array_slice( $the_likes, 0, 5 ); // this will limit the number of posts returned to 5
 			$like_list     .= "<aside>\n";
-			$like_list     .= "<h3>" . __( 'You Like:' ) . "</h3>\n";
+			$like_list     .= "<h3>" . __( 'You Like:', 'wpss' ) . "</h3>\n";
 			$like_list     .= "<ul>\n";
 			foreach ( $limited_likes as $the_like ) {
 				$like_list .= "<li><a href='" . esc_url( get_permalink( $the_like ) ) . "' title='" . esc_attr( get_the_title( $the_like ) ) . "'>" . get_the_title( $the_like ) . "</a></li>\n";
@@ -333,7 +333,7 @@ function wpss_most_popular_today() {
 	$args      = array(
 		'year'           => $year,
 		'day'            => $today,
-		'post_type'      => array( 'post', 'enter-your-comma-separated-post-types-here' ),
+		'post_type'      => array( 'post' ),
 		'meta_key'       => '_post_like_count',
 		'orderby'        => 'meta_value_num',
 		'order'          => 'DESC',
@@ -342,7 +342,7 @@ function wpss_most_popular_today() {
 	$pop_posts = new WP_Query( $args );
 	if ( $pop_posts->have_posts() ) {
 		echo "<aside>\n";
-		echo "<h3>" . _e( 'Today\'s Most Popular Posts' ) . "</h3>\n";
+		echo "<h3>" . __( 'Today\'s Most Popular Posts', 'wpss' ) . "</h3>\n";
 		echo "<ul>\n";
 		while ( $pop_posts->have_posts() ) {
 			$pop_posts->the_post();
@@ -365,7 +365,7 @@ function wpss_most_popular_month() {
 	$args      = array(
 		'year'           => $year,
 		'monthnum'       => $month,
-		'post_type'      => array( 'post', 'enter-your-comma-separated-post-types-here' ),
+		'post_type'      => array( 'post' ),
 		'meta_key'       => '_post_like_count',
 		'orderby'        => 'meta_value_num',
 		'order'          => 'DESC',
@@ -374,7 +374,7 @@ function wpss_most_popular_month() {
 	$pop_posts = new WP_Query( $args );
 	if ( $pop_posts->have_posts() ) {
 		echo "<aside>\n";
-		echo "<h3>" . _e( 'This Month\'s Most Popular Posts' ) . "</h3>\n";
+		echo "<h3>" . __( 'This Month\'s Most Popular Posts', 'wpss' ) . "</h3>\n";
 		echo "<ul>\n";
 		while ( $pop_posts->have_posts() ) {
 			$pop_posts->the_post();
@@ -397,7 +397,7 @@ function wpss_most_popular_week() {
 	$args      = array(
 		'year'           => $year,
 		'w'              => $week,
-		'post_type'      => array( 'post', 'enter-your-comma-separated-post-types-here' ),
+		'post_type'      => array( 'post' ),
 		'meta_key'       => '_post_like_count',
 		'orderby'        => 'meta_value_num',
 		'order'          => 'DESC',
@@ -406,7 +406,7 @@ function wpss_most_popular_week() {
 	$pop_posts = new WP_Query( $args );
 	if ( $pop_posts->have_posts() ) {
 		echo "<aside>\n";
-		echo "<h3>" . _e( 'This Week\'s Most Popular Posts' ) . "</h3>\n";
+		echo "<h3>" . _e( 'This Week\'s Most Popular Posts', 'wpss') . "</h3>\n";
 		echo "<ul>\n";
 		while ( $pop_posts->have_posts() ) {
 			$pop_posts->the_post();
@@ -425,10 +425,10 @@ function wpss_most_popular_week() {
 function wpss_most_popular() {
 	global $post;
 	echo "<aside>\n";
-	echo "<h3>" . _e( 'Most Popular Posts' ) . "</h3>\n";
+	echo "<h3>" . __( 'Most Popular Posts', 'wpss' ) . "</h3>\n";
 	echo "<ul>\n";
 	$args      = array(
-		'post_type'      => array( 'post', 'enter-your-comma-separated-post-types-here' ),
+		'post_type'      => array( 'post' ),
 		'meta_key'       => '_post_like_count',
 		'orderby'        => 'meta_value_num',
 		'order'          => 'DESC',
