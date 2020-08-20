@@ -152,6 +152,10 @@ function wpss_cmb2_sanitize_formfield_field( $check, $meta_value, $object_id, $f
             endif;
         endif;
 
+        if($val['id']):
+            $val['id'] = sanitize_title($val['id']);
+        endif;
+
         $meta_value[ $key ] = array_map( 'sanitize_text_field', $val );
     endforeach;
 
