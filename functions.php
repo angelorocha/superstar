@@ -30,7 +30,8 @@ define( '_WPSS_SITE_URL', home_url( '/' ) );
  * Init Theme
  */
 require_once 'init/WPSSinit.php';
-require_once 'lib/autoload.php';
+require_once 'lib/plugins/autoload.php';
+require_once 'lib/addons/cmb2-conditionals/cmb2-conditionals.php';
 
 /**
  * Load theme classes
@@ -53,6 +54,7 @@ WPSSinit::wpss_load_class( 'WPSSRest' );
 WPSSinit::wpss_load_class( 'WPSSMetaFilter' );
 WPSSinit::wpss_load_class( 'WPSSUpload' );
 WPSSinit::wpss_load_class( 'WPSSMail' );
+WPSSinit::wpss_load_class( 'WPSSForms' );
 WPSSinit::wpss_load_class( 'WPSSCPTRewrite' );
 
 /**
@@ -66,6 +68,7 @@ WPSSinit::wpss_load_files( 'inc/widgets' );
 WPSSinit::wpss_load_files( 'inc/widgets/blocks' );
 WPSSinit::wpss_load_files( 'inc/content-headers' );
 WPSSinit::wpss_load_files( 'inc/cmb2-fields' );
+WPSSinit::wpss_load_files( 'theme-options/forms' );
 
 if(is_admin() && current_user_can('administrator')):
     WPSSinit::wpss_load_files('theme-options/role-management');

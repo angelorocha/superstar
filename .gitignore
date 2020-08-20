@@ -4,5 +4,6 @@
 *.log
 *.sql
 *.zip
-lib
 composer.lock
+!lib/addons/
+lib/plugins/

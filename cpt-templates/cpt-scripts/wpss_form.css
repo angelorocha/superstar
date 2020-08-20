@@ -24,3 +24,7 @@
 .form_field_table td#form_field_required input{
     width:20px !important;
 }
+
+.form_field_table .hide{
+    display: none;
+}

@@ -17,7 +17,6 @@ jQuery(function ($) {
     $('#form_field_id input').each(function () {
         $(this).on('keyup', function () {
             $(this).val(form_replace_val($(this).val()));
-            console.log();
         })
     })
 });

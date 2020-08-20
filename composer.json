@@ -17,10 +17,10 @@
     "php-ffmpeg/extras": "^0.3.1"
   },
   "autoload": {
-    "files": ["lib/cmb2/cmb2/init.php"]
+    "files": ["lib/plugins/cmb2/cmb2/init.php"]
   },
   "config": {
-    "vendor-dir": "lib"
+    "vendor-dir": "lib/plugins"
   },
   "extra": {
     "asset-installer-paths": {
