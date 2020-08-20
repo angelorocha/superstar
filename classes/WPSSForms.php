@@ -13,7 +13,6 @@
 class WPSSForms{
 
 	public function __construct() {
-		add_action( 'wp_enqueue_scripts', array( $this, 'form_enqueue_front_scripts' ) );
 	}
 
 	/**
@@ -571,6 +570,10 @@ class WPSSForms{
 			endif;
 		endforeach;
 
+		if(!is_user_logged_in()):
+            return false;
+        endif;
+
 		return in_array( get_current_user_id(), $access );
 	}
 
@@ -718,15 +721,15 @@ class WPSSForms{
 	 * Enqueue front-end scripts
 	 */
 	public function form_enqueue_front_scripts() {
-		if ( is_singular( array( 'forms' ) ) ):
-			wp_enqueue_script( 'forms-datatables', _WPSS_THEME_DIR_URI . '/js/datatables.min.js', array( 'jquery' ), '20190430', false );
-			wp_enqueue_style( 'forms-datatables', _WPSS_THEME_DIR_URI . '/css/datatables.min.css', false, '20190430', 'all' );
-			wp_enqueue_script( 'forms-masks', _WPSS_THEME_DIR_URI . '/js/jquery.mask.min.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_script( 'forms-datepicker', _WPSS_THEME_DIR_URI . '/js/jquery-ui-datepicker.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_script( 'forms-count', _WPSS_THEME_DIR_URI . '/js/jquery.countdown.min.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_script( 'forms-paginate', _WPSS_THEME_DIR_URI . '/js/paginating.min.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_script( 'forms-functions', _WPSS_THEME_DIR_URI . '/js/forms-functions.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_style( 'forms-datepicker', _WPSS_THEME_DIR_URI . '/css/jquery-ui-datepicker.css', '', '20190430', 'all' );
+		if ( is_singular( array( 'wpss_form' ) ) ):
+			wp_enqueue_script( 'forms-datatables', _WPSS_JS_DIR . 'datatables.min.js', array( 'jquery' ), '20190430', false );
+			wp_enqueue_style( 'forms-datatables', _WPSS_CSS_DIR . 'datatables.min.css', false, '20190430', 'all' );
+			wp_enqueue_script( 'forms-masks', _WPSS_JS_DIR . 'jquery.mask.min.js', array( 'jquery' ), '20190430', true );
+			wp_enqueue_script( 'forms-datepicker', _WPSS_JS_DIR . 'jquery-ui-datepicker.js', array( 'jquery' ), '20190430', true );
+			wp_enqueue_script( 'forms-count', _WPSS_JS_DIR . 'jquery.countdown.min.js', array( 'jquery' ), '20190430', true );
+			wp_enqueue_script( 'forms-paginate', _WPSS_JS_DIR . 'paginating.min.js', array( 'jquery' ), '20190430', true );
+			wp_enqueue_script( 'forms-functions', _WPSS_JS_DIR . 'forms-functions.js', array( 'jquery' ), '20190430', true );
+			wp_enqueue_style( 'forms-datepicker', _WPSS_CSS_DIR . 'jquery-ui-datepicker.css', '', '20190430', 'all' );
 		endif;
 	}
 

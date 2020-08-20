@@ -13,6 +13,14 @@ jQuery(function ($) {
     });
 });
 
+jQuery(function ($){
+   $(".form_field_required input[type='checkbox']").each(function (){
+      if($(this).val() !== 'on'){
+          $(this).removeAttr('checked');
+      }
+   });
+});
+
 jQuery(function ($) {
     $('#form_field_id input').each(function () {
         $(this).on('keyup', function () {

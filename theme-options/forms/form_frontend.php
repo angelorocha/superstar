@@ -10,7 +10,116 @@
  * @since 1.0.0
  */
 
-add_action( 'wpss_inside_content_begin', 'wpss_form_frontend' );
+/**
+ * Form Instance
+ * @return WPSSForms
+ */
+function wpss_form_instance(){
+    return new WPSSForms();
+}
+
+/**
+ * Insert form actions
+ */
+
+add_action('wpss_before_head', 'wpss_form_actions');
+function wpss_form_actions(){
+    if(is_singular('wpss_form')):
+        if(isset($_POST['submit-form-' . wpss_form_instance()->get_form_id()])):
+            if(wpss_form_instance()->get_form_info()['form_type'] === '0'):
+                wpss_form_instance()->form_make_pdf(wpss_form_instance()->forms_get_html_posted_data());
+                exit;
+            endif;
+            if(wpss_form_instance()->get_form_info()['form_type'] === '1'):
+                wpss_form_instance()->send_mail_form();
+                wpss_form_instance()->form_insert_post();
+            endif;
+            if(wpss_form_instance()->get_form_info()['form_type'] === '2'):
+                wp_redirect(wpss_form_instance()->forms_send_whatsapp(), 301);
+                exit;
+            endif;
+        endif;
+        if(isset($_GET['entry_pdf'])):
+            wpss_form_instance()->form_print_pdf();
+        endif;
+    endif;
+
+    if(isset($_GET['entry_pdf'])):
+        wpss_form_instance()->form_print_pdf();
+    endif;
+}
+
+/**
+ * Embed form on singular page
+ */
+add_action( 'wpss_inside_content_begin', 'wpss_form_embed' );
+function wpss_form_embed(){
+    $view_form = ( wpss_form_instance()->check_form_access() ? is_user_logged_in() : true);
+
+    if($view_form):
+        if(!isset($_GET['form_entries']) && !isset($_GET['form_entry'])):
+            wpss_form_frontend();
+        endif;
+
+        if(current_user_can('administrator') ||  wpss_form_instance()->check_form_perms()):
+            if(isset($_GET['form_entries'])):
+                wpss_form_instance()->form_get_entries();
+            endif;
+            if(isset($_GET['form_entry'])):
+                $entry =  wpss_form_instance()->form_get_entry();
+                echo $entry;
+            endif;
+        endif;
+    else:
+        echo '<div class="alert alert-danger text-center">';
+        _e('<h3>You can not access this form!</h3>', 'wpss');
+
+        $login_url = wp_login_url(get_permalink( wpss_form_instance()->get_form_id()));
+        sprintf(__('<a href="%s" title="Login" class="btn btn-outline-danger">Login</a>', 'wpss'), $login_url);
+        echo '</div>';
+    endif;
+}
+
+/**
+ * Embed form extra data in sidebar
+ */
+add_action( 'wpss_sidebar_before', 'wpss_form_sidebar' );
+function wpss_form_sidebar(){
+    if(is_singular('wpss_form')):
+        global $wpss_custom_sidebar;
+        $wpss_custom_sidebar = true;
+
+        echo "<aside class='widget'>";
+        echo __("<h3>Form Info</h3>", "wpss");
+        echo "<div>";
+        echo wpss_form_instance()->form_get_desc();
+        echo "</div>";
+        echo "</aside>";
+
+        if(wpss_form_instance()->check_form_expire(get_queried_object_id())):
+            echo "<aside class='widget'>";
+            echo __("<h3>Expire</h3>", 'wpss');
+            echo "<div>";
+            echo wpss_form_instance()->form_get_date();
+            echo "</div>";
+            echo "</aside>";
+        endif;
+
+        if(wpss_form_instance()->check_form_perms()):
+            echo "<aside class='widget'>";
+            echo __("<h3>Data</h3>", "wpss");
+            echo "<div>";
+            wpss_form_instance()->form_entries_widget();
+            echo "</div>";
+            echo "</aside>";
+        endif;
+    endif;
+
+}
+
+/**
+ * Form front end
+ */
 function wpss_form_frontend() {
     ?>
     <div class="wpss-forms-content">
@@ -41,10 +150,10 @@ function wpss_form_frontend() {
         <?php
         $action = '';
         $target = '';
-        $form   = new WPSSForms();
-        $form->send_mail_success();
-        $form->forms_send_whatsapp();
-        if ( $form->get_form_info()['form_type'] === '2' ):
+        wpss_form_instance()->form_enqueue_front_scripts();
+        wpss_form_instance()->send_mail_success();
+        wpss_form_instance()->forms_send_whatsapp();
+        if ( wpss_form_instance()->get_form_info()['form_type'] === '2' ):
             $target = ' target="_blank"';
         endif;
         ?>

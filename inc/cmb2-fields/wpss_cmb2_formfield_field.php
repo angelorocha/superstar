@@ -106,7 +106,7 @@ function wpss_cmb2_render_formfield_field_callback( $field, $value, $object_id, 
                 ?>
             </td>
 
-            <td id="form_field_required">
+            <td id="form_field_required" class="form_field_required">
                 <label for="<?php echo $field_type->_id( '_required' ); ?>"><?php echo esc_html( $field_type->_text( 'formfield_field_required_label', __('Required','wpss') ) ); ?></label>
                 <?php
                 echo $field_type->checkbox(array(
@@ -154,6 +154,13 @@ function wpss_cmb2_sanitize_formfield_field( $check, $meta_value, $object_id, $f
 
         if($val['id']):
             $val['id'] = sanitize_title($val['id']);
+        endif;
+
+        if ( empty($val['required']) ):
+            unset( $val['required'] );
+            $val['required'] = 'off';
+        else:
+            $val['required'] = 'on';
         endif;
 
         $meta_value[ $key ] = array_map( 'sanitize_text_field', $val );

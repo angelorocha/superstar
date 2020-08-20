@@ -68,9 +68,9 @@ function wpss_custom_forms(){
             'type'    => 'radio',
             'default' => '1',
             'options' => array(
-                '0' => 'Make PDF',
-                '1' => 'Save Data',
-                '2' => 'Send to WhatsApp'
+                '0' => __('Make PDF', 'wpss'),
+                '1' => __('Send Mail', 'wpss'),
+                '2' => __('Send to WhatsApp', 'wpss'),
             )
         ),
         array(
@@ -191,7 +191,7 @@ function wpss_custom_forms(){
             )
         ),
         array(
-            'name'             => __( 'Form Report Acess', 'wpss' ),
+            'name'             => __( 'Form Report Access', 'wpss' ),
             'desc'             => '',
             'id'               => '_forms_user_admin',
             'type'             => 'select',
@@ -199,7 +199,7 @@ function wpss_custom_forms(){
             'options_cb'       => array( 'FormFrontEnd', 'forms_get_admins' ),
             'repeatable'       => true,
             'text'             => array(
-                'add_row_text' => __( 'Add User', '' ),
+                'add_row_text' => __( 'Add User', 'wpss' ),
             ),
         )
     );
