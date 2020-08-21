@@ -249,30 +249,31 @@ function wpss_form_actions(){
  */
 add_action( 'wpss_inside_content_begin', 'wpss_form_embed' );
 function wpss_form_embed(){
-    $view_form = ( wpss_form_instance()->check_form_access() ? is_user_logged_in() : true);
-
-    if($view_form):
-        wpss_form_instance()->form_enqueue_front_scripts();
-        if(!isset($_GET['form_entries']) && !isset($_GET['form_entry'])):
-            wpss_form_frontend();
-        endif;
-
-        if(current_user_can('administrator') ||  wpss_form_instance()->check_form_perms()):
-            if(isset($_GET['form_entries'])):
-                wpss_form_instance()->form_get_entries();
+    if(is_singular('wpss_form')):
+        $view_form = (wpss_form_instance()->check_form_access() ? is_user_logged_in() : true);
+        if($view_form):
+            wpss_form_instance()->form_enqueue_front_scripts();
+            if(!isset($_GET['form_entries']) && !isset($_GET['form_entry'])):
+                wpss_form_frontend();
             endif;
-            if(isset($_GET['form_entry'])):
-                $entry =  wpss_form_instance()->form_get_entry();
-                echo $entry;
-            endif;
-        endif;
-    else:
-        echo '<div class="alert alert-danger text-center">';
-        _e('<h3>You can not access this form!</h3>', 'wpss');
 
-        $login_url = wp_login_url(get_permalink( wpss_form_instance()->get_form_id()));
-        sprintf(__('<a href="%s" title="Login" class="btn btn-outline-danger">Login</a>', 'wpss'), $login_url);
-        echo '</div>';
+            if(current_user_can('administrator') || wpss_form_instance()->check_form_perms()):
+                if(isset($_GET['form_entries'])):
+                    wpss_form_instance()->form_get_entries();
+                endif;
+                if(isset($_GET['form_entry'])):
+                    $entry = wpss_form_instance()->form_get_entry();
+                    echo $entry;
+                endif;
+            endif;
+        else:
+            echo '<div class="alert alert-danger text-center">';
+            _e('<h3>You can not access this form!</h3>', 'wpss');
+
+            $login_url = wp_login_url(get_permalink(wpss_form_instance()->get_form_id()));
+            sprintf(__('<a href="%s" title="Login" class="btn btn-outline-danger">Login</a>', 'wpss'), $login_url);
+            echo '</div>';
+        endif;
     endif;
 }
 
