@@ -56,6 +56,8 @@ function wpss_custom_forms(){
             'desc'       => __( 'For field types: <br><strong>Radio, Select and Checkbox,</strong> separate the values with commas', 'wpss' ),
             'id'         => '_form_fields',
             'type'       => 'formfield',
+            'before'     => '<div id="formfield-container">',
+            'after'      => '</div>',
             'repeatable' => true,
             'text'       => array(
                 'add_row_text' => __( 'Add Field', 'wpss' ),

@@ -225,7 +225,7 @@ class WPSSForms{
 		$entries = new WP_Query( $args );
 
 		if ( ! $table ):
-			echo "<ul class='list-unstyled tjce-form-widget'>";
+			echo "<ul class='list-unstyled wpss-form-widget'>";
 			while( $entries->have_posts() ): $entries->the_post();
 				$url = get_permalink( self::get_form_id() ) . '?form_entry=' . get_the_ID();
 				echo '<li><a href="' . $url . '" title="' . get_the_title() . '"><span>[' . get_the_date( 'd-m-Y H:i' ) . ']</span> ' . get_the_title() . '</a></li>';

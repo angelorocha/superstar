@@ -1,24 +1,24 @@
 jQuery(function ($) {
-    let options = $('#formfield_options');
-    let formselect = $('#form_field_select select');
-
-    formselect.each(function () {
-        $(this).on('change', function () {
-            if ($(this).val() === 'select' || $(this).val() === 'radio' || $(this).val() === 'checkbox') {
-                $(this).parent().next().removeClass('hide');
-            } else {
-                $(this).parent().next().addClass('hide');
+    let field_row = $('#formfield-container');
+    field_row.each(function (e) {
+        $(this).on('change', 'select', function (e) {
+            let select = $($(this).find('select').context).val();
+            let option = $('#_form_fields_options_' + $($(this).find('select').context).attr('data-iterator')).attr('id');
+            if (select === 'select'||select === 'radio'||select === 'checkbox') {
+                $('#' + option).parent().removeClass('hide')
+            } else{
+                $('#' + option).parent().addClass('hide')
             }
         })
     });
 });
 
-jQuery(function ($){
-   $(".form_field_required input[type='checkbox']").each(function (){
-      if($(this).val() !== 'on'){
-          $(this).removeAttr('checked');
-      }
-   });
+jQuery(function ($) {
+    $(".form_field_required input[type='checkbox']").each(function () {
+        if ($(this).val() !== 'on') {
+            $(this).removeAttr('checked');
+        }
+    });
 });
 
 jQuery(function ($) {

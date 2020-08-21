@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    $('.tjce-form-widget').paginathing({
+    $('.wpss-form-widget').paginathing({
         perPage: 10,
         /* Limites your pagination number */
         /* false or number */

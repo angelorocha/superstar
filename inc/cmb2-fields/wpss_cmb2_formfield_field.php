@@ -85,12 +85,13 @@ function wpss_cmb2_render_formfield_field_callback( $field, $value, $object_id, 
             <td id="formfield_options" class="hide">
                 <label for="<?php echo $field_type->_id( '_options' ); ?>"><?php echo esc_html( $field_type->_text( 'formfield_field_options_label', __('Options','wpss') ) ); ?></label>
                 <?php
+
                 echo $field_type->input( array(
                     'name'  => $field_type->_name( '[options]' ),
                     'id'    => $field_type->_id( '_options' ),
                     'value' => $value['options'],
-                    'desc'  => ''
-                ) )
+                    'desc'  => '',
+                ) );
                 ?>
             </td>
 
