@@ -99,7 +99,7 @@ final class WPSScpt extends WPSSCptMenu {
 			'show_ui'             => true,
 			'show_in_menu'        => ( ! empty( $this->param_show_in_menu ) ? $this->param_show_in_menu : true ),
 			'menu_position'       => $this->param_menu_position,
-			'menu_icon'           => ( ! empty( $this->param_menu_icon ) ? $this->param_menu_icon : _WPSS_THEME_DIR_URI . '/docs/images/default_cpt_icon.png' ),
+			'menu_icon'           => ( ! empty( $this->param_menu_icon ) ? $this->param_menu_icon : _WPSS_IMAGES_DIR . 'default-cpt-icon.png' ),
 			'show_in_admin_bar'   => true,
 			'show_in_nav_menus'   => true,
 			'can_export'          => true,

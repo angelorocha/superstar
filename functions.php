@@ -69,6 +69,7 @@ WPSSinit::wpss_load_files( 'inc/widgets/blocks' );
 WPSSinit::wpss_load_files( 'inc/content-headers' );
 WPSSinit::wpss_load_files( 'inc/cmb2-fields' );
 WPSSinit::wpss_load_files( 'theme-options/forms' );
+WPSSinit::wpss_load_files( 'cpt' );
 
 if(is_admin() && current_user_can('administrator')):
     WPSSinit::wpss_load_files('theme-options/role-management');
