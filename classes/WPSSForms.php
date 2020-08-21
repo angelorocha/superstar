@@ -63,11 +63,16 @@ class WPSSForms{
 			endif;
 
 			if ( $val['type'] === 'checkbox' ):
-				$field_val = implode( ', ', $_POST[ $val['name'] ] );
+                if(!empty($_POST[ $val['name'] ])):
+				    $checkbox = implode( ', ', $_POST[ $val['name'] ]);
+                else:
+                    $checkbox = $_POST[ $val['name'] ];
+                endif;
+				$field_val = sanitize_text_field($checkbox);
 			endif;
 
 			if ( $val['type'] !== 'checkbox' && $val['type'] !== 'file' ):
-				$field_val = $_POST[ $val['name'] ];
+				$field_val = sanitize_text_field($_POST[ $val['name'] ]);
 			endif;
 
 			if ( $val['type'] !== 'file' && $field_val !== '' && ! is_null( $field_val ) ):
@@ -79,12 +84,13 @@ class WPSSForms{
 			endif;
 
 			if ( $val['type'] === 'file' && $field_val['name'] !== '' ):
+                $file_name = pathinfo($field_val['name'])['filename'].'-'.md5(time()).'.'.pathinfo($field_val['name'])['extension'];
 				$attachments[] = [
 					'file_key'   => $val['name'],
 					'file_label' => $val['label'],
 					'file_name'  => $field_val['name'],
-					'file_dir'   => self::upload_form_files( $field_val['tmp_name'], $field_val['name'] ),
-					'file_url'   => self::upload_form_files( $field_val['tmp_name'], $field_val['name'], false )
+					'file_dir'   => self::upload_form_files( $field_val['tmp_name'], $file_name ),
+					'file_url'   => self::upload_form_files( $field_val['tmp_name'], $file_name, false, false )
 				];
 			endif;
 
@@ -109,7 +115,7 @@ class WPSSForms{
 	 */
 	public function upload_form_files( $file_to_upload, $file_upload_name, $sub_dir = '', $get_dir = true ) {
 		$uploads_dir = self::form_get_upload_path() . $sub_dir;
-		$uploads_url = self::form_get_upload_path( true ) . '/forms-attachments/' . $sub_dir;
+		$uploads_url = self::form_get_upload_path( true ) . $sub_dir;
 
 		$file_dir = $uploads_dir . $file_upload_name;
 		$file_url = $uploads_url . $file_upload_name;
@@ -229,10 +235,9 @@ class WPSSForms{
 		if ( $table ):
 			self::form_datatables( self::get_form_id() );
 			echo "<div class='content-text mt20 mb20'>";
-			echo "<div class='table-responsive'>";
 			echo "<table id='table-" . self::get_form_id() . "' class='table table-bordered table-condensed table-striped nowrap'>";
 			echo "<thead><tr>";
-			echo "<th>Usuário</th>";
+			echo "<th>"._('User', 'wpss')."</th>";
 			foreach ( $fields as $field ):
 				echo "<th>" . $field['label'] . "</th>";
 			endforeach;
@@ -254,7 +259,7 @@ class WPSSForms{
 			endwhile;
 			wp_reset_postdata();
 			echo "</tbody>";
-			echo "</table></div></div>";
+			echo "</table></div>";
 
 			echo self::forms_back_to_form();
 		endif;
@@ -309,12 +314,13 @@ class WPSSForms{
 			$entry .= "</table></div></div>";
 
 		else:
-			$entry .= "<div class='alert alert-danger text-center'>Informação não encontrada!</div>";
+			$entry .= "<div class='alert alert-danger text-center'>".__('Information not found!','wpss')."</div>";
 		endif;
 
 		if ( $back_btn ):
 			$print_url = get_permalink( $this->get_form_id() ) . '?entry_pdf=' . $entry_id;
-			$entry     .= self::forms_back_to_form( "<a href='$print_url' title='Imprimir' class='btn btn-secondary' target='_blank'>Imprimir</a>" );
+		    $print = __('Print', 'wpss');
+			$entry     .= self::forms_back_to_form( "<a href='$print_url' title='$print' class='btn btn-secondary' target='_blank'>$print</a>" );
 		endif;
 
 		return $entry;
@@ -329,7 +335,8 @@ class WPSSForms{
 	 */
 	public function forms_back_to_form( $extra_tags = '' ) {
 		$href   = get_permalink( self::get_form_id() );
-		$button = "<a href='$href' title='Voltar' class='btn btn-outline-info'>Voltar</a>";
+		$back = __('Back', 'wpss');
+		$button = "<a href='$href' title='$back' class='btn btn-outline-info'>$back</a>";
 		$html   = "<div class='mb20 text-center'>$button $extra_tags</div>";
 
 		return $html;
@@ -615,21 +622,23 @@ class WPSSForms{
 		$date_start = date( 'd-m-Y', self::get_form_info()['data_start'] );
 		$end_date   = date( 'd-m-Y', self::get_form_info()['data_end'] );
 		$countdown  = date( 'Y/m/d H:i:s', self::get_form_info()['data_end'] );
-
+		$expired_form = __('Form Expired!','wpss');
+		$days_form = __('day','wpss');
+		$weeks_form = __('week','wpss');
 		$widget = "
 		<script>
 		jQuery(function($) {
 		  $('#clock').countdown('$countdown').on( 'update.countdown', function ( event) {
-			var format = '%H:%M:%S';
+			let format = '%H:%M:%S';
 			if ( event . offset . totalDays > 0 ) {
-				format = '%-d dia%!d ' + format;
+				format = '%-d $days_form%!d ' + format;
 			}
 			if ( event . offset . weeks > 0 ) {
-				format = '%-w semana%!w ' + format;
+				format = '%-w $weeks_form%!w ' + format;
 			}
 			$(this).html( event . strftime( format ) );
 		} ). on( 'finish.countdown', function(event) {
-			$(this).html( 'Formulário Expirou!' ).parent().addClass( 'disabled' );
+			$(this).html( '$expired_form' ).parent().addClass( 'disabled' );
 
 		});
 		});
@@ -645,10 +654,10 @@ class WPSSForms{
 		color:#929292;}
 		</style>";
 		$widget .= '<div class="pd10 mt10"><ul class="list-unstyled nomp">';
-		$widget .= "<li><strong>Início:</strong> $date_start</li>";
-		$widget .= "<li><strong>Finaliza em:</strong> $end_date</li>";
+		$widget .= "<li><strong>".__('Starts on:')."</strong> $date_start</li>";
+		$widget .= "<li><strong>".__('Ends in:', 'wpss')."</strong> $end_date</li>";
 		$widget .= '</ul>';
-		$widget .= '<div class="countdown mt20"><small>Tempo Restante</small><span id="clock"></span></div>';
+		$widget .= '<div class="countdown mt20"><small>'.__('Remaining time', 'wpss').'</small><span id="clock"></span></div>';
 		$widget .= '</div>';
 
 		return $widget;
@@ -656,9 +665,9 @@ class WPSSForms{
 
 	public function form_entries_widget() {
 		$link_url = get_permalink( self::get_form_id() ) . '?form_entries=' . self::get_form_id();
-
+        $report = __('Report', 'wpss');
 		echo "<div class = 'pd10'>";
-		echo "<a href = '$link_url' title = 'Relatório' class = 'btn btn-outline-secondary btn-block mb10'>Relatório</a>";
+		echo "<a href = '$link_url' title = '$report' class = 'btn btn-outline-secondary btn-block mb10'>$report</a>";
 		self::form_get_entries( false );
 
 		echo "</div>";
@@ -671,66 +680,23 @@ class WPSSForms{
 	 */
 
 	public function form_datatables( $table_id ) {
-		?>
-        <script>
-            jQuery(function ($) {
-                $('#table-<?=$table_id; ?>').DataTable({
-                    "scrollX": true,
-                    "order": [[0, "desc"]],
-                    "lengthMenu": [[10, 15, 20, -1], [10, 15, 20, "Tudo"]],
-                    /*"columnDefs": [
-						{"width": "150", "targets": 0}
-					],*/
-                    "oLanguage": {
-                        "sEmptyTable": "Nenhum registro encontrado",
-                        "sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-                        "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
-                        "sInfoFiltered": "(Filtrados de _MAX_ registros)",
-                        "sInfoPostFix": "",
-                        "sInfoThousands": ".",
-                        "sLengthMenu": "_MENU_ Itens por página",
-                        "sLoadingRecords": "Carregando...",
-                        "sProcessing": "Processando...",
-                        "sZeroRecords": "Nenhum registro encontrado",
-                        "sSearch": "Pesquisar: ",
-                        'sSearchPlaceholder': 'Buscar em todos os campos',
-                        "oPaginate": {
-                            "sNext": "&raquo;",
-                            "sPrevious": "&laquo;",
-                            "sFirst": "Primeiro",
-                            "sLast": "Último"
-                        },
-                        "oAria": {
-                            "sSortAscending": ": Ordenar colunas de forma ascendente",
-                            "sSortDescending": ": Ordenar colunas de forma descendente"
-                        }
-                    },
-                    dom: 'Bfrtip',
-                    buttons: [
-                        'excelHtml5',
-                        'csvHtml5',
-                        'pdfHtml5'
-                    ]
-                });
-            });
-        </script>
-		<?php
+	    $args = array(
+            'print' => true,
+            'scroll_x' => true
+        );
+        wpss_datatables_script("table-$table_id", $args);
 	}
 
 	/**
 	 * Enqueue front-end scripts
 	 */
 	public function form_enqueue_front_scripts() {
-		if ( is_singular( array( 'wpss_form' ) ) ):
-			wp_enqueue_script( 'forms-datatables', _WPSS_JS_DIR . 'datatables.min.js', array( 'jquery' ), '20190430', false );
-			wp_enqueue_style( 'forms-datatables', _WPSS_CSS_DIR . 'datatables.min.css', false, '20190430', 'all' );
 			wp_enqueue_script( 'forms-masks', _WPSS_JS_DIR . 'jquery.mask.min.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-datepicker', _WPSS_JS_DIR . 'jquery-ui-datepicker.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-count', _WPSS_JS_DIR . 'jquery.countdown.min.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-paginate', _WPSS_JS_DIR . 'paginating.min.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-functions', _WPSS_JS_DIR . 'forms-functions.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_style( 'forms-datepicker', _WPSS_CSS_DIR . 'jquery-ui-datepicker.css', '', '20190430', 'all' );
-		endif;
 	}
 
 }

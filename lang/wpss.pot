@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Super Star\n"
-"POT-Creation-Date: 2020-08-18 13:08-0300\n"
+"POT-Creation-Date: 2020-08-20 22:54-0300\n"
 "PO-Revision-Date: 2020-08-17 15:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: contato@angelorocha.com.br\n"
@@ -25,6 +25,50 @@ msgstr ""
 
 #: classes/WPSSFFmpeg.php:52
 msgid "File type not allowed"
+msgstr ""
+
+#: classes/WPSSForms.php:240 login-page.php:24
+msgid "User"
+msgstr ""
+
+#: classes/WPSSForms.php:317
+msgid "Information not found!"
+msgstr ""
+
+#: classes/WPSSForms.php:322
+msgid "Print"
+msgstr ""
+
+#: classes/WPSSForms.php:338
+msgid "Back"
+msgstr ""
+
+#: classes/WPSSForms.php:625
+msgid "Form Expired!"
+msgstr ""
+
+#: classes/WPSSForms.php:626
+msgid "day"
+msgstr ""
+
+#: classes/WPSSForms.php:627
+msgid "week"
+msgstr ""
+
+#: classes/WPSSForms.php:657
+msgid "Starts on:"
+msgstr ""
+
+#: classes/WPSSForms.php:658
+msgid "Ends in:"
+msgstr ""
+
+#: classes/WPSSForms.php:660
+msgid "Remaining time"
+msgstr ""
+
+#: classes/WPSSForms.php:668
+msgid "Report"
 msgstr ""
 
 #: classes/WPSSRest.php:26
@@ -229,38 +273,113 @@ msgstr ""
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:79
+#: cpt-templates/single-forms.php:56 theme-options/forms/wpss_forms.php:271
 msgid "<h3>You can not access this form!</h3>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:82
+#: cpt-templates/single-forms.php:59 theme-options/forms/wpss_forms.php:274
 #, php-format
 msgid ""
 "<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:92
+#: cpt-templates/single-forms.php:64 theme-options/forms/wpss_forms.php:289
 msgid "<h3>Form Info</h3>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:100
+#: cpt-templates/single-forms.php:72 theme-options/forms/wpss_forms.php:297
 msgid "<h3>Expire</h3>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:109
+#: cpt-templates/single-forms.php:81
 msgid "<h3>Data</h3>"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:95
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:96
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:97
 msgid "Footer Menu"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
+msgid "Text"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:28
+msgid "CPF"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:29
+msgid "Phone"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:30
+msgid "Zipcode"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
+msgid "Email"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:32
+msgid "Money"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:33
+#: inc/widgets/WPSSWidgetBlocks.php:101
+#: theme-options/post-views/wpss_content_statistics.php:81
+#: theme-options/post-views/wpss_content_statistics.php:119
+msgid "Date"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:34
+msgid "Select"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:35
+msgid "Radio"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:36
+msgid "Checkbox"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:37
+msgid "File"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:38
+msgid "Textarea"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:50
+msgid "ID"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:62
+msgid "Label"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:74
+msgid "Type"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:86
+msgid "Options"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:98
+msgid "Size"
+msgstr ""
+
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:110
+msgid "Required"
 msgstr ""
 
 #: inc/content-parts/wpss_modal_login.php:22
@@ -340,12 +459,6 @@ msgstr ""
 msgid "Last Posts"
 msgstr ""
 
-#: inc/widgets/WPSSWidgetBlocks.php:101
-#: theme-options/post-views/wpss_content_statistics.php:81
-#: theme-options/post-views/wpss_content_statistics.php:119
-msgid "Date"
-msgstr ""
-
 #: inc/widgets/WPSSWidgetBlocks.php:102
 msgid "Rand"
 msgstr ""
@@ -392,13 +505,13 @@ msgstr ""
 msgid "Block 7"
 msgstr ""
 
-#: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_forms.php:96
-#: inc/wpss_slide.php:24
+#: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_expire_content.php:32
+#: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:124
 msgid "Yes"
 msgstr ""
 
-#: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_forms.php:95
-#: inc/wpss_slide.php:25
+#: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_expire_content.php:33
+#: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:123
 msgid "No"
 msgstr ""
 
@@ -486,6 +599,63 @@ msgstr ""
 
 #: inc/wpss_custom_crons.php:38
 msgid "Once a minute"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:40
+#: theme-options/post-views/wpss_content_statistics.php:47
+msgid "All"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:42
+msgid "Search"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:43
+msgid "Search in table"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:81 inc/wpss_datatables_script.php:90
+msgid "No records found"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:82
+msgid "Showing from _START_ to _END_ of _TOTAL_ records"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:83
+msgid "Showing 0 to 0 of 0 entries"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:84
+msgid "(Filtered from _MAX_ records)"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:87
+msgid "_MENU_ Items per page"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:88
+msgid "Loading..."
+msgstr ""
+
+#: inc/wpss_datatables_script.php:89
+msgid "Processing ..."
+msgstr ""
+
+#: inc/wpss_datatables_script.php:96
+msgid "First"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:97
+msgid "Last"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:100
+msgid ": Sort columns in ascending order"
+msgstr ""
+
+#: inc/wpss_datatables_script.php:101
+msgid ": Sort columns in descending order"
 msgstr ""
 
 #: inc/wpss_datepicker.php:25
@@ -600,118 +770,8 @@ msgstr ""
 msgid "Sat"
 msgstr ""
 
-#: inc/wpss_forms.php:14
-msgid "Form"
-msgstr ""
-
-#: inc/wpss_forms.php:17
-msgid "Type form title"
-msgstr ""
-
-#: inc/wpss_forms.php:23
-msgid "Form Options"
-msgstr ""
-
-#: inc/wpss_forms.php:27
-msgid "Fields"
-msgstr ""
-
-#: inc/wpss_forms.php:28
-msgid ""
-"For field types: <br><strong>Radio, Select and Checkbox,</strong> separate "
-"the values with commas"
-msgstr ""
-
-#: inc/wpss_forms.php:33
-msgid "Add Field"
-msgstr ""
-
-#: inc/wpss_forms.php:37
-msgid "Form Type"
-msgstr ""
-
-#: inc/wpss_forms.php:38
-msgid "Select the form type, if is \"PDF\", data can't be saved!"
-msgstr ""
-
-#: inc/wpss_forms.php:49
-msgid "Send to"
-msgstr ""
-
-#: inc/wpss_forms.php:69
-msgid "WhatsApp Number"
-msgstr ""
-
-#: inc/wpss_forms.php:70
-msgid "Type your WhatsApp number, don't type spaces or special characters."
-msgstr ""
-
-#: inc/wpss_forms.php:78
-msgid "DDI+DDD+Phone Number"
-msgstr ""
-
-#: inc/wpss_forms.php:82
-msgid "Button Text"
-msgstr ""
-
-#: inc/wpss_forms.php:85
-msgid "Send"
-msgstr ""
-
-#: inc/wpss_forms.php:89
-msgid "Expire/Publish form"
-msgstr ""
-
-#: inc/wpss_forms.php:100
-msgid "Publish date"
-msgstr ""
-
-#: inc/wpss_forms.php:104
-msgid "d-m-Y"
-msgstr ""
-
-#: inc/wpss_forms.php:107
-msgid "Active in"
-msgstr ""
-
-#: inc/wpss_forms.php:118
-msgid "Expire in"
-msgstr ""
-
-#: inc/wpss_forms.php:125
-msgid "Expired in"
-msgstr ""
-
-#: inc/wpss_forms.php:136
-msgid "Form Description"
-msgstr ""
-
-#: inc/wpss_forms.php:145
-msgid "After send message"
-msgstr ""
-
-#: inc/wpss_forms.php:149
-msgid "Form successfully submitted"
-msgstr ""
-
-#: inc/wpss_forms.php:155
-msgid "Form Access"
-msgstr ""
-
-#: inc/wpss_forms.php:161
-msgid "Logged in Users"
-msgstr ""
-
-#: inc/wpss_forms.php:162
-msgid "Public"
-msgstr ""
-
-#: inc/wpss_forms.php:166
-msgid "Form Report Acess"
-msgstr ""
-
-#: inc/wpss_forms.php:174
-msgid "Add User"
+#: inc/wpss_expire_content.php:38
+msgid "Select Date"
 msgstr ""
 
 #: inc/wpss_gallery_sizes_names.php:20
@@ -857,10 +917,6 @@ msgstr ""
 msgid "Class %s not defined..."
 msgstr ""
 
-#: login-page.php:24
-msgid "User"
-msgstr ""
-
 #: login-page.php:25
 msgid "User Login"
 msgstr ""
@@ -881,14 +937,153 @@ msgstr ""
 msgid "User successfully logged out"
 msgstr ""
 
+#: searchform.php:3
+msgid "Search in site..."
+msgstr ""
+
+#: searchform.php:5
+msgid "Go"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:20
+#: theme-options/forms/wpss_forms.php:22
+msgid "Forms"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:21
+msgid "Form"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:27
+msgid "Type form name"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:51
+msgid "Form Options"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:55
+msgid "Fields"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:56
+msgid ""
+"For field types: <br><strong>Radio, Select and Checkbox,</strong> separate "
+"the values with commas"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:61
+msgid "Add Field"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:65
+msgid "Form Type"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:66
+msgid "Select the form type, if is \"PDF\", data can't be saved!"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:71
+msgid "Make PDF"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:72
+msgid "Send Mail"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:73
+msgid "Send to WhatsApp"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:77
+msgid "Send to"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:97
+msgid "WhatsApp Number"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:98
+msgid "Type your WhatsApp number, don't type spaces or special characters."
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:106
+msgid "DDI+DDD+Phone Number"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:110
+msgid "Button Text"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:113
+msgid "Send"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:117
+msgid "Expire/Publish form"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:128
+msgid "Publish date"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:132
+msgid "d-m-Y"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:135
+msgid "Active in"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:146
+msgid "Expire in"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:153
+msgid "Expired in"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:164
+msgid "Form Description"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:173
+msgid "After send message"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:177
+msgid "Form successfully submitted"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:183
+msgid "Form Access"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:189
+msgid "Logged in Users"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:190
+msgid "Public"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:194
+msgid "Form Report Access"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:202
+msgid "Add User"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:306
+msgid "<h3>Form Data</h3>"
+msgstr ""
+
 #: theme-options/post-views/wpss_content_statistics.php:16
 #: theme-options/post-views/wpss_content_statistics.php:17
 #: theme-options/post-views/wpss_content_statistics.php:34
 msgid "Post Statistics"
-msgstr ""
-
-#: theme-options/post-views/wpss_content_statistics.php:47
-msgid "All"
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:55

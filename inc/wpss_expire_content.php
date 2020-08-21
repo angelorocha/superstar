@@ -29,13 +29,13 @@ function wpss_expire_metabox( $id, $post_type, $metabox_name, $metabox_op_title,
 			'id'      => 'wpss_expire_content',
 			'type'    => 'radio_inline',
 			'options' => array(
-				'yes' => 'Sim',
-				'no'  => 'Não',
+				'yes' => __('Yes', 'wpss'),
+				'no'  => __('No', 'wpss'),
 			),
 			'default' => 'no'
 		),
 		array(
-			'name'        => "Selecione a data",
+			'name'        => __("Select Date", "wpss"),
 			'id'          => 'wpss_expire_date',
 			'type'        => 'text_datetime_timestamp',
 			'date_format' => 'd-m-Y',
