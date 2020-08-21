@@ -1,622 +1,619 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Super Star\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: 2020-08-21 00:35-0300\n"
-"PO-Revision-Date: 2020-08-17 15:07-0300\n"
+"PO-Revision-Date: 2020-08-21 00:35-0300\n"
 "Last-Translator: \n"
-"Language-Team: contato@angelorocha.com.br\n"
-"Language: en\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
-"X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;esc_html_e;"
-"esc_html__;esc_attr_e\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: lib\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: classes/WPSSCptMenu.php:143
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Alternar Navegação"
 
 #: classes/WPSSFFmpeg.php:52
 msgid "File type not allowed"
-msgstr ""
+msgstr "Tipo de arquivo não permitido"
 
 #: classes/WPSSForms.php:241 login-page.php:24
 msgid "User"
-msgstr ""
+msgstr "Usuário"
 
 #: classes/WPSSForms.php:318
 msgid "Information not found!"
-msgstr ""
+msgstr "Informação não encontrada!"
 
 #: classes/WPSSForms.php:323
 msgid "Print"
-msgstr ""
+msgstr "Imprimir"
 
 #: classes/WPSSForms.php:339
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: classes/WPSSForms.php:626
 msgid "Form Expired!"
-msgstr ""
+msgstr "Formulário Expirado!"
 
 #: classes/WPSSForms.php:627
 msgid "day"
-msgstr ""
+msgstr "dia"
 
 #: classes/WPSSForms.php:628
 msgid "week"
-msgstr ""
+msgstr "semana"
 
 #: classes/WPSSForms.php:658
 msgid "Starts on:"
-msgstr ""
+msgstr "Inicia em:"
 
 #: classes/WPSSForms.php:659
 msgid "Ends in:"
-msgstr ""
+msgstr "Termina em:"
 
 #: classes/WPSSForms.php:661
 msgid "Remaining time"
-msgstr ""
+msgstr "Tempo restante"
 
 #: classes/WPSSForms.php:669
 msgid "Report"
-msgstr ""
+msgstr "Relatório"
 
 #: classes/WPSSRest.php:26
 msgid "Sorry, only GET methods..."
-msgstr ""
+msgstr "Desculpe, somente métodos GET..."
 
 #: classes/WPSSRest.php:31
 msgid "Access denied for this client..."
-msgstr ""
+msgstr "Acesso negado para este cliente..."
 
 #: classes/WPSSUpload.php:100
 msgid "File size not allowed, please check your file and try again."
 msgstr ""
+"Tamanho do arquivo não permitido, por favor, verifique seu arquivo e tente "
+"de novo."
 
 #: classes/WPSSbreadcrumb.php:27
 msgid "Home"
-msgstr ""
+msgstr "Início"
 
 #: classes/WPSSbreadcrumb.php:49 inc/wpss_archive_title.php:29
 msgid "Search results for: "
-msgstr ""
+msgstr "Resultados da busca por: "
 
 #: classes/WPSSbreadcrumb.php:53
 msgid "404 not found"
-msgstr ""
+msgstr "404 não encontrado"
 
 #: classes/WPSScomments.php:30
 msgid "Y-m-d H:i:s"
-msgstr ""
+msgstr "Y-m-d H:i:s"
 
 #: classes/WPSScpt.php:92
 #: theme-options/post-views/wpss_content_statistics.php:117
 msgid "Post Type"
-msgstr ""
+msgstr "Tipo de post"
 
 #: classes/WPSScpt.php:93
 msgid "Post Type Description"
-msgstr ""
+msgstr "Descrição do tipo de post"
 
 #: classes/WPSScpt.php:184 classes/WPSScpt.php:185 classes/WPSScpt.php:186
 #: classes/WPSScpt.php:187 classes/WPSScpt.php:191 classes/WPSSct.php:55
 #: classes/WPSSct.php:56 classes/WPSSct.php:57
 #, php-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: classes/WPSScpt.php:188
 #, php-format
 msgid "%s Archives"
-msgstr ""
+msgstr "%s Arquivos"
 
 #: classes/WPSScpt.php:189
 #, php-format
 msgid "%s Attributes"
-msgstr ""
+msgstr "Atributos %s"
 
 #: classes/WPSScpt.php:190
 msgid "Parent Item:"
-msgstr ""
+msgstr "Item Pai:"
 
 #: classes/WPSScpt.php:192 classes/WPSScpt.php:193 classes/WPSSct.php:62
 #, php-format
 msgid "Add %s"
-msgstr ""
+msgstr "Adicionar %s"
 
 #: classes/WPSScpt.php:194
 #, php-format
 msgid "New %s"
-msgstr ""
+msgstr "Novo %s"
 
 #: classes/WPSScpt.php:195 classes/WPSSct.php:63
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Editar %s"
 
 #: classes/WPSScpt.php:196 classes/WPSSct.php:64
 #, php-format
 msgid "Update %s"
-msgstr ""
+msgstr "Atualizar %s"
 
 #: classes/WPSScpt.php:197 classes/WPSSct.php:65
 #, php-format
 msgid "View %s"
-msgstr ""
+msgstr "Ver %s"
 
 #: classes/WPSScpt.php:198
 #, php-format
 msgid "View %ss"
-msgstr ""
+msgstr "Ver%ss"
 
 #: classes/WPSScpt.php:199 classes/WPSSct.php:70
 #, php-format
 msgid "Search %s"
-msgstr ""
+msgstr "Buscar %s"
 
 #: classes/WPSScpt.php:200
 msgid "Not found"
-msgstr ""
+msgstr "Nada encontrado"
 
 #: classes/WPSScpt.php:201
 msgid "Not found in Trash"
-msgstr ""
+msgstr "Nada encontrado na lixeira"
 
 #: classes/WPSScpt.php:202
 msgid "Featured Image"
-msgstr ""
+msgstr "Imagem Destacada"
 
 #: classes/WPSScpt.php:203
 msgid "Set featured image"
-msgstr ""
+msgstr "Definir imagem destacada"
 
 #: classes/WPSScpt.php:204
 msgid "Remove featured image"
-msgstr ""
+msgstr "Remover imagem destacada"
 
 #: classes/WPSScpt.php:205
 msgid "Use as featured image"
-msgstr ""
+msgstr "Usar como imagem destacada"
 
 #: classes/WPSScpt.php:206
 msgid "Insert in item"
-msgstr ""
+msgstr "Inserir no item"
 
 #: classes/WPSScpt.php:207
 msgid "Uploaded to this item"
-msgstr ""
+msgstr "Enviar para este item"
 
 #: classes/WPSScpt.php:208
 msgid "Items list"
-msgstr ""
+msgstr "Lista de items"
 
 #: classes/WPSScpt.php:209
 msgid "Items list navigation"
-msgstr ""
+msgstr "Navegação da lista de items"
 
 #: classes/WPSScpt.php:210
 msgid "Filter items list"
-msgstr ""
+msgstr "Filtrar lista de items"
 
 #: classes/WPSSct.php:58
 #, php-format
 msgid "All %s"
-msgstr ""
+msgstr "Todos %s"
 
 #: classes/WPSSct.php:59
 #, php-format
 msgid "Parent %s"
-msgstr ""
+msgstr "Item Pai%s"
 
 #: classes/WPSSct.php:60
 #, php-format
 msgid "Parent %s:"
-msgstr ""
+msgstr "Item pai %s:"
 
 #: classes/WPSSct.php:61
 #, php-format
 msgid "New %s name"
-msgstr ""
+msgstr "Novo %s"
 
 #: classes/WPSSct.php:66
 msgid "Separate items with commas"
-msgstr ""
+msgstr "Separados por vírgula"
 
 #: classes/WPSSct.php:67
 #, php-format
 msgid "Add or remove %s"
-msgstr ""
+msgstr "Adicionar ou remover %s"
 
 #: classes/WPSSct.php:68
 msgid "Choose from the most used"
-msgstr ""
+msgstr "Escolher as mais usadas"
 
 #: classes/WPSSct.php:69
 #, php-format
 msgid "Popular %s"
-msgstr ""
+msgstr "Popular %s"
 
 #: classes/WPSSct.php:71
 msgid "Not Found"
-msgstr ""
+msgstr "Nada Encontrado"
 
 #: classes/WPSSct.php:72
 #, php-format
 msgid "No %s"
-msgstr ""
+msgstr "Sem %s"
 
 #: classes/WPSSct.php:73
 #, php-format
 msgid "%s list"
-msgstr ""
+msgstr "%s lista"
 
 #: classes/WPSSct.php:74
 #, php-format
 msgid "%s list navigation"
-msgstr ""
+msgstr "%s Lista de nagevação"
 
 #: classes/WPSSmenu.php:367
 msgid "Add menu"
-msgstr ""
+msgstr "Adicionar Menu"
 
 #: classes/WPSSquery.php:54
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
-msgstr ""
+msgstr "<h4 class=\"text-center\">Nenhuma informação ainda...</h4>"
 
 #: cpt-templates/single-forms.php:56 theme-options/forms/wpss_forms.php:271
 msgid "<h3>You can not access this form!</h3>"
-msgstr ""
+msgstr "<h3>Você não pode acessar este formulário!</h3>"
 
 #: cpt-templates/single-forms.php:59 theme-options/forms/wpss_forms.php:274
 #, php-format
 msgid ""
 "<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
 msgstr ""
+"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
 
 #: cpt-templates/single-forms.php:64 theme-options/forms/wpss_forms.php:290
 msgid "<h3>Form Info</h3>"
-msgstr ""
+msgstr "<h3>Informações</h3>"
 
 #: cpt-templates/single-forms.php:72 theme-options/forms/wpss_forms.php:298
 msgid "<h3>Expire</h3>"
-msgstr ""
+msgstr "<h3>Expira em</h3>"
 
 #: cpt-templates/single-forms.php:81
 msgid "<h3>Data</h3>"
-msgstr ""
+msgstr "<h3>Envios</h3>"
 
 #: functions.php:95
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu Principal"
 
 #: functions.php:96
 msgid "Top Menu"
-msgstr ""
+msgstr "Menu do Topo"
 
 #: functions.php:97
 msgid "Footer Menu"
-msgstr ""
+msgstr "Menu do Rodapé"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:28
 msgid "CPF"
-msgstr ""
+msgstr "CPF"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:29
 msgid "Phone"
-msgstr ""
+msgstr "Telefone"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:30
 msgid "Zipcode"
-msgstr ""
+msgstr "CEP"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:32
 msgid "Money"
-msgstr ""
+msgstr "Dinheiro"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:33
 #: inc/widgets/WPSSWidgetBlocks.php:101
 #: theme-options/post-views/wpss_content_statistics.php:81
 #: theme-options/post-views/wpss_content_statistics.php:119
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:34
 msgid "Select"
-msgstr ""
+msgstr "Select"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:35
 msgid "Radio"
-msgstr ""
+msgstr "Radio"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:36
 msgid "Checkbox"
-msgstr ""
+msgstr "Checkbox"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:37
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:38
 msgid "Textarea"
-msgstr ""
+msgstr "Textarea"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:50
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:62
 msgid "Label"
-msgstr ""
+msgstr "Legenda"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:74
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:86
 msgid "Options"
-msgstr ""
+msgstr "Opções"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:98
 msgid "Size"
-msgstr ""
+msgstr "Tamanho"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:110
 msgid "Required"
-msgstr ""
+msgstr "Obrigatório"
 
 #: inc/content-parts/wpss_modal_login.php:22
 msgid "User: "
-msgstr ""
+msgstr "Usuário: "
 
 #: inc/content-parts/wpss_modal_login.php:27
 msgid "Password: "
-msgstr ""
+msgstr "Senha: "
 
 #: inc/content-parts/wpss_modal_login.php:33
 msgid "Remember"
-msgstr ""
+msgstr "Lembrar"
 
 #: inc/content-parts/wpss_modal_login.php:37 login-page.php:36
 msgid "Login"
-msgstr ""
+msgstr "Entrar"
 
 #: inc/content-parts/wpss_post_pagination.php:29 inc/wpss_slide.php:80
 #: inc/wpss_slide.php:147
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: inc/content-parts/wpss_post_pagination.php:40 inc/wpss_slide.php:92
 #: inc/wpss_slide.php:159
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #: inc/content-parts/wpss_readmore_btn.php:20
 #: inc/widgets/blocks/wpss_widget_block_5.php:19
 msgid "Read More"
-msgstr ""
+msgstr "Leia Mais"
 
 #: inc/theme-templates/wpss_content.php:18
 msgid "Content area"
-msgstr ""
+msgstr "Área de Conteúdo"
 
 #: inc/theme-templates/wpss_default_loop.php:31
 msgid "No information entered in this section"
-msgstr ""
+msgstr "Nenhuma informação ainda nesta seção"
 
 #: inc/widgets/WPSSCPTCalendar.php:23
 msgid "A calendar for your custom post types."
-msgstr ""
+msgstr "Um calendário para seus custom post types."
 
 #: inc/widgets/WPSSCPTCalendar.php:26
 msgid "(WPSS) Calendar (Custom Post Type)"
-msgstr ""
+msgstr "(WPSS) Agenda (Custom Post Type)"
 
 #: inc/widgets/WPSSCPTCalendar.php:57
 msgid "Calendar"
-msgstr ""
+msgstr "Agenda"
 
 #: inc/widgets/WPSSCPTCalendar.php:95 inc/widgets/WPSSWidgetBlocks.php:151
 msgid "Title:"
-msgstr ""
+msgstr "Título:"
 
 #: inc/widgets/WPSSCPTCalendar.php:100 inc/widgets/WPSSWidgetBlocks.php:156
 #: theme-options/post-views/wpss_content_statistics.php:38
 msgid "Post Type:"
-msgstr ""
+msgstr "Tipo de post:"
 
 #: inc/widgets/WPSSCPTCalendar.php:199
 #, php-format
 msgid "%1$s %2$s"
-msgstr ""
+msgstr "%1$s %2$s"
 
 #: inc/widgets/WPSSWidgetBlocks.php:22
 msgid "Show a content list"
-msgstr ""
+msgstr "Exibe uma lista de conteúdo"
 
 #: inc/widgets/WPSSWidgetBlocks.php:25
 msgid "(WPSS) Last Posts"
-msgstr ""
+msgstr "(WPSS) Últimos Posts"
 
 #: inc/widgets/WPSSWidgetBlocks.php:75
 msgid "Last Posts"
-msgstr ""
+msgstr "Últimos Posts"
 
 #: inc/widgets/WPSSWidgetBlocks.php:102
 msgid "Rand"
-msgstr ""
+msgstr "Aleatório"
 
 #: inc/widgets/WPSSWidgetBlocks.php:103
 msgid "Título"
-msgstr ""
+msgstr "Título"
 
 #: inc/widgets/WPSSWidgetBlocks.php:113
 #: theme-options/post-views/wpss_content_statistics.php:92
 msgid "DESC"
-msgstr ""
+msgstr "Decrescente"
 
 #: inc/widgets/WPSSWidgetBlocks.php:114
 #: theme-options/post-views/wpss_content_statistics.php:92
 msgid "ASC"
-msgstr ""
+msgstr "Crescente"
 
 #: inc/widgets/WPSSWidgetBlocks.php:124
 msgid "Block 1"
-msgstr ""
+msgstr "Bloco 1"
 
 #: inc/widgets/WPSSWidgetBlocks.php:125
 msgid "Block 2"
-msgstr ""
+msgstr "Bloco 2"
 
 #: inc/widgets/WPSSWidgetBlocks.php:126
 msgid "Block 3"
-msgstr ""
+msgstr "Bloco 3"
 
 #: inc/widgets/WPSSWidgetBlocks.php:127
 msgid "Block 4"
-msgstr ""
+msgstr "Bloco 4"
 
 #: inc/widgets/WPSSWidgetBlocks.php:128
 msgid "Block 5"
-msgstr ""
+msgstr "Bloco 5"
 
 #: inc/widgets/WPSSWidgetBlocks.php:129
 msgid "Block 6"
-msgstr ""
+msgstr "Bloco 6"
 
 #: inc/widgets/WPSSWidgetBlocks.php:130
 msgid "Block 7"
-msgstr ""
+msgstr "Bloco 7"
 
 #: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_expire_content.php:32
 #: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:124
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_expire_content.php:33
 #: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:123
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: inc/widgets/WPSSWidgetBlocks.php:158
 msgid "Eg: post"
-msgstr ""
+msgstr "Ex: post"
 
 #: inc/widgets/WPSSWidgetBlocks.php:162
 msgid "Limit Posts:"
-msgstr ""
+msgstr "Limite de Posts:"
 
 #: inc/widgets/WPSSWidgetBlocks.php:167
 msgid "Excerpt Limit (Words):"
-msgstr ""
+msgstr "Limite do Resumo (Palavras):"
 
 #: inc/widgets/WPSSWidgetBlocks.php:172
 msgid "Block Type:"
-msgstr ""
+msgstr "Tipo de Bloco:"
 
 #: inc/widgets/WPSSWidgetBlocks.php:184
 msgid "Order By:"
-msgstr ""
+msgstr "Ordenar Por:"
 
 #: inc/widgets/WPSSWidgetBlocks.php:196
 #: theme-options/post-views/wpss_content_statistics.php:78
 msgid "Order:"
-msgstr ""
+msgstr "Ordem:"
 
 #: inc/widgets/WPSSWidgetBlocks.php:206
 msgid "Ajax Load:"
-msgstr ""
+msgstr "Ajax Load:"
 
 #: inc/widgets/WPSSWidgetBlocks.php:291
 msgid "No content found"
-msgstr ""
+msgstr "Nenhum conteúdo encontrado"
 
 #: inc/widgets/WPSSWidgetBlocks.php:296
 msgid "Load More"
-msgstr ""
+msgstr "Mostrar Mais"
 
 #: inc/widgets/blocks/wpss_widget_block_3.php:26
 msgid "Continue reading..."
-msgstr ""
+msgstr "Continue Lendo..."
 
 #: inc/wpss_archive_title.php:33
 msgid "404 - Content not found"
-msgstr ""
+msgstr "404 - Conteúdo não encontrado"
 
 #: inc/wpss_content_date.php:24
 msgid "(today)"
-msgstr ""
+msgstr "(hoje)"
 
 #: inc/wpss_content_date.php:28
 msgid "(yesterday)"
-msgstr ""
+msgstr "(ontem)"
 
 #: inc/wpss_content_date.php:32
 #, php-format
 msgid "(%1$s days ago)"
-msgstr ""
+msgstr "(à %1$s dias atrás)"
 
 #: inc/wpss_content_date.php:38
 msgid "Posted by"
-msgstr ""
+msgstr "Postado por"
 
 #: inc/wpss_content_date.php:39 inc/wpss_content_date.php:47
 msgid "on"
-msgstr ""
+msgstr "em"
 
 #: inc/wpss_content_date.php:39 inc/wpss_content_date.php:47
 msgid "at"
-msgstr ""
+msgstr "às"
 
 #: inc/wpss_content_date.php:46
 msgid "Last updated by "
-msgstr ""
+msgstr "Última atualização por "
 
 #: inc/wpss_custom_crons.php:26
 msgid "Once a week"
-msgstr ""
+msgstr "Uma vez por semana"
 
 #: inc/wpss_custom_crons.php:32
 msgid "Once a month"
-msgstr ""
+msgstr "Uma vez por mês"
 
 #: inc/wpss_custom_crons.php:38
 msgid "Once a minute"
-msgstr ""
+msgstr "Uma vez por minuto"
 
 #: inc/wpss_datatables_script.php:40
 #: theme-options/post-views/wpss_content_statistics.php:47
 msgid "All"
-msgstr ""
+msgstr "Todos"
 
 #: inc/wpss_datatables_script.php:42
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: inc/wpss_datatables_script.php:43
 msgid "Search in table"
-msgstr ""
+msgstr "Buscar na tabela"
 
 #: inc/wpss_datatables_script.php:81 inc/wpss_datatables_script.php:90
 msgid "No records found"
-msgstr ""
+msgstr "Nenhum registro encontrado"
 
 #: inc/wpss_datatables_script.php:82
 msgid "Showing from _START_ to _END_ of _TOTAL_ records"
@@ -660,210 +657,210 @@ msgstr ""
 
 #: inc/wpss_datepicker.php:25 theme-options/forms/wpss_forms.php:326
 msgid "0000-00-00"
-msgstr ""
+msgstr "00-00-0000"
 
 #: inc/wpss_datepicker.php:26 theme-options/forms/wpss_forms.php:327
 msgid "yy-mm-dd"
-msgstr ""
+msgstr "dd-mm-yy"
 
 #: inc/wpss_datepicker.php:28
 msgid "January"
-msgstr ""
+msgstr "Janeiro"
 
 #: inc/wpss_datepicker.php:28
 msgid "February"
-msgstr ""
+msgstr "Fevereiro"
 
 #: inc/wpss_datepicker.php:28
 msgid "March"
-msgstr ""
+msgstr "Março"
 
 #: inc/wpss_datepicker.php:28
 msgid "April"
-msgstr ""
+msgstr "Abril"
 
 #: inc/wpss_datepicker.php:28
 msgid "May"
-msgstr ""
+msgstr "Maio"
 
 #: inc/wpss_datepicker.php:28
 msgid "June"
-msgstr ""
+msgstr "Junho"
 
 #: inc/wpss_datepicker.php:28
 msgid "July"
-msgstr ""
+msgstr "Julho"
 
 #: inc/wpss_datepicker.php:28
 msgid "August"
-msgstr ""
+msgstr "Agosto"
 
 #: inc/wpss_datepicker.php:28
 msgid "September"
-msgstr ""
+msgstr "Setembro"
 
 #: inc/wpss_datepicker.php:28
 msgid "October"
-msgstr ""
+msgstr "Outubro"
 
 #: inc/wpss_datepicker.php:28
 msgid "November"
-msgstr ""
+msgstr "Novembro"
 
 #: inc/wpss_datepicker.php:28
 msgid "December"
-msgstr ""
+msgstr "Dezembro"
 
 #: inc/wpss_datepicker.php:29
 msgid "Sunday"
-msgstr ""
+msgstr "Domingo"
 
 #: inc/wpss_datepicker.php:29
 msgid "Monday"
-msgstr ""
+msgstr "Segunda"
 
 #: inc/wpss_datepicker.php:29
 msgid "Tuesday"
-msgstr ""
+msgstr "Terça"
 
 #: inc/wpss_datepicker.php:29
 msgid "Wednesday"
-msgstr ""
+msgstr "Quarta"
 
 #: inc/wpss_datepicker.php:29
 msgid "Thursday"
-msgstr ""
+msgstr "Quinta"
 
 #: inc/wpss_datepicker.php:29
 msgid "Friday"
-msgstr ""
+msgstr "Sexta"
 
 #: inc/wpss_datepicker.php:29
 msgid "Saturday"
-msgstr ""
+msgstr "Sábad"
 
 #: inc/wpss_datepicker.php:30
 msgid "Sun"
-msgstr ""
+msgstr "Dom"
 
 #: inc/wpss_datepicker.php:30
 msgid "Mon"
-msgstr ""
+msgstr "Seg"
 
 #: inc/wpss_datepicker.php:30
 msgid "Tue"
-msgstr ""
+msgstr "Ter"
 
 #: inc/wpss_datepicker.php:30
 msgid "Wed"
-msgstr ""
+msgstr "Qua"
 
 #: inc/wpss_datepicker.php:30
 msgid "Thu"
-msgstr ""
+msgstr "Qui"
 
 #: inc/wpss_datepicker.php:30
 msgid "Fri"
-msgstr ""
+msgstr "Sex"
 
 #: inc/wpss_datepicker.php:30
 msgid "Sat"
-msgstr ""
+msgstr "Sáb"
 
 #: inc/wpss_expire_content.php:38
 msgid "Select Date"
-msgstr ""
+msgstr "Selecionar Data"
 
 #: inc/wpss_expire_content.php:41 theme-options/forms/wpss_forms.php:132
 #: theme-options/forms/wpss_forms.php:150
 msgid "Y-m-d"
-msgstr ""
+msgstr "d-m-Y"
 
 #: inc/wpss_expire_content.php:43 inc/wpss_expire_content.php:67
 #: theme-options/role-management/wpss_role_management_functions.php:72
 msgid "Y-m-d H:i"
-msgstr ""
+msgstr "d-m-Y H:i"
 
 #: inc/wpss_gallery_sizes_names.php:20
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
 #: inc/wpss_gallery_sizes_names.php:21
 msgid "Post Cover"
-msgstr ""
+msgstr "Post Cover"
 
 #: inc/wpss_gallery_sizes_names.php:22
 msgid "Container Cover"
-msgstr ""
+msgstr "Container Cover"
 
 #: inc/wpss_gallery_sizes_names.php:23
 msgid "Full Width Image"
-msgstr ""
+msgstr "Full Width Image"
 
 #: inc/wpss_pagination.php:31
 msgid "&laquo;"
-msgstr ""
+msgstr "&laquo;"
 
 #: inc/wpss_pagination.php:32
 msgid "&raquo;"
-msgstr ""
+msgstr "&raquo;"
 
 #: inc/wpss_pagination.php:40
 msgid "Posts navigation"
-msgstr ""
+msgstr "Navegação de posts"
 
 #: inc/wpss_post_views.php:29
 msgid " views"
-msgstr ""
+msgstr " views"
 
 #: inc/wpss_post_views.php:56
 #: theme-options/post-views/wpss_content_statistics.php:121
 msgid "Views"
-msgstr ""
+msgstr "Views"
 
 #: inc/wpss_rest.php:21
 msgid "Choose a post type..."
-msgstr ""
+msgstr "Selecione um post type..."
 
 #: inc/wpss_share_icons.php:16
 msgid "Share on Facebook"
-msgstr ""
+msgstr "Compartilhar no Facebook"
 
 #: inc/wpss_share_icons.php:17
 msgid "Tweet this!"
-msgstr ""
+msgstr "Tweet isto!"
 
 #: inc/wpss_share_icons.php:18
 msgid "Send via WhatsApp"
-msgstr ""
+msgstr "Enviar por WhatsApp"
 
 #: inc/wpss_share_icons.php:19
 msgid "Share on Linkedin"
-msgstr ""
+msgstr "Compartilhar no Linkedin"
 
 #: inc/wpss_share_icons.php:20
 msgid "Send via telegram"
-msgstr ""
+msgstr "Enviar no Telegram"
 
 #: inc/wpss_sidebar_widgets.php:15
 msgid "Sidebar Widgets"
-msgstr ""
+msgstr "Widgets da Sidebar"
 
 #: inc/wpss_slide.php:16
 msgid "Slide"
-msgstr ""
+msgstr "Slide"
 
 #: inc/wpss_slide.php:20
 msgid "Show in slide?"
-msgstr ""
+msgstr "Mostrar no Slide?"
 
 #: inc/wpss_slide.php:34
 msgid "Expire"
-msgstr ""
+msgstr "Expirar"
 
 #: inc/wpss_slide.php:35
 msgid "Expire Slide?"
-msgstr ""
+msgstr "Expirar Slide?"
 
 #: inc/wpss_super_like.php:189
 msgid "Who liked?"
@@ -904,28 +901,28 @@ msgstr ""
 
 #: inc/wpss_super_like.php:313
 msgid "You Like:"
-msgstr ""
+msgstr "Vecê gosta:"
 
 #: inc/wpss_super_like.php:345
 msgid "Today's Most Popular Posts"
-msgstr ""
+msgstr "Posts mais populares de hoje"
 
 #: inc/wpss_super_like.php:377
 msgid "This Month's Most Popular Posts"
-msgstr ""
+msgstr "Posts mais populares deste mês"
 
 #: inc/wpss_super_like.php:409
 msgid "This Week's Most Popular Posts"
-msgstr ""
+msgstr "Posts mais populares desta semana"
 
 #: inc/wpss_super_like.php:428
 msgid "Most Popular Posts"
-msgstr ""
+msgstr "Posts mais populares"
 
 #: init/WPSSinit.php:35
 #, php-format
 msgid "Class %s not defined..."
-msgstr ""
+msgstr "Classe %s não definida..."
 
 #: login-page.php:25
 msgid "User Login"
@@ -955,240 +952,243 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:20
-#: theme-options/forms/wpss_forms.php:22
+#: theme-options/forms/wpss_forms.php:20 theme-options/forms/wpss_forms.php:22
 msgid "Forms"
 msgstr ""
 
 #: theme-options/forms/wpss_forms.php:21
 msgid "Form"
-msgstr ""
+msgstr "Formulário"
 
 #: theme-options/forms/wpss_forms.php:27
 msgid "Type form name"
-msgstr ""
+msgstr "Digite o nome do formulário"
 
 #: theme-options/forms/wpss_forms.php:51
 msgid "Form Options"
-msgstr ""
+msgstr "Opções do Formulário"
 
 #: theme-options/forms/wpss_forms.php:55
 msgid "Fields"
-msgstr ""
+msgstr "Campos"
 
 #: theme-options/forms/wpss_forms.php:56
 msgid ""
 "For field types: <br><strong>Radio, Select and Checkbox,</strong> separate "
 "the values with commas"
 msgstr ""
+"Para tipos de campo: <br><strong>Radio, Select and Checkbox,</strong> separe "
+"os valores com vírgulas"
 
 #: theme-options/forms/wpss_forms.php:61
 msgid "Add Field"
-msgstr ""
+msgstr "Adicionar Campo"
 
 #: theme-options/forms/wpss_forms.php:65
 msgid "Form Type"
-msgstr ""
+msgstr "Tipo do Formulário"
 
 #: theme-options/forms/wpss_forms.php:66
 msgid "Select the form type, if is \"PDF\", data can't be saved!"
 msgstr ""
+"Selecione o tipo de formulário, se for \"PDF\", os dados não serão salvos!"
 
 #: theme-options/forms/wpss_forms.php:71
 msgid "Make PDF"
-msgstr ""
+msgstr "Criar PDF"
 
 #: theme-options/forms/wpss_forms.php:72
 msgid "Send Mail"
-msgstr ""
+msgstr "Enviar Email"
 
 #: theme-options/forms/wpss_forms.php:73
 msgid "Send to WhatsApp"
-msgstr ""
+msgstr "Enviar por WhatsApp"
 
 #: theme-options/forms/wpss_forms.php:77
 msgid "Send to"
-msgstr ""
+msgstr "Enviar para"
 
 #: theme-options/forms/wpss_forms.php:97
 msgid "WhatsApp Number"
-msgstr ""
+msgstr "Número WhatsApp"
 
 #: theme-options/forms/wpss_forms.php:98
 msgid "Type your WhatsApp number, don't type spaces or special characters."
 msgstr ""
+"Insira o seu numero do WhatsApp, não digite espaços ou caracteres especiais."
 
 #: theme-options/forms/wpss_forms.php:106
 msgid "DDI+DDD+Phone Number"
-msgstr ""
+msgstr "DDI+DDD+Número"
 
 #: theme-options/forms/wpss_forms.php:110
 msgid "Button Text"
-msgstr ""
+msgstr "Texto do Botão"
 
 #: theme-options/forms/wpss_forms.php:113
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: theme-options/forms/wpss_forms.php:117
 msgid "Expire/Publish form"
-msgstr ""
+msgstr "Expirar/Publicar"
 
 #: theme-options/forms/wpss_forms.php:128
 msgid "Publish date"
-msgstr ""
+msgstr "Publicar Em"
 
 #: theme-options/forms/wpss_forms.php:135
 msgid "Active in"
-msgstr ""
+msgstr "Ativo em"
 
 #: theme-options/forms/wpss_forms.php:146
 msgid "Expire in"
-msgstr ""
+msgstr "Expiram em"
 
 #: theme-options/forms/wpss_forms.php:153
 msgid "Expired in"
-msgstr ""
+msgstr "Expirado em"
 
 #: theme-options/forms/wpss_forms.php:164
 msgid "Form Description"
-msgstr ""
+msgstr "Descrição do Formulário"
 
 #: theme-options/forms/wpss_forms.php:173
 msgid "After send message"
-msgstr ""
+msgstr "Após enviar mensagem"
 
 #: theme-options/forms/wpss_forms.php:177
 msgid "Form successfully submitted"
-msgstr ""
+msgstr "Formulário enviado com sucesso"
 
 #: theme-options/forms/wpss_forms.php:183
 msgid "Form Access"
-msgstr ""
+msgstr "Acesso ao formulário"
 
 #: theme-options/forms/wpss_forms.php:189
 msgid "Logged in Users"
-msgstr ""
+msgstr "Usuários Logados"
 
 #: theme-options/forms/wpss_forms.php:190
 msgid "Public"
-msgstr ""
+msgstr "Público"
 
 #: theme-options/forms/wpss_forms.php:194
 msgid "Form Report Access"
-msgstr ""
+msgstr "Permissão de acesso ao relatório"
 
 #: theme-options/forms/wpss_forms.php:202
 msgid "Add User"
-msgstr ""
+msgstr "Adicionar Usuário"
 
 #: theme-options/forms/wpss_forms.php:307
 msgid "<h3>Form Data</h3>"
-msgstr ""
+msgstr "<h3>Dados do Formulário</h3>"
 
 #: theme-options/post-views/wpss_content_statistics.php:16
 #: theme-options/post-views/wpss_content_statistics.php:17
 #: theme-options/post-views/wpss_content_statistics.php:34
 msgid "Post Statistics"
-msgstr ""
+msgstr "Estatísticas de posts"
 
 #: theme-options/post-views/wpss_content_statistics.php:55
 msgid "Start Date:"
-msgstr ""
+msgstr "Data de Início:"
 
 #: theme-options/post-views/wpss_content_statistics.php:62
 msgid "End Date"
-msgstr ""
+msgstr "Data Fim"
 
 #: theme-options/post-views/wpss_content_statistics.php:66
 msgid "Limit:"
-msgstr ""
+msgstr "Limite:"
 
 #: theme-options/post-views/wpss_content_statistics.php:101
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: theme-options/post-views/wpss_content_statistics.php:118
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: theme-options/post-views/wpss_content_statistics.php:120
 #: theme-options/post-views/wpss_content_statistics.php:130
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: theme-options/post-views/wpss_content_statistics.php:125
 #: theme-options/role-management/wpss_role_management_functions.php:453
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: theme-options/post-views/wpss_content_statistics.php:130
 msgid "Go to URL"
-msgstr ""
+msgstr "Ir para URL"
 
 #: theme-options/role-management/wpss_role_management.php:17
 #: theme-options/role-management/wpss_role_management.php:18
 #: theme-options/role-management/wpss_role_management.php:44
 msgid "Role Management"
-msgstr ""
+msgstr "Gerenciamento de Permissões"
 
 #: theme-options/role-management/wpss_role_management_functions.php:19
 msgid "Select User: "
-msgstr ""
+msgstr "Selecione Usuário: "
 
 #: theme-options/role-management/wpss_role_management_functions.php:69
 msgid "User Login: "
-msgstr ""
+msgstr "Login do Usuário "
 
 #: theme-options/role-management/wpss_role_management_functions.php:70
 msgid "Display Name: "
-msgstr ""
+msgstr "Nome do Usuário "
 
 #: theme-options/role-management/wpss_role_management_functions.php:71
 msgid "User Email: "
-msgstr ""
+msgstr "Email do Usuário "
 
 #: theme-options/role-management/wpss_role_management_functions.php:72
 msgid "Registered on: "
-msgstr ""
+msgstr "Registrado em "
 
 #: theme-options/role-management/wpss_role_management_functions.php:73
 msgid "Roles: "
-msgstr ""
+msgstr "Roles "
 
 #: theme-options/role-management/wpss_role_management_functions.php:84
 #: theme-options/role-management/wpss_role_management_functions.php:244
 msgid "Removed Capabilities: "
-msgstr ""
+msgstr "Capabilities removidas "
 
 #: theme-options/role-management/wpss_role_management_functions.php:90
 #: theme-options/role-management/wpss_role_management_functions.php:241
 msgid "Added Capabilities: "
-msgstr ""
+msgstr "Capabilities: adicionadas "
 
 #: theme-options/role-management/wpss_role_management_functions.php:111
 msgid "Add or Remove User Capabilities"
-msgstr ""
+msgstr "Adicionar ou remover capabilities do usuário"
 
 #: theme-options/role-management/wpss_role_management_functions.php:161
 msgid "Role name: "
-msgstr ""
+msgstr "Nome da role: "
 
 #: theme-options/role-management/wpss_role_management_functions.php:162
 msgid "Type role name"
-msgstr ""
+msgstr "Digite o nome da role"
 
 #: theme-options/role-management/wpss_role_management_functions.php:163
 msgid "Add Role"
-msgstr ""
+msgstr "Adicionar Role"
 
 #: theme-options/role-management/wpss_role_management_functions.php:178
 msgid "Role successfully created"
-msgstr ""
+msgstr "Role criada com sucesso"
 
 #: theme-options/role-management/wpss_role_management_functions.php:180
 msgid "Something went wrong, try again"
-msgstr ""
+msgstr "Algo deu errado, tente novamente"
 
 #: theme-options/role-management/wpss_role_management_functions.php:192
 msgid "Delete Role"
@@ -1250,3 +1250,6 @@ msgstr ""
 #: theme-options/role-management/wpss_role_management_functions.php:447
 msgid "Available Custom Roles"
 msgstr ""
+
+#~ msgid "d-m-Y"
+#~ msgstr "d-m-Y"

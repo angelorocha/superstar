@@ -18,9 +18,16 @@
  */
 
 function wpss_datepicker( $element, $mask = '', $dateformat = '' ) {
-	wp_enqueue_script( 'wpss-masks', _WPSS_JS_DIR . 'jquery.mask.min.js', array( 'jquery' ), _WPSS_FILE_VERSION, true );
+    if(!wp_script_is('wpss-masks', 'enqueued ')):
+        wp_enqueue_script('wpss-masks', _WPSS_JS_DIR . 'jquery.mask.min.js', array('jquery'), _WPSS_FILE_VERSION, true);
+    endif;
+    if(!wp_script_is('wpss-datepicker', 'enqueued ')):
 	wp_enqueue_script( 'wpss-datepicker', _WPSS_JS_DIR . 'jquery-ui-datepicker.js', array( 'jquery' ), _WPSS_FILE_VERSION, true );
-	wp_enqueue_style( 'wpss-datepicker', _WPSS_CSS_DIR . 'jquery-ui-datepicker.css', '', _WPSS_FILE_VERSION, 'all' );
+    endif;
+
+    if(!wp_style_is('wpss-datepicker', 'enqueued')):
+        wp_enqueue_style('wpss-datepicker', _WPSS_CSS_DIR . 'jquery-ui-datepicker.css', '', _WPSS_FILE_VERSION, 'all');
+    endif;
 
 	$input_mask       = ( empty( $mask ) ? __( '0000-00-00', 'wpss' ) : $mask );
 	$input_dateformat = ( empty( $dateformat ) ? __( 'yy-mm-dd', 'wpss' ) : $dateformat );

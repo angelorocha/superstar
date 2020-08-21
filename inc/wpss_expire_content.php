@@ -38,9 +38,9 @@ function wpss_expire_metabox( $id, $post_type, $metabox_name, $metabox_op_title,
 			'name'        => __("Select Date", "wpss"),
 			'id'          => 'wpss_expire_date',
 			'type'        => 'text_datetime_timestamp',
-			'date_format' => 'd-m-Y',
+			'date_format' => __('Y-m-d', 'wpss'),
 			'time_format' => 'H:i',
-			'default'     => current_time( 'd-m-Y H:i' ) . ( '+1 day' )
+			'default'     => current_time( __('Y-m-d H:i', 'wpss') ) . ( '+1 day' )
 		),
 		array(
 			'name'    => '',
@@ -64,7 +64,7 @@ function wpss_get_posts_to_expire() {
 }
 
 function wpss_expire_content() {
-	$current_time = current_time( 'Y-m-d H:i' );
+	$current_time = current_time( __('Y-m-d H:i', 'wpss') );
 
 	if ( ! empty( wpss_get_posts_to_expire() ) ):
 

@@ -129,7 +129,7 @@ function wpss_custom_forms(){
             'desc'        => '',
             'id'          => '_form_start_date',
             'type'        => 'text_datetime_timestamp',
-            'date_format' => __( 'd-m-Y', 'wpss' ),
+            'date_format' => __( 'Y-m-d', 'wpss' ),
             'time_format' => 'H:i',
             'column'      => array(
                 'name'     => __( 'Active in', 'wpss' ),
@@ -147,7 +147,7 @@ function wpss_custom_forms(){
             'desc'        => '',
             'id'          => '_form_end_date',
             'type'        => 'text_datetime_timestamp',
-            'date_format' => 'd-m-Y',
+            'date_format' => __( 'Y-m-d', 'wpss' ),
             'time_format' => 'H:i',
             'column'      => array(
                 'name'     => __( 'Expired in', 'wpss' ),
@@ -320,33 +320,14 @@ function wpss_form_sidebar(){
 function wpss_form_frontend() {
     ?>
     <div class="wpss-forms-content">
-        <script>
-            jQuery(function ($) {
-                $('.money').mask('000.000.000.000,00', {reverse: true});
-                $('.date').mask('00-00-0000').datepicker({
-                    dateFormat: "dd-mm-yy",
-                    //maxDate: 'D',
-                    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-                    dayNames: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
-                    dayNamesMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
-                });
-                $('.cep').mask('00000-000');
-                $('.cpf').mask('000.000.000-00');
-
-                $('.phone').each(function () {
-                    $(this).on('keypress change', function () {
-                        if ($(this).val().length < 14) {
-                            $(this).mask('(00) 0000-0000');
-                        } else {
-                            $(this).mask('(00) 00000-0000');
-                        }
-                    })
-                })
-            });
-        </script>
         <?php
         $action = '';
         $target = '';
+        wpss_datepicker('.date');
+        wpss_mask('.money','000.000.000.000,00', true);
+        wpss_mask('.cpf','000.000.000-00');
+        wpss_mask('.cep','00000-00');
+        wpss_mask('.phone','(00) 0000-0000', false);
         wpss_form_instance()->form_enqueue_front_scripts();
         wpss_form_instance()->send_mail_success();
         wpss_form_instance()->forms_send_whatsapp();

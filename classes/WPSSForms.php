@@ -199,7 +199,7 @@ class WPSSForms{
 		$args = array(
 			'post_author' => get_current_user_id(),
 			'post_title'  => self::form_entrie_prefix() . get_the_title( $this->get_form_id() ),
-			'post_status' => 'publish',
+			'post_status' => 'inherit',
 			'post_type'   => 'form-entry',
 			'post_parent' => self::get_form_id(),
 			'meta_input'  => $meta
@@ -219,7 +219,8 @@ class WPSSForms{
 		$args    = array(
 			'post_type'      => 'form-entry',
 			'post_parent'    => self::get_form_id(),
-			'posts_per_page' => - 1
+			'posts_per_page' => - 1,
+            'post_status'    => 'inherit'
 		);
 		$entries = new WP_Query( $args );
 
@@ -290,7 +291,7 @@ class WPSSForms{
 
 		$entry = '';
 		if ( ! is_null( $entry_id ) ):
-			$entry     .= "<div class='content-text mt20'><div class='table-responsive'><table$table_attr class='table table-bordered table-condensed table-striped'>";
+			$entry     .= "<div class='content-text mt20'><table$table_attr class='table table-bordered table-condensed table-striped'>";
 			$submmiter = get_userdata( get_post( $entry_id )->post_author )->display_name;
 
 			if ( $extra_header ):
@@ -308,10 +309,10 @@ class WPSSForms{
 					$content = "<a href='" . $meta[1] . "' title='" . $meta[0] . "' target='_blank' class='btn btn-xs btn-outline-secondary'>Download</a>";
 				endif;
 				if ( ! empty( $meta ) ):
-					$entry .= "<tr$tr_attr><td$td_attr class='col-md-6 active'>$meta[0]</td><td$td_attr class='col-md-6'>$content</td></tr>";
+					$entry .= "<tr$tr_attr><td$td_attr>$meta[0]</td><td$td_attr>$content</td></tr>";
 				endif;
 			endforeach;
-			$entry .= "</table></div></div>";
+			$entry .= "</table></div>";
 
 		else:
 			$entry .= "<div class='alert alert-danger text-center'>".__('Information not found!','wpss')."</div>";
@@ -691,12 +692,9 @@ class WPSSForms{
 	 * Enqueue front-end scripts
 	 */
 	public function form_enqueue_front_scripts() {
-			wp_enqueue_script( 'forms-masks', _WPSS_JS_DIR . 'jquery.mask.min.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_script( 'forms-datepicker', _WPSS_JS_DIR . 'jquery-ui-datepicker.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-count', _WPSS_JS_DIR . 'jquery.countdown.min.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-paginate', _WPSS_JS_DIR . 'paginating.min.js', array( 'jquery' ), '20190430', true );
 			wp_enqueue_script( 'forms-functions', _WPSS_JS_DIR . 'forms-functions.js', array( 'jquery' ), '20190430', true );
-			wp_enqueue_style( 'forms-datepicker', _WPSS_CSS_DIR . 'jquery-ui-datepicker.css', '', '20190430', 'all' );
 	}
 
 }
