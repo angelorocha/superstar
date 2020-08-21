@@ -323,7 +323,7 @@ function wpss_form_frontend() {
     ?>
     <div class="wpss-forms-content">
         <?php
-        $action = '';
+        $action = get_permalink(get_queried_object_id());
         $target = '';
         wpss_datepicker('.date');
         wpss_mask('.money','000.000.000.000,00', true);
@@ -366,47 +366,47 @@ function wpss_form_frontend() {
                 $input_file     = "<input type='file' id='$field_id' name='$field_id' class='form-control'>";
 
                 if ( $field_type === 'text' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_text</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_text</div></div>";
                 endif;
                 if ( $field_type === 'email' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_email</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_email</div></div>";
                 endif;
                 if ( $field_type === 'cpf' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_cpf</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_cpf</div></div>";
                 endif;
                 if ( $field_type === 'phone' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_phone</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_phone</div></div>";
                 endif;
                 if ( $field_type === 'cep' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_cep</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_cep</div></div>";
                 endif;
                 if ( $field_type === 'date' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_date</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_date</div></div>";
                 endif;
                 if ( $field_type === 'money' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_money</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_money</div></div>";
                 endif;
                 if ( $field_type === 'radio' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label class='label-option' for='$field_id'>$field_label</label>";
-                    foreach ( $input_radio as $radio ):
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label class='d-block'>$field_label</label>";
+                    foreach ( $input_radio as $r => $radio ):
                         $radio_checked = ( $_POST[ $field_id ] === $radio ? ' checked' : false );
-                        echo "<label class='radio-inline'><input type='radio' id='$field_id' name='$field_id' value='$radio'$radio_checked>$radio</label>";
+                        echo "<label class='radio-inline'><input type='radio' id='$field_id-$r' name='$field_id' value='$radio'$radio_checked>$radio</label>";
                     endforeach;
                     echo "</div></div>";
                 endif;
                 if ( $field_type === 'checkbox' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label class='label-option' for='$field_id'>$field_label</label>";
-                    foreach ( $input_checkbox as $check ):
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label class='d-block'>$field_label</label>";
+                    foreach ( $input_checkbox as $c => $check ):
                         $checked = null;
                         if ( isset( $_POST[ $submit_action ] ) ):
                             $checked = ( in_array( $check, $_POST[ $field_id ] ) ? ' checked' : false );
                         endif;
-                        echo '<label class="checkbox-inline"><input type="checkbox" id="' . $field_id . '" name="' . $field_id . '[]" value="' . $check . '"' . $checked . '>' . $check . '</label>';
+                        echo '<label class="checkbox-inline"><input type="checkbox" id="' . $field_id . '_'.$c.'" name="' . $field_id . '[]" value="' . $check . '"' . $checked . '>' . $check . '</label>';
                     endforeach;
                     echo "</div></div>";
                 endif;
                 if ( $field_type === 'select' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>";
                     echo "<select name='$field_id' id='$field_id' class='form-control'><option value=''>----------</option>";
                     foreach ( $input_select as $options ):
                         $selected = ( $_POST[ $field_id ] === $options ? ' selected' : false );
@@ -415,16 +415,16 @@ function wpss_form_frontend() {
                     echo "</select></div></div>";
                 endif;
                 if ( $field_type === 'textarea' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_textarea</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_textarea</div></div>";
                 endif;
                 if ( $field_type === 'file' ):
-                    echo "<div class='grid-item col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_file</div></div>";
+                    echo "<div class='col-md-$field_size'><div class='form-group'><label for='$field_id'>$field_label</label>$input_file</div></div>";
                 endif;
 
             endforeach;
             ?>
 
-            <div class="grid-item col-md-12 text-center">
+            <div class="col-md-12 text-center">
                 <hr>
                 <button class="btn btn-outline-secondary" type="submit" name="<?php echo $submit_action; ?>">
                     <?php echo get_post_meta( get_the_ID(), '_form_submit_text', true ) ?>
