@@ -29,9 +29,10 @@ define( '_WPSS_SITE_URL', home_url( '/' ) );
 /**
  * Init Theme
  */
-require_once 'init/WPSSinit.php';
-require_once 'lib/plugins/autoload.php';
-require_once 'lib/addons/cmb2-conditionals/cmb2-conditionals.php';
+require_once dirname( __FILE__ ) . '/init/WPSSinit.php';
+require_once dirname( __FILE__ ) . '/lib/plugins/autoload.php';
+require_once dirname( __FILE__ ) . '/lib/addons/cmb2-conditionals/cmb2-conditionals.php';
+require_once dirname( __FILE__ ) . '/lib/addons/ReduxCore/framework.php';
 
 /**
  * Load theme classes
@@ -69,6 +70,7 @@ WPSSinit::wpss_load_files( 'inc/widgets/blocks' );
 WPSSinit::wpss_load_files( 'inc/content-headers' );
 WPSSinit::wpss_load_files( 'inc/cmb2-fields' );
 WPSSinit::wpss_load_files( 'theme-options/forms' );
+WPSSinit::wpss_load_files( 'theme-options/options' );
 WPSSinit::wpss_load_files( 'cpt' );
 
 if(is_admin() && current_user_can('administrator')):

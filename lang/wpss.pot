@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Super Star\n"
-"POT-Creation-Date: 2020-08-21 00:35-0300\n"
+"POT-Creation-Date: 2020-08-21 23:47-0300\n"
 "PO-Revision-Date: 2020-08-17 15:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: contato@angelorocha.com.br\n"
@@ -273,37 +273,15 @@ msgstr ""
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
 msgstr ""
 
-#: cpt-templates/single-forms.php:56 theme-options/forms/wpss_forms.php:271
-msgid "<h3>You can not access this form!</h3>"
-msgstr ""
-
-#: cpt-templates/single-forms.php:59 theme-options/forms/wpss_forms.php:274
-#, php-format
-msgid ""
-"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
-msgstr ""
-
-#: cpt-templates/single-forms.php:64 theme-options/forms/wpss_forms.php:290
-msgid "<h3>Form Info</h3>"
-msgstr ""
-
-#: cpt-templates/single-forms.php:72 theme-options/forms/wpss_forms.php:298
-msgid "<h3>Expire</h3>"
-msgstr ""
-
-#: cpt-templates/single-forms.php:81
-msgid "<h3>Data</h3>"
-msgstr ""
-
-#: functions.php:95
+#: functions.php:98
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:99
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:100
 msgid "Footer Menu"
 msgstr ""
 
@@ -374,11 +352,11 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:98
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:99
 msgid "Size"
 msgstr ""
 
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:110
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:111
 msgid "Required"
 msgstr ""
 
@@ -506,12 +484,12 @@ msgid "Block 7"
 msgstr ""
 
 #: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_expire_content.php:32
-#: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:124
+#: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:126
 msgid "Yes"
 msgstr ""
 
 #: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_expire_content.php:33
-#: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:123
+#: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:125
 msgid "No"
 msgstr ""
 
@@ -658,115 +636,115 @@ msgstr ""
 msgid ": Sort columns in descending order"
 msgstr ""
 
-#: inc/wpss_datepicker.php:25 theme-options/forms/wpss_forms.php:326
+#: inc/wpss_datepicker.php:32
 msgid "0000-00-00"
 msgstr ""
 
-#: inc/wpss_datepicker.php:26 theme-options/forms/wpss_forms.php:327
+#: inc/wpss_datepicker.php:33
 msgid "yy-mm-dd"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "January"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "February"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "March"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "April"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "May"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "June"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "July"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "August"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "September"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "October"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "November"
 msgstr ""
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "December"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Sunday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Monday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Tuesday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Wednesday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Thursday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Friday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Saturday"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Sun"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Mon"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Tue"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Wed"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Thu"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Fri"
 msgstr ""
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Sat"
 msgstr ""
 
@@ -774,8 +752,8 @@ msgstr ""
 msgid "Select Date"
 msgstr ""
 
-#: inc/wpss_expire_content.php:41 theme-options/forms/wpss_forms.php:132
-#: theme-options/forms/wpss_forms.php:150
+#: inc/wpss_expire_content.php:41 theme-options/forms/wpss_forms.php:134
+#: theme-options/forms/wpss_forms.php:152
 msgid "Y-m-d"
 msgstr ""
 
@@ -982,108 +960,150 @@ msgid ""
 "the values with commas"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:61
+#: theme-options/forms/wpss_forms.php:63
 msgid "Add Field"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:65
+#: theme-options/forms/wpss_forms.php:67
 msgid "Form Type"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:66
+#: theme-options/forms/wpss_forms.php:68
 msgid "Select the form type, if is \"PDF\", data can't be saved!"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:71
+#: theme-options/forms/wpss_forms.php:73
 msgid "Make PDF"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:72
+#: theme-options/forms/wpss_forms.php:74
 msgid "Send Mail"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:73
+#: theme-options/forms/wpss_forms.php:75
 msgid "Send to WhatsApp"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:77
+#: theme-options/forms/wpss_forms.php:79
 msgid "Send to"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:97
+#: theme-options/forms/wpss_forms.php:99
 msgid "WhatsApp Number"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:98
+#: theme-options/forms/wpss_forms.php:100
 msgid "Type your WhatsApp number, don't type spaces or special characters."
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:106
+#: theme-options/forms/wpss_forms.php:108
 msgid "DDI+DDD+Phone Number"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:110
+#: theme-options/forms/wpss_forms.php:112
 msgid "Button Text"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:113
+#: theme-options/forms/wpss_forms.php:115
 msgid "Send"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:117
+#: theme-options/forms/wpss_forms.php:119
 msgid "Expire/Publish form"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:128
+#: theme-options/forms/wpss_forms.php:130
 msgid "Publish date"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:135
+#: theme-options/forms/wpss_forms.php:137
 msgid "Active in"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:146
+#: theme-options/forms/wpss_forms.php:148
 msgid "Expire in"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:153
+#: theme-options/forms/wpss_forms.php:155
 msgid "Expired in"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:164
+#: theme-options/forms/wpss_forms.php:166
 msgid "Form Description"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:173
+#: theme-options/forms/wpss_forms.php:175
 msgid "After send message"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:177
+#: theme-options/forms/wpss_forms.php:179
 msgid "Form successfully submitted"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:183
+#: theme-options/forms/wpss_forms.php:185
 msgid "Form Access"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:189
+#: theme-options/forms/wpss_forms.php:191
 msgid "Logged in Users"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:190
+#: theme-options/forms/wpss_forms.php:192
 msgid "Public"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:194
+#: theme-options/forms/wpss_forms.php:196
 msgid "Form Report Access"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:202
+#: theme-options/forms/wpss_forms.php:204
 msgid "Add User"
 msgstr ""
 
-#: theme-options/forms/wpss_forms.php:307
+#: theme-options/forms/wpss_forms.php:273
+msgid "<h3>You can not access this form!</h3>"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:276
+#, php-format
+msgid ""
+"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:292
+msgid "<h3>Form Info</h3>"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:300
+msgid "<h3>Expire</h3>"
+msgstr ""
+
+#: theme-options/forms/wpss_forms.php:309
 msgid "<h3>Form Data</h3>"
+msgstr ""
+
+#: theme-options/options/theme_options.php:26
+msgid "Theme Options"
+msgstr ""
+
+#: theme-options/options/theme_options.php:62
+msgid "Basic Field"
+msgstr ""
+
+#: theme-options/options/theme_options.php:64
+msgid "Basic field with no subsections."
+msgstr ""
+
+#: theme-options/options/theme_options.php:70
+msgid "Example Text"
+msgstr ""
+
+#: theme-options/options/theme_options.php:71
+msgid "Example description."
+msgstr ""
+
+#: theme-options/options/theme_options.php:72
+msgid "Example subtitle."
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:16
