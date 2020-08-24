@@ -86,7 +86,7 @@ Redux::setSection($opt_name, array(
     'title'  => esc_html__('Custom Scripts', 'wpss'),
     'id'     => 'custom_scripts',
     'desc'   => esc_html__('Insert your custom scripts here.', 'wpss'),
-    'icon'   => 'el el-jquery',
+    'icon'   => 'el el-quote-alt',
     'fields' => array(
         array(
             'id'       => 'wpss-header-script',
