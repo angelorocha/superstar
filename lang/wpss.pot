@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Super Star\n"
-"POT-Creation-Date: 2020-08-21 23:47-0300\n"
+"POT-Creation-Date: 2020-08-25 16:02-0300\n"
 "PO-Revision-Date: 2020-08-17 15:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: contato@angelorocha.com.br\n"
@@ -18,6 +18,132 @@ msgstr ""
 "esc_html__;esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: lib\n"
+
+#: classes/WPSSCptContact.php:50
+msgid "Name"
+msgstr ""
+
+#: classes/WPSSCptContact.php:55
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
+msgid "Email"
+msgstr ""
+
+#: classes/WPSSCptContact.php:60
+msgid "Subject"
+msgstr ""
+
+#: classes/WPSSCptContact.php:65
+msgid "Message"
+msgstr ""
+
+#: classes/WPSSCptContact.php:70
+#: theme-options/post-views/wpss_content_statistics.php:101
+msgid "Submit"
+msgstr ""
+
+#: classes/WPSSCptContact.php:77
+msgid "Recipient email not informed, check settings"
+msgstr ""
+
+#: classes/WPSSCptContact.php:133
+msgid "Email not sent!"
+msgstr ""
+
+#: classes/WPSSCptContact.php:134
+msgid "Check the form, all fields are required."
+msgstr ""
+
+#: classes/WPSSCptContact.php:176
+msgid "Email Sent!"
+msgstr ""
+
+#: classes/WPSSCptContact.php:177
+msgid "Thank you, we will contact you soon"
+msgstr ""
+
+#: classes/WPSSCptContact.php:196
+msgid "Contact Form Options"
+msgstr ""
+
+#: classes/WPSSCptContact.php:203
+msgid "Emails"
+msgstr ""
+
+#: classes/WPSSCptContact.php:204
+msgid "Select the emails to receive the form."
+msgstr ""
+
+#: classes/WPSSCptContact.php:209
+msgid "Add email"
+msgstr ""
+
+#: classes/WPSSCptContact.php:214 classes/WPSSCptMenu.php:88
+msgid "Select Page"
+msgstr ""
+
+#: classes/WPSSCptContact.php:216
+msgid "Select the page to show the form"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:28 classes/WPSSCptMenu.php:30
+msgid "Menu"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:29
+msgid "Link"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:34
+msgid "Type link title"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:41
+msgid "Drag the menu items in the desired order."
+msgstr ""
+
+#: classes/WPSSCptMenu.php:59
+msgid "Menu Items"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:65
+msgid "Add items from this menu"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:68
+msgid "Add Link"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:69
+msgid "Remove Link"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:72
+msgid "Are you sure?"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:78
+msgid "Link Type"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:83
+msgid "Page"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:84
+msgid "Link/File"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:99
+msgid "File Title"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:109
+msgid "File URL"
+msgstr ""
+
+#: classes/WPSSCptMenu.php:113
+msgid "Send From PC"
+msgstr ""
 
 #: classes/WPSSCptMenu.php:143
 msgid "Toggle navigation"
@@ -299,10 +425,6 @@ msgstr ""
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:30
 msgid "Zipcode"
-msgstr ""
-
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
-msgid "Email"
 msgstr ""
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:32
@@ -1086,24 +1208,73 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
-#: theme-options/options/theme_options.php:62
-msgid "Basic Field"
-msgstr ""
-
-#: theme-options/options/theme_options.php:64
-msgid "Basic field with no subsections."
+#: theme-options/options/theme_options.php:68
+msgid "Header"
 msgstr ""
 
 #: theme-options/options/theme_options.php:70
-msgid "Example Text"
+msgid "Theme header options."
 msgstr ""
 
-#: theme-options/options/theme_options.php:71
-msgid "Example description."
+#: theme-options/options/theme_options.php:76
+msgid "Site Logo"
 msgstr ""
 
-#: theme-options/options/theme_options.php:72
-msgid "Example subtitle."
+#: theme-options/options/theme_options.php:77
+msgid "Define your site logo."
+msgstr ""
+
+#: theme-options/options/theme_options.php:78
+msgid "Upload your logo file."
+msgstr ""
+
+#: theme-options/options/theme_options.php:88
+msgid "Custom Scripts"
+msgstr ""
+
+#: theme-options/options/theme_options.php:90
+msgid "Insert your custom scripts here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:96
+msgid "Header Javascript Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:97
+#: theme-options/options/theme_options.php:110
+msgid "Paste your javascript code here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:100
+msgid "Your script will be inserted immediately before the </head> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:109
+msgid "Footer Javascript Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:113
+msgid "Your script will be inserted immediately before the </body> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:123
+msgid "Custom CSS"
+msgstr ""
+
+#: theme-options/options/theme_options.php:125
+msgid "Insert your custom CSS here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:131
+msgid "CSS Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:132
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:135
+msgid "Your css will be inserted immediately before the </head> tag"
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:16
@@ -1122,10 +1293,6 @@ msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:66
 msgid "Limit:"
-msgstr ""
-
-#: theme-options/post-views/wpss_content_statistics.php:101
-msgid "Submit"
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:118

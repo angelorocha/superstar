@@ -47,34 +47,35 @@ final class WPSSCptContact {
             <form method="post" action="<?= get_permalink(); ?>">
                 <div class="row">
                     <div class="col-md-6 mb-1">
-                        <label for="<?= $this->param_cpt; ?>_name">Nome:</label>
+                        <label for="<?= $this->param_cpt; ?>_name"><?php _e('Name', 'wpss'); ?></label>
                         <input class="form-control" type="text" name="<?= $this->param_cpt; ?>_name" id="<?= $this->param_cpt; ?>_name" value="">
                     </div>
 
                     <div class="col-md-6 mb-1">
-                        <label for="<?= $this->param_cpt; ?>_mail">Email:</label>
+                        <label for="<?= $this->param_cpt; ?>_mail"><?php _e('Email', 'wpss'); ?></label>
                         <input class="form-control" type="text" name="<?= $this->param_cpt; ?>_mail" id="<?= $this->param_cpt; ?>_mail" value="">
                     </div>
 
                     <div class="col-md-12 mb-1">
-                        <label for="<?= $this->param_cpt; ?>_subject">Assunto:</label>
+                        <label for="<?= $this->param_cpt; ?>_subject"><?php _e('Subject', 'wpss'); ?></label>
                         <input class="form-control" type="text" name="<?= $this->param_cpt; ?>_subject" id="<?= $this->param_cpt; ?>_subject" value="">
                     </div>
 
                     <div class="col-md-12 mb-1">
-                        <label for="<?= $this->param_cpt; ?>_message">Mensagem:</label>
+                        <label for="<?= $this->param_cpt; ?>_message"><?php _e('Message', 'wpss'); ?></label>
                         <textarea class="form-control" name="<?= $this->param_cpt; ?>_message" id="<?= $this->param_cpt; ?>_message"></textarea>
                     </div>
 
                     <div class="col-md-12 text-center mt-2">
-                        <input class="btn btn-outline-dark" type="submit" name="<?= $this->param_cpt; ?>_submit" value="Enviar"<?= $disabled ?>>
+                        <input class="btn btn-outline-dark" type="submit" name="<?= $this->param_cpt; ?>_submit" value="<?php _e('Submit', 'wpss'); ?>"<?= $disabled ?>>
                     </div>
 
                 </div>
             </form>
 			<?php
 			if ( ! self::wpss_cpt_to_mail() ):
-                echo "<div class='text-center alert alert-warning mt-3'><h6>O email do destinatário desta seção não foi preenchido, entre em contato com o setor responsável por telefone para informar este ocorrido.</h6></div>";
+                $check_mail = __('Recipient email not informed, check settings', 'wpss');
+                echo "<div class='text-center alert alert-warning mt-3'><h6>$check_mail</h6></div>";
 			else:
 				self::wpss_cpt_contact_send();
 			endif;
@@ -129,8 +130,8 @@ final class WPSSCptContact {
 	 */
 	public function wpss_cpt_form_check_message() {
 		$message = "<div class='alert alert-warning text-center mt-2 mb-2'>";
-		$message .= "<h4>Email não enviado!</h4>";
-		$message .= "<p>Verifique o formulário, todos os campos são obrigatórios.</p>";
+        $message .= "<h4>" . __('Email not sent!', 'wpss') . "</h4>";
+        $message .= "<p>" . __('Check the form, all fields are required.', 'wpss') . "</p>";
 		$message .= "</div>";
 
 		return $message;
@@ -172,8 +173,8 @@ final class WPSSCptContact {
 	 */
 	public function wpss_cpt_contact_success_message() {
 		$message = "<div class='alert alert-success text-center mb-2 mt-2'>";
-		$message .= "<h4>Email Enviado</h4>";
-		$message .= "<p>Entraremos em contato em breve</p>";
+		$message .= "<h4>".__('Email Sent!', 'wpss')."</h4>";
+		$message .= "<p>".__('Thank you, we will contact you soon','wpss')."</p>";
 		$message .= "</div>";
 
 		return $message;
@@ -192,27 +193,27 @@ final class WPSSCptContact {
 		$config->capability    = get_post_type_object( $this->param_cpt )->cap->edit_post;
 		$config->fields        = array(
 			array(
-				'name' => 'Opções do formulário de contato',
+				'name' => __('Contact Form Options', 'wpss'),
 				'desc' => '',
 				'id'   => '_op_head_1',
 				'type' => 'title',
 			),
 
 			array(
-				'name'       => 'Emails',
-				'desc'       => 'Selecione os emails para recebimento do formulário.',
+				'name'       => __('Emails', 'wpss'),
+				'desc'       => __('Select the emails to receive the form.', 'wpss'),
 				'id'         => 'wpss_cpt_contact_mails',
 				'type'       => 'text_email',
 				'repeatable' => true,
 				'text'       => array(
-					'add_row_text' => 'Adicionar Email',
+					'add_row_text' => __('Add email', 'wpss'),
 				),
 			),
 
 			array(
-				'name'             => 'Selecionar Página',
+				'name'             => __('Select Page', 'wpss'),
 				'id'               => 'wpss_admin_contact_page',
-				'desc'             => 'Selecione a página em que o formulário será exibido.',
+				'desc'             => __('Select the page to show the form', 'wpss'),
 				'type'             => 'select',
 				'show_option_none' => true,
 				'options_cb'       => array( $this, 'wpss_admin_contact_select_cb' ),

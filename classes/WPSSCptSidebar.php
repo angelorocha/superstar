@@ -62,33 +62,33 @@ class WPSSCptSidebar {
 			array(
 				'id'          => 'wpss_custom_sdb_group',
 				'type'        => 'group',
-				'description' => 'Selecione os items do widget.',
+				'description' => __('Select widget items', 'wpss'),
 				'options'     => array(
 					'group_title'    => 'Link {#}',
-					'add_button'     => 'Adicionar Link',
-					'remove_button'  => 'Remover Link',
+					'add_button'     => __('Add Link', 'wpss'),
+					'remove_button'  => __('Remove Link', 'wpss'),
 					'sortable'       => true,
 					'closed'         => false,
-					'remove_confirm' => 'Remover link?'
+					'remove_confirm' => __('Are you sure?', 'wpss')
 				),
 
 				'group_fields' => array(
 
 					array(
-						'name'    => 'Tipo de Link',
+						'name'    => __('Link Type', 'wpss'),
 						'id'      => 'wpss_sdb_type',
 						'type'    => 'radio',
 						'default' => 'page',
 						'options' => array(
-							'page'  => "Página",
-							'link'  => "Link/Arquivo",
-							'text'  => "Texto",
-							'image' => "Imagem",
+							'page'  => __('Page', 'wpss'),
+							'link'  => __('Link/File', 'wpss'),
+							'text'  => __('Text', 'wpss'),
+							'image' => __('Image', 'wpss'),
 						)
 					),
 					/*** If is a page link */
 					array(
-						'name'       => 'Selecionar Página',
+						'name'       => __('Select Page', 'wpss'),
 						'id'         => 'wpss_sdb_page',
 						'type'       => 'select',
 						'options_cb' => array( $this, 'wpss_sidebar_select_cb' ),
@@ -101,7 +101,7 @@ class WPSSCptSidebar {
 
 					/*** If is a external link or file */
 					array(
-						'name'       => 'Titulo do Arquivo',
+						'name'       => __('File Title', 'wpss'),
 						'id'         => 'wpss_sdb_file_name',
 						'type'       => 'text',
 						'attributes' => array(
@@ -111,11 +111,11 @@ class WPSSCptSidebar {
 						),
 					),
 					array(
-						'name'       => 'URL/Link do Arquivo',
+						'name'       => __('File URL', 'wpss'),
 						'id'         => 'wpss_sdb_file_url',
 						'type'       => 'file',
 						'options'    => array(
-							'add_upload_file_text' => 'Selecionar Arquivo',
+							'add_upload_file_text' => __('Send From PC', 'wpss'),
 						),
 						'attributes' => array(
 							'required'               => true,
@@ -126,7 +126,7 @@ class WPSSCptSidebar {
 
 					/*** If is a text input */
 					array(
-						'name'       => 'Digite o conteúdo',
+						'name'       => __('Type Content', 'wpss'),
 						'id'         => 'wpss_sdb_textarea',
 						'type'       => 'textarea',
 						'attributes' => array(
@@ -138,7 +138,7 @@ class WPSSCptSidebar {
 
 					/*** If is a image */
 					array(
-						'name'       => 'URL <sup>(opcional)</sup>',
+						'name'       => __('URL <sup>(optional)</sup>', 'wpss'),
 						'id'         => 'wpss_sdb_image_url',
 						'type'       => 'text',
 						'attributes' => array(
@@ -149,14 +149,14 @@ class WPSSCptSidebar {
 					),
 
 					array(
-						'name'         => 'Imagem',
+						'name'         => __('Image', 'wpss'),
 						'id'           => 'wpss_sdb_image',
 						'type'         => 'file',
 						'options'      => array(
 							'url' => false,
 						),
 						'text'         => array(
-							'add_upload_file_text' => 'Selecionar Imagem',
+							'add_upload_file_text' => __('Select Image', 'wpss'),
 						),
 						'query_args'   => array(
 							'type' => array(

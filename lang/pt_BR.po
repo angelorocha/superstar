@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-08-21 00:35-0300\n"
-"PO-Revision-Date: 2020-08-21 00:35-0300\n"
+"POT-Creation-Date: 2020-08-25 16:02-0300\n"
+"PO-Revision-Date: 2020-08-25 16:11-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -12,6 +12,132 @@ msgstr ""
 "X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: classes/WPSSCptContact.php:50
+msgid "Name"
+msgstr "Nome"
+
+#: classes/WPSSCptContact.php:55
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
+msgid "Email"
+msgstr "Email"
+
+#: classes/WPSSCptContact.php:60
+msgid "Subject"
+msgstr "Assunto"
+
+#: classes/WPSSCptContact.php:65
+msgid "Message"
+msgstr "Mensagem"
+
+#: classes/WPSSCptContact.php:70
+#: theme-options/post-views/wpss_content_statistics.php:101
+msgid "Submit"
+msgstr "Enviar"
+
+#: classes/WPSSCptContact.php:77
+msgid "Recipient email not informed, check settings"
+msgstr "Destinatário do formulário não informado, verifique as configurações"
+
+#: classes/WPSSCptContact.php:133
+msgid "Email not sent!"
+msgstr "Email não enviado!"
+
+#: classes/WPSSCptContact.php:134
+msgid "Check the form, all fields are required."
+msgstr "Verifique o formulário, todos os campos são obrigatórios."
+
+#: classes/WPSSCptContact.php:176
+msgid "Email Sent!"
+msgstr "Email Enviado!"
+
+#: classes/WPSSCptContact.php:177
+msgid "Thank you, we will contact you soon"
+msgstr "Obrigado, entraremos em contato em breve"
+
+#: classes/WPSSCptContact.php:196
+msgid "Contact Form Options"
+msgstr "Opções do Formulário"
+
+#: classes/WPSSCptContact.php:203
+msgid "Emails"
+msgstr "Emails"
+
+#: classes/WPSSCptContact.php:204
+msgid "Select the emails to receive the form."
+msgstr "Selecione os e-mails para receber o formulário."
+
+#: classes/WPSSCptContact.php:209
+msgid "Add email"
+msgstr "Adicionar Email"
+
+#: classes/WPSSCptContact.php:214 classes/WPSSCptMenu.php:88
+msgid "Select Page"
+msgstr "Selecionar Página"
+
+#: classes/WPSSCptContact.php:216
+msgid "Select the page to show the form"
+msgstr "Selecione a página para exibir o formulário"
+
+#: classes/WPSSCptMenu.php:28 classes/WPSSCptMenu.php:30
+msgid "Menu"
+msgstr "Menu"
+
+#: classes/WPSSCptMenu.php:29
+msgid "Link"
+msgstr "Link"
+
+#: classes/WPSSCptMenu.php:34
+msgid "Type link title"
+msgstr "Escreva o título do link"
+
+#: classes/WPSSCptMenu.php:41
+msgid "Drag the menu items in the desired order."
+msgstr "Arraste os itens do menu na ordem desejada."
+
+#: classes/WPSSCptMenu.php:59
+msgid "Menu Items"
+msgstr "Itens do menu"
+
+#: classes/WPSSCptMenu.php:65
+msgid "Add items from this menu"
+msgstr "Adicionar itens para este menu"
+
+#: classes/WPSSCptMenu.php:68
+msgid "Add Link"
+msgstr "Adicionar Link"
+
+#: classes/WPSSCptMenu.php:69
+msgid "Remove Link"
+msgstr "Remover Link"
+
+#: classes/WPSSCptMenu.php:72
+msgid "Are you sure?"
+msgstr "Você tem certeza?"
+
+#: classes/WPSSCptMenu.php:78
+msgid "Link Type"
+msgstr "Tipo do Link"
+
+#: classes/WPSSCptMenu.php:83
+msgid "Page"
+msgstr "Página"
+
+#: classes/WPSSCptMenu.php:84
+msgid "Link/File"
+msgstr "Link/Arquivo"
+
+#: classes/WPSSCptMenu.php:99
+msgid "File Title"
+msgstr "Título do Arquivo"
+
+#: classes/WPSSCptMenu.php:109
+msgid "File URL"
+msgstr "URL do Arquivo"
+
+#: classes/WPSSCptMenu.php:113
+msgid "Send From PC"
+msgstr "Enviar do Computador"
 
 #: classes/WPSSCptMenu.php:143
 msgid "Toggle navigation"
@@ -269,38 +395,15 @@ msgstr "Adicionar Menu"
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
 msgstr "<h4 class=\"text-center\">Nenhuma informação ainda...</h4>"
 
-#: cpt-templates/single-forms.php:56 theme-options/forms/wpss_forms.php:271
-msgid "<h3>You can not access this form!</h3>"
-msgstr "<h3>Você não pode acessar este formulário!</h3>"
-
-#: cpt-templates/single-forms.php:59 theme-options/forms/wpss_forms.php:274
-#, php-format
-msgid ""
-"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
-msgstr ""
-"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
-
-#: cpt-templates/single-forms.php:64 theme-options/forms/wpss_forms.php:290
-msgid "<h3>Form Info</h3>"
-msgstr "<h3>Informações</h3>"
-
-#: cpt-templates/single-forms.php:72 theme-options/forms/wpss_forms.php:298
-msgid "<h3>Expire</h3>"
-msgstr "<h3>Expira em</h3>"
-
-#: cpt-templates/single-forms.php:81
-msgid "<h3>Data</h3>"
-msgstr "<h3>Envios</h3>"
-
-#: functions.php:95
+#: functions.php:98
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: functions.php:96
+#: functions.php:99
 msgid "Top Menu"
 msgstr "Menu do Topo"
 
-#: functions.php:97
+#: functions.php:100
 msgid "Footer Menu"
 msgstr "Menu do Rodapé"
 
@@ -319,10 +422,6 @@ msgstr "Telefone"
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:30
 msgid "Zipcode"
 msgstr "CEP"
-
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:31
-msgid "Email"
-msgstr "Email"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:32
 msgid "Money"
@@ -371,11 +470,11 @@ msgstr "Tipo"
 msgid "Options"
 msgstr "Opções"
 
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:98
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:99
 msgid "Size"
 msgstr "Tamanho"
 
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:110
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:111
 msgid "Required"
 msgstr "Obrigatório"
 
@@ -503,12 +602,12 @@ msgid "Block 7"
 msgstr "Bloco 7"
 
 #: inc/widgets/WPSSWidgetBlocks.php:140 inc/wpss_expire_content.php:32
-#: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:124
+#: inc/wpss_slide.php:24 theme-options/forms/wpss_forms.php:126
 msgid "Yes"
 msgstr "Sim"
 
 #: inc/widgets/WPSSWidgetBlocks.php:141 inc/wpss_expire_content.php:33
-#: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:123
+#: inc/wpss_slide.php:25 theme-options/forms/wpss_forms.php:125
 msgid "No"
 msgstr "Não"
 
@@ -655,115 +754,115 @@ msgstr ""
 msgid ": Sort columns in descending order"
 msgstr ""
 
-#: inc/wpss_datepicker.php:25 theme-options/forms/wpss_forms.php:326
+#: inc/wpss_datepicker.php:32
 msgid "0000-00-00"
 msgstr "00-00-0000"
 
-#: inc/wpss_datepicker.php:26 theme-options/forms/wpss_forms.php:327
+#: inc/wpss_datepicker.php:33
 msgid "yy-mm-dd"
 msgstr "dd-mm-yy"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "January"
 msgstr "Janeiro"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "February"
 msgstr "Fevereiro"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "March"
 msgstr "Março"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "April"
 msgstr "Abril"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "May"
 msgstr "Maio"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "June"
 msgstr "Junho"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "July"
 msgstr "Julho"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "August"
 msgstr "Agosto"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "September"
 msgstr "Setembro"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "October"
 msgstr "Outubro"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "November"
 msgstr "Novembro"
 
-#: inc/wpss_datepicker.php:28
+#: inc/wpss_datepicker.php:35
 msgid "December"
 msgstr "Dezembro"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Sunday"
 msgstr "Domingo"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Monday"
 msgstr "Segunda"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Tuesday"
 msgstr "Terça"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Wednesday"
 msgstr "Quarta"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Thursday"
 msgstr "Quinta"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Friday"
 msgstr "Sexta"
 
-#: inc/wpss_datepicker.php:29
+#: inc/wpss_datepicker.php:36
 msgid "Saturday"
 msgstr "Sábad"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Sun"
 msgstr "Dom"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Mon"
 msgstr "Seg"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Tue"
 msgstr "Ter"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Wed"
 msgstr "Qua"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Thu"
 msgstr "Qui"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Fri"
 msgstr "Sex"
 
-#: inc/wpss_datepicker.php:30
+#: inc/wpss_datepicker.php:37
 msgid "Sat"
 msgstr "Sáb"
 
@@ -771,8 +870,8 @@ msgstr "Sáb"
 msgid "Select Date"
 msgstr "Selecionar Data"
 
-#: inc/wpss_expire_content.php:41 theme-options/forms/wpss_forms.php:132
-#: theme-options/forms/wpss_forms.php:150
+#: inc/wpss_expire_content.php:41 theme-options/forms/wpss_forms.php:134
+#: theme-options/forms/wpss_forms.php:152
 msgid "Y-m-d"
 msgstr "d-m-Y"
 
@@ -980,111 +1079,203 @@ msgstr ""
 "Para tipos de campo: <br><strong>Radio, Select and Checkbox,</strong> separe "
 "os valores com vírgulas"
 
-#: theme-options/forms/wpss_forms.php:61
+#: theme-options/forms/wpss_forms.php:63
 msgid "Add Field"
 msgstr "Adicionar Campo"
 
-#: theme-options/forms/wpss_forms.php:65
+#: theme-options/forms/wpss_forms.php:67
 msgid "Form Type"
 msgstr "Tipo do Formulário"
 
-#: theme-options/forms/wpss_forms.php:66
+#: theme-options/forms/wpss_forms.php:68
 msgid "Select the form type, if is \"PDF\", data can't be saved!"
 msgstr ""
 "Selecione o tipo de formulário, se for \"PDF\", os dados não serão salvos!"
 
-#: theme-options/forms/wpss_forms.php:71
+#: theme-options/forms/wpss_forms.php:73
 msgid "Make PDF"
 msgstr "Criar PDF"
 
-#: theme-options/forms/wpss_forms.php:72
+#: theme-options/forms/wpss_forms.php:74
 msgid "Send Mail"
 msgstr "Enviar Email"
 
-#: theme-options/forms/wpss_forms.php:73
+#: theme-options/forms/wpss_forms.php:75
 msgid "Send to WhatsApp"
 msgstr "Enviar por WhatsApp"
 
-#: theme-options/forms/wpss_forms.php:77
+#: theme-options/forms/wpss_forms.php:79
 msgid "Send to"
 msgstr "Enviar para"
 
-#: theme-options/forms/wpss_forms.php:97
+#: theme-options/forms/wpss_forms.php:99
 msgid "WhatsApp Number"
 msgstr "Número WhatsApp"
 
-#: theme-options/forms/wpss_forms.php:98
+#: theme-options/forms/wpss_forms.php:100
 msgid "Type your WhatsApp number, don't type spaces or special characters."
 msgstr ""
 "Insira o seu numero do WhatsApp, não digite espaços ou caracteres especiais."
 
-#: theme-options/forms/wpss_forms.php:106
+#: theme-options/forms/wpss_forms.php:108
 msgid "DDI+DDD+Phone Number"
 msgstr "DDI+DDD+Número"
 
-#: theme-options/forms/wpss_forms.php:110
+#: theme-options/forms/wpss_forms.php:112
 msgid "Button Text"
 msgstr "Texto do Botão"
 
-#: theme-options/forms/wpss_forms.php:113
+#: theme-options/forms/wpss_forms.php:115
 msgid "Send"
 msgstr "Enviar"
 
-#: theme-options/forms/wpss_forms.php:117
+#: theme-options/forms/wpss_forms.php:119
 msgid "Expire/Publish form"
 msgstr "Expirar/Publicar"
 
-#: theme-options/forms/wpss_forms.php:128
+#: theme-options/forms/wpss_forms.php:130
 msgid "Publish date"
 msgstr "Publicar Em"
 
-#: theme-options/forms/wpss_forms.php:135
+#: theme-options/forms/wpss_forms.php:137
 msgid "Active in"
 msgstr "Ativo em"
 
-#: theme-options/forms/wpss_forms.php:146
+#: theme-options/forms/wpss_forms.php:148
 msgid "Expire in"
 msgstr "Expiram em"
 
-#: theme-options/forms/wpss_forms.php:153
+#: theme-options/forms/wpss_forms.php:155
 msgid "Expired in"
 msgstr "Expirado em"
 
-#: theme-options/forms/wpss_forms.php:164
+#: theme-options/forms/wpss_forms.php:166
 msgid "Form Description"
 msgstr "Descrição do Formulário"
 
-#: theme-options/forms/wpss_forms.php:173
+#: theme-options/forms/wpss_forms.php:175
 msgid "After send message"
 msgstr "Após enviar mensagem"
 
-#: theme-options/forms/wpss_forms.php:177
+#: theme-options/forms/wpss_forms.php:179
 msgid "Form successfully submitted"
 msgstr "Formulário enviado com sucesso"
 
-#: theme-options/forms/wpss_forms.php:183
+#: theme-options/forms/wpss_forms.php:185
 msgid "Form Access"
 msgstr "Acesso ao formulário"
 
-#: theme-options/forms/wpss_forms.php:189
+#: theme-options/forms/wpss_forms.php:191
 msgid "Logged in Users"
 msgstr "Usuários Logados"
 
-#: theme-options/forms/wpss_forms.php:190
+#: theme-options/forms/wpss_forms.php:192
 msgid "Public"
 msgstr "Público"
 
-#: theme-options/forms/wpss_forms.php:194
+#: theme-options/forms/wpss_forms.php:196
 msgid "Form Report Access"
 msgstr "Permissão de acesso ao relatório"
 
-#: theme-options/forms/wpss_forms.php:202
+#: theme-options/forms/wpss_forms.php:204
 msgid "Add User"
 msgstr "Adicionar Usuário"
 
-#: theme-options/forms/wpss_forms.php:307
+#: theme-options/forms/wpss_forms.php:273
+msgid "<h3>You can not access this form!</h3>"
+msgstr "<h3>Você não pode acessar este formulário!</h3>"
+
+#: theme-options/forms/wpss_forms.php:276
+#, php-format
+msgid ""
+"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
+msgstr ""
+"<a href=\"%s\" title=\"Login\" class=\"btn btn-outline-danger\">Login</a>"
+
+#: theme-options/forms/wpss_forms.php:292
+msgid "<h3>Form Info</h3>"
+msgstr "<h3>Informações</h3>"
+
+#: theme-options/forms/wpss_forms.php:300
+msgid "<h3>Expire</h3>"
+msgstr "<h3>Expira em</h3>"
+
+#: theme-options/forms/wpss_forms.php:309
 msgid "<h3>Form Data</h3>"
 msgstr "<h3>Dados do Formulário</h3>"
+
+#: theme-options/options/theme_options.php:26
+msgid "Theme Options"
+msgstr "Opções do Tema"
+
+#: theme-options/options/theme_options.php:68
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: theme-options/options/theme_options.php:70
+msgid "Theme header options."
+msgstr "Opções do cabeçalho do tema."
+
+#: theme-options/options/theme_options.php:76
+msgid "Site Logo"
+msgstr ""
+
+#: theme-options/options/theme_options.php:77
+msgid "Define your site logo."
+msgstr ""
+
+#: theme-options/options/theme_options.php:78
+msgid "Upload your logo file."
+msgstr ""
+
+#: theme-options/options/theme_options.php:88
+msgid "Custom Scripts"
+msgstr ""
+
+#: theme-options/options/theme_options.php:90
+msgid "Insert your custom scripts here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:96
+msgid "Header Javascript Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:97
+#: theme-options/options/theme_options.php:110
+msgid "Paste your javascript code here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:100
+msgid "Your script will be inserted immediately before the </head> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:109
+msgid "Footer Javascript Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:113
+msgid "Your script will be inserted immediately before the </body> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:123
+msgid "Custom CSS"
+msgstr ""
+
+#: theme-options/options/theme_options.php:125
+msgid "Insert your custom CSS here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:131
+msgid "CSS Code"
+msgstr ""
+
+#: theme-options/options/theme_options.php:132
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: theme-options/options/theme_options.php:135
+msgid "Your css will be inserted immediately before the </head> tag"
+msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:16
 #: theme-options/post-views/wpss_content_statistics.php:17
@@ -1103,10 +1294,6 @@ msgstr "Data Fim"
 #: theme-options/post-views/wpss_content_statistics.php:66
 msgid "Limit:"
 msgstr "Limite:"
-
-#: theme-options/post-views/wpss_content_statistics.php:101
-msgid "Submit"
-msgstr "Enviar"
 
 #: theme-options/post-views/wpss_content_statistics.php:118
 msgid "Title"
@@ -1250,6 +1437,9 @@ msgstr ""
 #: theme-options/role-management/wpss_role_management_functions.php:447
 msgid "Available Custom Roles"
 msgstr ""
+
+#~ msgid "<h3>Data</h3>"
+#~ msgstr "<h3>Envios</h3>"
 
 #~ msgid "d-m-Y"
 #~ msgstr "d-m-Y"

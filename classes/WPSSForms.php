@@ -655,7 +655,7 @@ class WPSSForms{
 		color:#929292;}
 		</style>";
 		$widget .= '<div class="pd10 mt10"><ul class="list-unstyled nomp">';
-		$widget .= "<li><strong>".__('Starts on:')."</strong> $date_start</li>";
+		$widget .= "<li><strong>".__('Starts on:', 'wpss')."</strong> $date_start</li>";
 		$widget .= "<li><strong>".__('Ends in:', 'wpss')."</strong> $end_date</li>";
 		$widget .= '</ul>';
 		$widget .= '<div class="countdown mt20"><small>'.__('Remaining time', 'wpss').'</small><span id="clock"></span></div>';

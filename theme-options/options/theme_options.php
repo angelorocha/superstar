@@ -29,7 +29,7 @@ $args = array(
     'page_permissions'   => 'manage_options',
     'page_slug'          => '_wpss_options_page',
     'page_title'         => 'Theme Options Page',
-    'show_import_export' => false,
+    'show_import_export' => true,
     'customizer'         => true,
     'dev_mode'           => false,
     'footer_text'        => '',
@@ -63,6 +63,7 @@ $args['share_icons'][] = array(
 
 Redux::setArgs($opt_name, $args);
 
+/*** Header options */
 Redux::setSection($opt_name, array(
     'title'  => esc_html__('Header', 'wpss'),
     'id'     => 'header_options',
@@ -82,6 +83,7 @@ Redux::setSection($opt_name, array(
     )
 ));
 
+/*** Custom Javascript */
 Redux::setSection($opt_name, array(
     'title'  => esc_html__('Custom Scripts', 'wpss'),
     'id'     => 'custom_scripts',
@@ -89,14 +91,88 @@ Redux::setSection($opt_name, array(
     'icon'   => 'el el-quote-alt',
     'fields' => array(
         array(
-            'id'       => 'wpss-header-script',
+            'id'       => 'wpss_header_script',
             'type'     => 'ace_editor',
             'title'    => __('Header Javascript Code', 'wpss'),
             'subtitle' => __('Paste your javascript code here.', 'wpss'),
             'mode'     => 'javascript',
             'theme'    => 'monokai',
             'desc'     => esc_html__('Your script will be inserted immediately before the </head> tag', 'wpss'),
-            'default'  => "$('#your-script-here');"
+            'options'  => array(
+                'minLines' => 30,
+            ),
+            'default'  => "//$('#your-script-here');"
+        ),
+        array(
+            'id'       => 'wpss_footer_script',
+            'type'     => 'ace_editor',
+            'title'    => __('Footer Javascript Code', 'wpss'),
+            'subtitle' => __('Paste your javascript code here.', 'wpss'),
+            'mode'     => 'javascript',
+            'theme'    => 'monokai',
+            'desc'     => esc_html__('Your script will be inserted immediately before the </body> tag', 'wpss'),
+            'options'  => array(
+                'minLines' => 30,
+            ),
+            'default'  => "//$('#your-script-here');"
         )
     )
 ));
+
+Redux::setSection($opt_name, array(
+    'title'  => esc_html__('Custom CSS', 'wpss'),
+    'id'     => 'custom_css',
+    'desc'   => esc_html__('Insert your custom CSS here.', 'wpss'),
+    'icon'   => 'el el-css',
+    'fields' => array(
+        array(
+            'id'       => 'wpss_custom_css',
+            'type'     => 'ace_editor',
+            'title'    => __('CSS Code', 'wpss'),
+            'subtitle' => __('Paste your CSS code here.', 'wpss'),
+            'mode'     => 'css',
+            'theme'    => 'monokai',
+            'desc'     => esc_html__('Your css will be inserted immediately before the </head> tag', 'wpss'),
+            'options'  => array(
+                'minLines' => 30,
+            ),
+            'default'  => "/* Custom CSS Code */"
+        )
+    )
+));
+
+/***
+ * Get options
+ */
+/*** Get global option */
+function wpss_get_option(){
+    global $wpss_option;
+    return $wpss_option;
+}
+
+/*** Get header javascript */
+add_action('wpss_after_inside_head', 'wpss_get_header_scripts_op');
+function wpss_get_header_scripts_op(){
+    $op = wpss_get_option()['wpss_header_script'];
+    if(!empty($op)):
+        echo "<script>\n $op \n</script>\n";
+    endif;
+}
+
+/*** Get footer javascript */
+add_action('wpss_body_end', 'wpss_get_footer_scripts_op');
+function wpss_get_footer_scripts_op(){
+    $op = wpss_get_option()['wpss_footer_script'];
+    if(!empty($op)):
+        echo "\n<script>\n $op \n</script>\n";
+    endif;
+}
+
+/*** Get CSS Code */
+add_action('wpss_after_inside_head', 'wpss_get_css_op');
+function wpss_get_css_op(){
+    $op = wpss_get_option()['wpss_custom_css'];
+    if(!empty($op)):
+        echo "<style>\n $op \n</style>\n";
+    endif;
+}

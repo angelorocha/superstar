@@ -25,20 +25,20 @@ class WPSSCptMenu extends WPSSCptSidebar {
 	public function wpss_menu_cpt() {
 		$menu                           = new WPSScpt();
 		$menu->param_cpt_key            = self::wpss_menu_cpt_key();
-		$menu->param_cpt_name           = 'Menu';
-		$menu->param_cpt_new            = 'Link';
-		$menu->param_cpt_all            = 'Menu';
+		$menu->param_cpt_name           = __('Menu', 'wpss');
+		$menu->param_cpt_new            = __('Link', 'wpss');
+		$menu->param_cpt_all            = __('Menu', 'wpss');
 		$menu->param_show_in_menu       = "edit.php?post_type=$this->param_cpt";
 		$menu->param_cpt_public         = false;
 		$menu->param_supports           = array( 'title' );
-		$menu->param_custom_input       = 'Digite o título do link';
+		$menu->param_custom_input       = __('Type link title', 'wpss');
 		$menu->param_taxonomies         = null;
 		$menu->param_rewrite            = 'menu-' . $this->param_cpt;
 		$menu->param_redirect_archive   = basename( get_post_type_archive_link( $this->param_cpt ) );
 		$menu->param_redirect_single    = basename( get_post_type_archive_link( $this->param_cpt ) );
 		$menu->param_remove_cpt_columns = true;
 		$menu->param_add_cap            = $this->param_cap;
-		$menu->param_cpt_admin_notice   = 'Posicione os items arrastando e soltando na ordem desejada.';
+		$menu->param_cpt_admin_notice   = __('Drag the menu items in the desired order.', 'wpss');
 		$menu->param_cpt_cap_type       = $this->param_cpt;
 		$menu->wpss_make_cpt();
 
@@ -56,36 +56,36 @@ class WPSSCptMenu extends WPSSCptSidebar {
 	public function wpss_menu_metaboxes() {
 		$menu_meta                = new WPSSMetaBox();
 		$menu_meta->metabox_id    = self::wpss_menu_cpt_key() . '_metabox';
-		$menu_meta->metabox_title = 'Items do menu';
+		$menu_meta->metabox_title = __('Menu Items', 'wpss');
 		$menu_meta->post_type     = array( self::wpss_menu_cpt_key() );
 		$menu_meta->fields        = array(
 			array(
 				'id'          => 'wpss_custom_menu_group',
 				'type'        => 'group',
-				'description' => 'Selecione os items do menu, caso selecione mais de um, se tratará de um menu cascata.',
+				'description' => __('Add items from this menu', 'wpss'),
 				'options'     => array(
 					'group_title'    => 'Link {#}',
-					'add_button'     => 'Adicionar Link',
-					'remove_button'  => 'Remover Link',
+					'add_button'     => __('Add Link', 'wpss'),
+					'remove_button'  => __('Remove Link', 'wpss'),
 					'sortable'       => true,
 					'closed'         => false,
-					'remove_confirm' => 'Remover link?'
+					'remove_confirm' => __('Are you sure?', 'wpss')
 				),
 
 				'group_fields' => array(
 
 					array(
-						'name'    => 'Tipo de Link',
+						'name'    => __('Link Type', 'wpss'),
 						'id'      => 'wpss_menu_type',
 						'type'    => 'radio',
 						'default' => 'page',
 						'options' => array(
-							'page' => "Página",
-							'link' => "Link/Arquivo"
+							'page' => __('Page', 'wpss'),
+							'link' => __('Link/File', 'wpss')
 						)
 					),
 					array(
-						'name'       => 'Selecionar Página',
+						'name'       => __('Select Page', 'wpss'),
 						'id'         => 'wpss_menu_page',
 						'type'       => 'select',
 						'options_cb' => array( $this, 'wpss_menu_select_cb' ),
@@ -96,7 +96,7 @@ class WPSSCptMenu extends WPSSCptSidebar {
 						),
 					),
 					array(
-						'name'       => 'Titulo do Arquivo',
+						'name'       => __('File Title', 'wpss'),
 						'id'         => 'wpss_menu_file_name',
 						'type'       => 'text',
 						'attributes' => array(
@@ -106,11 +106,11 @@ class WPSSCptMenu extends WPSSCptSidebar {
 						),
 					),
 					array(
-						'name'       => 'URL/Link do Arquivo',
+						'name'       => __('File URL', 'wpss'),
 						'id'         => 'wpss_menu_file_url',
 						'type'       => 'file',
 						'options'    => array(
-							'add_upload_file_text' => 'Selecionar Arquivo',
+							'add_upload_file_text' => __('Send From PC', 'wpss'),
 						),
 						'attributes' => array(
 							'required'               => true,
