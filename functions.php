@@ -38,7 +38,6 @@ require_once dirname( __FILE__ ) . '/lib/addons/ReduxCore/framework.php';
  * Load theme classes
  */
 WPSSinit::wpss_load_class( 'WPSSquery' );
-WPSSinit::wpss_load_class( 'WPSSQueryUser' );
 WPSSinit::wpss_load_class( 'WPSSMetaBox' );
 WPSSinit::wpss_load_class( 'WPSSPostsOrder' );
 WPSSinit::wpss_load_class( 'WPSSCptContact' );

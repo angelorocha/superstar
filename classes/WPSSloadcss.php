@@ -29,7 +29,6 @@ final class WPSSloadcss {
 		self::wpss_load_styles( 'headers_css', 'content-headers' );
 		self::wpss_load_styles( 'slide_css', 'slide' );
 		#self::wpss_load_styles( 'perfect_scroll_css', 'perfect-scrollbar' );
-		self::wpss_load_styles( 'login_css', 'login' );
 		self::wpss_load_styles( 'modal_login', 'wpss-modal-login' );
 		self::wpss_load_styles( 'reset_css', 'reset' );
 		self::wpss_load_styles( 'print_css', 'print', '', 'print' );

@@ -28,7 +28,7 @@ $args = array(
     'page_priority'      => 9,
     'page_permissions'   => 'manage_options',
     'page_slug'          => '_wpss_options_page',
-    'page_title'         => 'Theme Options Page',
+    'page_title'         => __('Theme Options Page', 'wpss'),
     'show_import_export' => true,
     'customizer'         => true,
     'dev_mode'           => false,
@@ -119,6 +119,7 @@ Redux::setSection($opt_name, array(
     )
 ));
 
+/*** Custom CSS */
 Redux::setSection($opt_name, array(
     'title'  => esc_html__('Custom CSS', 'wpss'),
     'id'     => 'custom_css',
@@ -141,9 +142,100 @@ Redux::setSection($opt_name, array(
     )
 ));
 
+/*** Site Maintenance */
+Redux::setSection($opt_name, array(
+    'title'  => esc_html__('Maintenance Mode', 'wpss'),
+    'id'     => 'maintenance_mode',
+    'desc'   => esc_html__('Enable site maintenance mode.', 'wpss'),
+    'icon'   => 'el el-lock',
+    'fields' => array(
+        array(
+            'id'       => 'wpss_maintenance',
+            'type'     => 'switch',
+            'title'    => __('Enable', 'wpss'),
+            'subtitle' => __('Configure site maintenance mode.', 'wpss'),
+            'desc'     => esc_html__('Enable/Disable Maintenance Mode', 'wpss'),
+            'on'       => 'Enable',
+            'off'      => 'Disable',
+            'default'  => false
+        ),
+        array(
+            'id'           => 'wpss_maintenance_title',
+            'type'         => 'text',
+            'title'        => __('Site Title', 'wpss'),
+            'subtitle'     => __('Define site title', 'wpss'),
+            'desc'         => __('Site title when maintenance mode is enabled', 'wpss'),
+            'default'      => __('Maintenance mode enabled', 'wpss'),
+            'required'     => array(
+                array(
+                    'wpss_maintenance',
+                    '=',
+                    true
+                )
+            ),
+            'autocomplete' => 'off'
+        ),
+        array(
+            'id'           => 'wpss_maintenance_description',
+            'type'         => 'editor',
+            'title'        => __('Site Description', 'wpss'),
+            'subtitle'     => __('Type maintenance description', 'wpss'),
+            'desc'         => __('Add a short description to maintenance mode.', 'wpss'),
+            'default'      => __('Our site is undergoing scheduled maintenance', 'wpss'),
+            'required'     => array(
+                array(
+                    'wpss_maintenance',
+                    '=',
+                    true
+                )
+            ),
+            'autocomplete' => 'off'
+        ),
+        array(
+            'id'       => 'wpss_maintenance_background',
+            'type'     => 'background',
+            'title'    => __('Background Style', 'wpss'),
+            'subtitle' => __('Set maintenance background.', 'wpss'),
+            'desc'     => __('Pick a color or send a background image to maintenance mode.', 'wpss'),
+            'default'  => array(
+                'background-color'      => '#FAFAFA',
+                'background-repeat'     => 'no-repeat',
+                'background-attachment' => 'fixed',
+                'background-position'   => 'center top',
+                'background-size'       => 'cover'
+            ),
+            'required' => array(
+                array(
+                    'wpss_maintenance',
+                    '=',
+                    true
+                )
+            ),
+        ),
+        array(
+            'id'       => 'wpss_maintenance_login',
+            'type'     => 'switch',
+            'title'    => __('Login Box', 'wpss'),
+            'subtitle' => __('Enable login box.', 'wpss'),
+            'desc'     => esc_html__('Enable/Disable user login box', 'wpss'),
+            'on'       => 'Enable',
+            'off'      => 'Disable',
+            'default'  => false,
+            'required' => array(
+                array(
+                    'wpss_maintenance',
+                    '=',
+                    true
+                )
+            ),
+        ),
+    )
+));
+
 /***
  * Get options
  */
+
 /*** Get global option */
 function wpss_get_option(){
     global $wpss_option;

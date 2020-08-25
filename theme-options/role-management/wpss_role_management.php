@@ -36,8 +36,8 @@ function wpss_user_role_management_cotent() {
 	$count      = 0;
 	$admin_home = menu_page_url( 'wpss-role-management', false );
 	$menu_nav   = array(
-		'caps'    => 'Add or Remove Role',
-		'roles'   => 'Roles List',
+		'caps'    => __('Add or Remove Role', 'wpss'),
+		'roles'   => __('Roles List', 'wpss'),
 	);
 	?>
     <div class="wpss-admin-container">
