@@ -30,9 +30,12 @@
  */
 
 function wpss_datatables_script( $table_id, $table_args = array(), $before_script = '', $after_script = '' ) {
-
-	wp_enqueue_script( 'wpss-datatables', _WPSS_JS_DIR . 'datatables.min.js', array( 'jquery' ), _WPSS_FILE_VERSION, true );
-	wp_enqueue_style( 'wpss-datatables', _WPSS_CSS_DIR . 'datatables.min.css', '', _WPSS_FILE_VERSION, 'all' );
+    if(!wp_script_is('wpss-datatables', 'enqueued ')):
+        wp_enqueue_script('wpss-datatables', _WPSS_JS_DIR . 'datatables.min.js', array('jquery'), _WPSS_FILE_VERSION, true);
+    endif;
+    if(!wp_style_is('wpss-datatables', 'enqueued ')):
+        wp_enqueue_style('wpss-datatables', _WPSS_CSS_DIR . 'datatables.min.css', '', _WPSS_FILE_VERSION, 'all');
+    endif;
 
 	$table_args = array(
 		'scroll_x'           => ( empty( $table_args['scroll_x'] ) ? 'false' : $table_args['scroll_x'] ),

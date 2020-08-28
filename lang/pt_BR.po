@@ -1,17 +1,21 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2020-08-25 16:02-0300\n"
-"PO-Revision-Date: 2020-08-25 16:11-0300\n"
+"Project-Id-Version: Super Star\n"
+"POT-Creation-Date: 2020-08-25 20:11-0300\n"
+"PO-Revision-Date: 2020-08-25 20:37-0300\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: contato@angelorocha.com.br\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: lib\n"
 
 #: classes/WPSSCptContact.php:50
 msgid "Name"
@@ -72,6 +76,7 @@ msgid "Add email"
 msgstr "Adicionar Email"
 
 #: classes/WPSSCptContact.php:214 classes/WPSSCptMenu.php:88
+#: classes/WPSSCptSidebar.php:91
 msgid "Select Page"
 msgstr "Selecionar Página"
 
@@ -103,39 +108,39 @@ msgstr "Itens do menu"
 msgid "Add items from this menu"
 msgstr "Adicionar itens para este menu"
 
-#: classes/WPSSCptMenu.php:68
+#: classes/WPSSCptMenu.php:68 classes/WPSSCptSidebar.php:68
 msgid "Add Link"
 msgstr "Adicionar Link"
 
-#: classes/WPSSCptMenu.php:69
+#: classes/WPSSCptMenu.php:69 classes/WPSSCptSidebar.php:69
 msgid "Remove Link"
 msgstr "Remover Link"
 
-#: classes/WPSSCptMenu.php:72
+#: classes/WPSSCptMenu.php:72 classes/WPSSCptSidebar.php:72
 msgid "Are you sure?"
 msgstr "Você tem certeza?"
 
-#: classes/WPSSCptMenu.php:78
+#: classes/WPSSCptMenu.php:78 classes/WPSSCptSidebar.php:78
 msgid "Link Type"
 msgstr "Tipo do Link"
 
-#: classes/WPSSCptMenu.php:83
+#: classes/WPSSCptMenu.php:83 classes/WPSSCptSidebar.php:83
 msgid "Page"
 msgstr "Página"
 
-#: classes/WPSSCptMenu.php:84
+#: classes/WPSSCptMenu.php:84 classes/WPSSCptSidebar.php:84
 msgid "Link/File"
 msgstr "Link/Arquivo"
 
-#: classes/WPSSCptMenu.php:99
+#: classes/WPSSCptMenu.php:99 classes/WPSSCptSidebar.php:104
 msgid "File Title"
 msgstr "Título do Arquivo"
 
-#: classes/WPSSCptMenu.php:109
+#: classes/WPSSCptMenu.php:109 classes/WPSSCptSidebar.php:114
 msgid "File URL"
 msgstr "URL do Arquivo"
 
-#: classes/WPSSCptMenu.php:113
+#: classes/WPSSCptMenu.php:113 classes/WPSSCptSidebar.php:118
 msgid "Send From PC"
 msgstr "Enviar do Computador"
 
@@ -143,11 +148,36 @@ msgstr "Enviar do Computador"
 msgid "Toggle navigation"
 msgstr "Alternar Navegação"
 
+#: classes/WPSSCptSidebar.php:65
+msgid "Select widget items"
+msgstr "Selecione os itens do widget"
+
+#: classes/WPSSCptSidebar.php:85
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
+msgid "Text"
+msgstr "Texto"
+
+#: classes/WPSSCptSidebar.php:86 classes/WPSSCptSidebar.php:152
+msgid "Image"
+msgstr "Imagem"
+
+#: classes/WPSSCptSidebar.php:129
+msgid "Type Content"
+msgstr "Digite o conteúdo"
+
+#: classes/WPSSCptSidebar.php:141
+msgid "URL <sup>(optional)</sup>"
+msgstr "URL <sup>(opcional)</sup>"
+
+#: classes/WPSSCptSidebar.php:159
+msgid "Select Image"
+msgstr "Selecionar Imagem"
+
 #: classes/WPSSFFmpeg.php:52
 msgid "File type not allowed"
 msgstr "Tipo de arquivo não permitido"
 
-#: classes/WPSSForms.php:241 login-page.php:24
+#: classes/WPSSForms.php:241 login-page.php:56
 msgid "User"
 msgstr "Usuário"
 
@@ -395,21 +425,17 @@ msgstr "Adicionar Menu"
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
 msgstr "<h4 class=\"text-center\">Nenhuma informação ainda...</h4>"
 
-#: functions.php:98
+#: functions.php:97
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: functions.php:99
+#: functions.php:98
 msgid "Top Menu"
 msgstr "Menu do Topo"
 
-#: functions.php:100
+#: functions.php:99
 msgid "Footer Menu"
 msgstr "Menu do Rodapé"
-
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
-msgid "Text"
-msgstr "Texto"
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:28
 msgid "CPF"
@@ -490,7 +516,7 @@ msgstr "Senha: "
 msgid "Remember"
 msgstr "Lembrar"
 
-#: inc/content-parts/wpss_modal_login.php:37 login-page.php:36
+#: inc/content-parts/wpss_modal_login.php:37 login-page.php:69
 msgid "Login"
 msgstr "Entrar"
 
@@ -716,43 +742,43 @@ msgstr "Nenhum registro encontrado"
 
 #: inc/wpss_datatables_script.php:82
 msgid "Showing from _START_ to _END_ of _TOTAL_ records"
-msgstr ""
+msgstr "Mostrando de _START_ até _END_ de _TOTAL_ de registros"
 
 #: inc/wpss_datatables_script.php:83
 msgid "Showing 0 to 0 of 0 entries"
-msgstr ""
+msgstr "Mostrando 0 até 0 de 0 registros"
 
 #: inc/wpss_datatables_script.php:84
 msgid "(Filtered from _MAX_ records)"
-msgstr ""
+msgstr "(Filtrado de _MAX_ registros)"
 
 #: inc/wpss_datatables_script.php:87
 msgid "_MENU_ Items per page"
-msgstr ""
+msgstr "_MENU_ Itens por página"
 
 #: inc/wpss_datatables_script.php:88
 msgid "Loading..."
-msgstr ""
+msgstr "Carregando..."
 
 #: inc/wpss_datatables_script.php:89
 msgid "Processing ..."
-msgstr ""
+msgstr "Processando..."
 
 #: inc/wpss_datatables_script.php:96
 msgid "First"
-msgstr ""
+msgstr "Primeiro"
 
 #: inc/wpss_datatables_script.php:97
 msgid "Last"
-msgstr ""
+msgstr "Último"
 
 #: inc/wpss_datatables_script.php:100
 msgid ": Sort columns in ascending order"
-msgstr ""
+msgstr ": Ordenar colunas em ordem ascendente"
 
 #: inc/wpss_datatables_script.php:101
 msgid ": Sort columns in descending order"
-msgstr ""
+msgstr ": Ordenar colunas em ordem decrescente"
 
 #: inc/wpss_datepicker.php:32
 msgid "0000-00-00"
@@ -963,44 +989,44 @@ msgstr "Expirar Slide?"
 
 #: inc/wpss_super_like.php:189
 msgid "Who liked?"
-msgstr ""
+msgstr "Quem Curtiu?"
 
 #: inc/wpss_super_like.php:202
 msgid "Be first to like!"
-msgstr ""
+msgstr "Seja o primeiro a curtir!"
 
 #: inc/wpss_super_like.php:219
 msgid "See who likes"
-msgstr ""
+msgstr "Veja quem curtiu"
 
 #: inc/wpss_super_like.php:221
 msgid "Like"
-msgstr ""
+msgstr "Curtir"
 
 #: inc/wpss_super_like.php:221 inc/wpss_super_like.php:237
 #: inc/wpss_super_like.php:243
 msgid "Like!"
-msgstr ""
+msgstr "Curtir!"
 
 #: inc/wpss_super_like.php:226
 msgid "You must be logged in to like!"
-msgstr ""
+msgstr "Você precisa estar logado para curtir!"
 
 #: inc/wpss_super_like.php:239
 msgid " liked"
-msgstr ""
+msgstr "curtiu"
 
 #: inc/wpss_super_like.php:240
 msgid "Dislike"
-msgstr ""
+msgstr "Dislike"
 
 #: inc/wpss_super_like.php:277
 msgid "Didn't like anything yet..."
-msgstr ""
+msgstr "Ninguém curtiu ainda..."
 
 #: inc/wpss_super_like.php:313
 msgid "You Like:"
-msgstr "Vecê gosta:"
+msgstr "Você curtiu:"
 
 #: inc/wpss_super_like.php:345
 msgid "Today's Most Popular Posts"
@@ -1023,37 +1049,37 @@ msgstr "Posts mais populares"
 msgid "Class %s not defined..."
 msgstr "Classe %s não definida..."
 
-#: login-page.php:25
+#: login-page.php:57
 msgid "User Login"
-msgstr ""
+msgstr "Login de usuário"
 
-#: login-page.php:27
+#: login-page.php:59
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
-#: login-page.php:28
+#: login-page.php:60
 msgid "User Password"
-msgstr ""
+msgstr "Senha de usuário"
 
-#: login-page.php:33
+#: login-page.php:65
 msgid "Remember me"
-msgstr ""
+msgstr "Lembra-me"
 
-#: login-page.php:48
+#: login-page.php:82
 msgid "User successfully logged out"
-msgstr ""
+msgstr "Usuário desconectado com sucesso"
 
 #: searchform.php:3
 msgid "Search in site..."
-msgstr ""
+msgstr "Buscar no site..."
 
 #: searchform.php:5
 msgid "Go"
-msgstr ""
+msgstr "Ir"
 
 #: theme-options/forms/wpss_forms.php:20 theme-options/forms/wpss_forms.php:22
 msgid "Forms"
-msgstr ""
+msgstr "Formulários"
 
 #: theme-options/forms/wpss_forms.php:21
 msgid "Form"
@@ -1208,6 +1234,10 @@ msgstr "<h3>Dados do Formulário</h3>"
 msgid "Theme Options"
 msgstr "Opções do Tema"
 
+#: theme-options/options/theme_options.php:31
+msgid "Theme Options Page"
+msgstr "Página de Opções do Tema"
+
 #: theme-options/options/theme_options.php:68
 msgid "Header"
 msgstr "Cabeçalho"
@@ -1230,51 +1260,135 @@ msgstr ""
 
 #: theme-options/options/theme_options.php:88
 msgid "Custom Scripts"
-msgstr ""
+msgstr "Scripts Customizados"
 
 #: theme-options/options/theme_options.php:90
 msgid "Insert your custom scripts here."
-msgstr ""
+msgstr "Insira seus scripts aqui."
 
 #: theme-options/options/theme_options.php:96
 msgid "Header Javascript Code"
-msgstr ""
+msgstr "Javascript do Cabeçalho"
 
 #: theme-options/options/theme_options.php:97
 #: theme-options/options/theme_options.php:110
 msgid "Paste your javascript code here."
-msgstr ""
+msgstr "Insira seu código javascript aqui."
 
 #: theme-options/options/theme_options.php:100
 msgid "Your script will be inserted immediately before the </head> tag"
-msgstr ""
+msgstr "Seu código javascript será inserido imediatamente antes da tag </head>"
 
 #: theme-options/options/theme_options.php:109
 msgid "Footer Javascript Code"
-msgstr ""
+msgstr "Javascript do rodapé"
 
 #: theme-options/options/theme_options.php:113
 msgid "Your script will be inserted immediately before the </body> tag"
-msgstr ""
+msgstr "Seu código javascript será inserido imediatamente antes da tag </body>"
 
-#: theme-options/options/theme_options.php:123
+#: theme-options/options/theme_options.php:124
 msgid "Custom CSS"
-msgstr ""
+msgstr "CSS Customizado"
 
-#: theme-options/options/theme_options.php:125
+#: theme-options/options/theme_options.php:126
 msgid "Insert your custom CSS here."
 msgstr ""
 
-#: theme-options/options/theme_options.php:131
+#: theme-options/options/theme_options.php:132
 msgid "CSS Code"
 msgstr ""
 
-#: theme-options/options/theme_options.php:132
+#: theme-options/options/theme_options.php:133
 msgid "Paste your CSS code here."
 msgstr ""
 
-#: theme-options/options/theme_options.php:135
+#: theme-options/options/theme_options.php:136
 msgid "Your css will be inserted immediately before the </head> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:147
+msgid "Maintenance Mode"
+msgstr ""
+
+#: theme-options/options/theme_options.php:149
+msgid "Enable site maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:155
+msgid "Enable"
+msgstr ""
+
+#: theme-options/options/theme_options.php:156
+msgid "Configure site maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:157
+msgid "Enable/Disable Maintenance Mode"
+msgstr ""
+
+#: theme-options/options/theme_options.php:165
+#, fuzzy
+#| msgid "File Title"
+msgid "Site Title"
+msgstr "Título do Arquivo"
+
+#: theme-options/options/theme_options.php:166
+msgid "Define site title"
+msgstr ""
+
+#: theme-options/options/theme_options.php:167
+msgid "Site title when maintenance mode is enabled"
+msgstr ""
+
+#: theme-options/options/theme_options.php:168
+msgid "Maintenance mode enabled"
+msgstr ""
+
+#: theme-options/options/theme_options.php:181
+#, fuzzy
+#| msgid "Post Type Description"
+msgid "Site Description"
+msgstr "Descrição do tipo de post"
+
+#: theme-options/options/theme_options.php:182
+#, fuzzy
+#| msgid "Post Type Description"
+msgid "Type maintenance description"
+msgstr "Descrição do tipo de post"
+
+#: theme-options/options/theme_options.php:183
+msgid "Add a short description to maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:184
+msgid "Our site is undergoing scheduled maintenance"
+msgstr ""
+
+#: theme-options/options/theme_options.php:197
+msgid "Background Style"
+msgstr ""
+
+#: theme-options/options/theme_options.php:198
+msgid "Set maintenance background."
+msgstr ""
+
+#: theme-options/options/theme_options.php:199
+msgid "Pick a color or send a background image to maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:218
+#, fuzzy
+#| msgid "Login"
+msgid "Login Box"
+msgstr "Entrar"
+
+#: theme-options/options/theme_options.php:219
+msgid "Enable login box."
+msgstr ""
+
+#: theme-options/options/theme_options.php:220
+msgid "Enable/Disable user login box"
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:16
@@ -1318,6 +1432,14 @@ msgstr "Ir para URL"
 #: theme-options/role-management/wpss_role_management.php:44
 msgid "Role Management"
 msgstr "Gerenciamento de Permissões"
+
+#: theme-options/role-management/wpss_role_management.php:39
+msgid "Add or Remove Role"
+msgstr "Adicionar ou Remover Role"
+
+#: theme-options/role-management/wpss_role_management.php:40
+msgid "Roles List"
+msgstr "Lista de Roles"
 
 #: theme-options/role-management/wpss_role_management_functions.php:19
 msgid "Select User: "

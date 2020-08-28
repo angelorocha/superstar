@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Super Star\n"
-"POT-Creation-Date: 2020-08-25 16:02-0300\n"
+"POT-Creation-Date: 2020-08-25 20:32-0300\n"
 "PO-Revision-Date: 2020-08-17 15:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: contato@angelorocha.com.br\n"
@@ -78,6 +78,7 @@ msgid "Add email"
 msgstr ""
 
 #: classes/WPSSCptContact.php:214 classes/WPSSCptMenu.php:88
+#: classes/WPSSCptSidebar.php:91
 msgid "Select Page"
 msgstr ""
 
@@ -109,39 +110,39 @@ msgstr ""
 msgid "Add items from this menu"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:68
+#: classes/WPSSCptMenu.php:68 classes/WPSSCptSidebar.php:68
 msgid "Add Link"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:69
+#: classes/WPSSCptMenu.php:69 classes/WPSSCptSidebar.php:69
 msgid "Remove Link"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:72
+#: classes/WPSSCptMenu.php:72 classes/WPSSCptSidebar.php:72
 msgid "Are you sure?"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:78
+#: classes/WPSSCptMenu.php:78 classes/WPSSCptSidebar.php:78
 msgid "Link Type"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:83
+#: classes/WPSSCptMenu.php:83 classes/WPSSCptSidebar.php:83
 msgid "Page"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:84
+#: classes/WPSSCptMenu.php:84 classes/WPSSCptSidebar.php:84
 msgid "Link/File"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:99
+#: classes/WPSSCptMenu.php:99 classes/WPSSCptSidebar.php:104
 msgid "File Title"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:109
+#: classes/WPSSCptMenu.php:109 classes/WPSSCptSidebar.php:114
 msgid "File URL"
 msgstr ""
 
-#: classes/WPSSCptMenu.php:113
+#: classes/WPSSCptMenu.php:113 classes/WPSSCptSidebar.php:118
 msgid "Send From PC"
 msgstr ""
 
@@ -149,11 +150,36 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
+#: classes/WPSSCptSidebar.php:65
+msgid "Select widget items"
+msgstr ""
+
+#: classes/WPSSCptSidebar.php:85
+#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
+msgid "Text"
+msgstr ""
+
+#: classes/WPSSCptSidebar.php:86 classes/WPSSCptSidebar.php:152
+msgid "Image"
+msgstr ""
+
+#: classes/WPSSCptSidebar.php:129
+msgid "Type Content"
+msgstr ""
+
+#: classes/WPSSCptSidebar.php:141
+msgid "URL <sup>(optional)</sup>"
+msgstr ""
+
+#: classes/WPSSCptSidebar.php:159
+msgid "Select Image"
+msgstr ""
+
 #: classes/WPSSFFmpeg.php:52
 msgid "File type not allowed"
 msgstr ""
 
-#: classes/WPSSForms.php:241 login-page.php:24
+#: classes/WPSSForms.php:241 login-page.php:56
 msgid "User"
 msgstr ""
 
@@ -399,20 +425,16 @@ msgstr ""
 msgid "<h4 class=\"text-center\">No information yet...</h4>"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:97
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:98
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:99
 msgid "Footer Menu"
-msgstr ""
-
-#: inc/cmb2-fields/wpss_cmb2_formfield_field.php:27
-msgid "Text"
 msgstr ""
 
 #: inc/cmb2-fields/wpss_cmb2_formfield_field.php:28
@@ -494,7 +516,7 @@ msgstr ""
 msgid "Remember"
 msgstr ""
 
-#: inc/content-parts/wpss_modal_login.php:37 login-page.php:36
+#: inc/content-parts/wpss_modal_login.php:37 login-page.php:69
 msgid "Login"
 msgstr ""
 
@@ -1027,23 +1049,23 @@ msgstr ""
 msgid "Class %s not defined..."
 msgstr ""
 
-#: login-page.php:25
+#: login-page.php:57
 msgid "User Login"
 msgstr ""
 
-#: login-page.php:27
+#: login-page.php:59
 msgid "Password"
 msgstr ""
 
-#: login-page.php:28
+#: login-page.php:60
 msgid "User Password"
 msgstr ""
 
-#: login-page.php:33
+#: login-page.php:65
 msgid "Remember me"
 msgstr ""
 
-#: login-page.php:48
+#: login-page.php:82
 msgid "User successfully logged out"
 msgstr ""
 
@@ -1208,6 +1230,10 @@ msgstr ""
 msgid "Theme Options"
 msgstr ""
 
+#: theme-options/options/theme_options.php:31
+msgid "Theme Options Page"
+msgstr ""
+
 #: theme-options/options/theme_options.php:68
 msgid "Header"
 msgstr ""
@@ -1257,24 +1283,100 @@ msgstr ""
 msgid "Your script will be inserted immediately before the </body> tag"
 msgstr ""
 
-#: theme-options/options/theme_options.php:123
+#: theme-options/options/theme_options.php:124
 msgid "Custom CSS"
 msgstr ""
 
-#: theme-options/options/theme_options.php:125
+#: theme-options/options/theme_options.php:126
 msgid "Insert your custom CSS here."
 msgstr ""
 
-#: theme-options/options/theme_options.php:131
+#: theme-options/options/theme_options.php:132
 msgid "CSS Code"
 msgstr ""
 
-#: theme-options/options/theme_options.php:132
+#: theme-options/options/theme_options.php:133
 msgid "Paste your CSS code here."
 msgstr ""
 
-#: theme-options/options/theme_options.php:135
+#: theme-options/options/theme_options.php:136
 msgid "Your css will be inserted immediately before the </head> tag"
+msgstr ""
+
+#: theme-options/options/theme_options.php:147
+msgid "Maintenance Mode"
+msgstr ""
+
+#: theme-options/options/theme_options.php:149
+msgid "Enable site maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:155
+msgid "Enable"
+msgstr ""
+
+#: theme-options/options/theme_options.php:156
+msgid "Configure site maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:157
+msgid "Enable/Disable Maintenance Mode"
+msgstr ""
+
+#: theme-options/options/theme_options.php:165
+msgid "Site Title"
+msgstr ""
+
+#: theme-options/options/theme_options.php:166
+msgid "Define site title"
+msgstr ""
+
+#: theme-options/options/theme_options.php:167
+msgid "Site title when maintenance mode is enabled"
+msgstr ""
+
+#: theme-options/options/theme_options.php:168
+msgid "Maintenance mode enabled"
+msgstr ""
+
+#: theme-options/options/theme_options.php:181
+msgid "Site Description"
+msgstr ""
+
+#: theme-options/options/theme_options.php:182
+msgid "Type maintenance description"
+msgstr ""
+
+#: theme-options/options/theme_options.php:183
+msgid "Add a short description to maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:184
+msgid "Our site is undergoing scheduled maintenance"
+msgstr ""
+
+#: theme-options/options/theme_options.php:197
+msgid "Background Style"
+msgstr ""
+
+#: theme-options/options/theme_options.php:198
+msgid "Set maintenance background."
+msgstr ""
+
+#: theme-options/options/theme_options.php:199
+msgid "Pick a color or send a background image to maintenance mode."
+msgstr ""
+
+#: theme-options/options/theme_options.php:218
+msgid "Login Box"
+msgstr ""
+
+#: theme-options/options/theme_options.php:219
+msgid "Enable login box."
+msgstr ""
+
+#: theme-options/options/theme_options.php:220
+msgid "Enable/Disable user login box"
 msgstr ""
 
 #: theme-options/post-views/wpss_content_statistics.php:16
@@ -1317,6 +1419,14 @@ msgstr ""
 #: theme-options/role-management/wpss_role_management.php:18
 #: theme-options/role-management/wpss_role_management.php:44
 msgid "Role Management"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management.php:39
+msgid "Add or Remove Role"
+msgstr ""
+
+#: theme-options/role-management/wpss_role_management.php:40
+msgid "Roles List"
 msgstr ""
 
 #: theme-options/role-management/wpss_role_management_functions.php:19

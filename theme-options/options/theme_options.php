@@ -65,20 +65,42 @@ Redux::setArgs($opt_name, $args);
 
 /*** Header options */
 Redux::setSection($opt_name, array(
-    'title'  => esc_html__('Header', 'wpss'),
-    'id'     => 'header_options',
-    'desc'   => esc_html__('Theme header options.', 'wpss'),
-    'icon'   => 'el el-home',
+    'title'  => esc_html__('Social Links', 'wpss'),
+    'id'     => 'wpss_social_links',
+    'desc'   => esc_html__('Configure your social links.', 'wpss'),
+    'icon'   => 'el el-share',
     'fields' => array(
         array(
-            'id'       => 'wpss-header-logo',
-            'type'     => 'media',
-            'title'    => esc_html__('Site Logo', 'wpss'),
-            'desc'     => esc_html__('Define your site logo.', 'wpss'),
-            'subtitle' => esc_html__('Upload your logo file.', 'wpss'),
-            //'hint'     => array(
-            //    'content' => '',
-            //)
+            'id'       => 'wpss_social_fb',
+            'type'     => 'text',
+            'title'    => esc_html__('Facebook', 'wpss'),
+            'desc'     => esc_html__('', ''),
+            'subtitle' => esc_html__('Insert your facebook link.', 'wpss'),
+            'validate' => 'url'
+        ),
+        array(
+            'id'       => 'wpss_social_tt',
+            'type'     => 'text',
+            'title'    => esc_html__('Twitter', 'wpss'),
+            'desc'     => esc_html__('', ''),
+            'subtitle' => esc_html__('Insert your twitter link.', 'wpss'),
+            'validate' => 'url'
+        ),
+        array(
+            'id'       => 'wpss_social_ig',
+            'type'     => 'text',
+            'title'    => esc_html__('Instagram', 'wpss'),
+            'desc'     => esc_html__('', ''),
+            'subtitle' => esc_html__('Insert your Instagram link.', 'wpss'),
+            'validate' => 'url'
+        ),
+        array(
+            'id'       => 'wpss_social_yt',
+            'type'     => 'text',
+            'title'    => esc_html__('YouTube', 'wpss'),
+            'desc'     => esc_html__('', ''),
+            'subtitle' => esc_html__('Insert your Youtube link.', 'wpss'),
+            'validate' => 'url'
         )
     )
 ));
