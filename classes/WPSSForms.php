@@ -426,10 +426,12 @@ class WPSSForms{
 	 */
 	public function forms_send_whatsapp() {
 		$data = '';
-
 		foreach ( self::get_form_fields() as $key => $values ):
-			$label = urlencode( $values['label'] );
-			$value = ( isset( $_POST[ $values['name'] ] ) ? urlencode( $_POST[ $values['name'] ] ) : ' --- ' );
+			$label = $values['label'];
+			$value = ( isset( $_POST[ $values['name'] ] ) ? $_POST[ $values['name'] ] : ' --- ' );
+            if(is_array($value)):
+                $value = implode(",", $value);
+            endif;
 			$data  .= "*$label:*%20";
 			$data  .= "$value";
 			$data  .= "%0D%0A%20";
