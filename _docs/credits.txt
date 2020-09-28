@@ -51,6 +51,10 @@ Using:
 # Sticky Sidebar
 -- https://github.com/abouolia/sticky-sidebar
 
+# Slick Carousel
+-- https://kenwheeler.github.io/slick/
+-- https://github.com/kenwheeler/slick
+
 Thanks! ♥
 
 #########################################################################
