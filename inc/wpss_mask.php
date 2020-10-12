@@ -1,8 +1,8 @@
 <?php
 /**
- * @param $table_id
- * @param array $table_args
- *
+ * @param $element
+ * @param $mask
+ * @param bool $reverse
  * @link                https://angelorocha.com.br
  * @copyleft            2020
  * @license             GNU GPL 3 (https://www.gnu.org/licenses/gpl-3.0.html)
@@ -25,7 +25,6 @@
  * 'print'              => true                        // Enable print buttons
  * )
  * );
- *
  *
  */
 
